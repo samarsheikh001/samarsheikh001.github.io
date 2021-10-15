@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/lo_victoria2666/510627", {data:[{}],fetch:{"data-v-25febe66:0":{_error:{message:"invalid json response body at https:\u002F\u002Fdev.to\u002Fapi\u002Farticles\u002F510627 reason: Unexpected token R in JSON at position 0",type:"invalid-json",statusCode:500}}},mutations:[]});
