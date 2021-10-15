@@ -1,7 +1,7 @@
 <!doctype html>
 <html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
   <head >
-    <title>codelearn_website</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" name="format-detection" content="telephone=no"><meta data-n-head="ssr" data-hid="charset" charset="utf-8"><meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="preconnect" href="https://fonts.gstatic.com"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap"><link data-n-head="ssr" data-hid="shortcut-icon" rel="shortcut icon" href="/_nuxt/icons/icon_64x64.e3e9fb.png"><link data-n-head="ssr" data-hid="apple-touch-icon" rel="apple-touch-icon" href="/_nuxt/icons/icon_512x512.e3e9fb.png" sizes="512x512"><link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.f9c56d04.json" data-hid="manifest"><link rel="preload" href="/_nuxt/548109a.js" as="script"><link rel="preload" href="/_nuxt/84567ea.js" as="script"><link rel="preload" href="/_nuxt/ad2e88f.js" as="script"><link rel="preload" href="/_nuxt/ad0ee30.js" as="script"><link rel="preload" href="/_nuxt/c3ddcce.js" as="script"><style data-vue-ssr-id="54b08540:0 a57b151a:0 1239d49d:0 bc0f4dfc:0 59be0982:0 4d321698:0 7dbd20ba:0 3c003464:0 6cfba90a:0">/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com*/
+    <title>Functional Programming in JS: Functor - Monad&#x27;s little brother</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" name="format-detection" content="telephone=no"><meta data-n-head="ssr" data-hid="charset" charset="utf-8"><meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="preconnect" href="https://fonts.gstatic.com"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap"><link data-n-head="ssr" data-hid="shortcut-icon" rel="shortcut icon" href="/_nuxt/icons/icon_64x64.e3e9fb.png"><link data-n-head="ssr" data-hid="apple-touch-icon" rel="apple-touch-icon" href="/_nuxt/icons/icon_512x512.e3e9fb.png" sizes="512x512"><link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.f9c56d04.json" data-hid="manifest"><link rel="preload" href="/_nuxt/548109a.js" as="script"><link rel="preload" href="/_nuxt/84567ea.js" as="script"><link rel="preload" href="/_nuxt/ad2e88f.js" as="script"><link rel="preload" href="/_nuxt/ad0ee30.js" as="script"><link rel="preload" href="/_nuxt/c3ddcce.js" as="script"><style data-vue-ssr-id="54b08540:0 a57b151a:0 1239d49d:0 bc0f4dfc:0 59be0982:0 4d321698:0 3c003464:0 6cfba90a:0">/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com*/
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -1594,24 +1594,6 @@ header .meta .scl .comments[data-v-25febe66]{
 
 /*purgecss end ignore*/
 /*purgecss start ignore*/
-.error-block[data-v-118d0980]{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  padding:2rem
-}
-svg[data-v-118d0980]{
-  width:3rem;
-  height:3rem;
-  margin-bottom:1rem;
-  opacity:.75
-}
-h2[data-v-118d0980]{
-  text-align:center
-}
-
-/*purgecss end ignore*/
-/*purgecss start ignore*/
 aside[data-v-29ea5fa2]{
   padding:1rem;
   border-radius:1rem
@@ -1678,7 +1660,7 @@ aside .info .content[data-v-29ea5fa2]{
   background:transparent
 }
 
-/*purgecss end ignore*/</style><link rel="preload" href="/_nuxt/static/1634315267/articles/mpodlasin/483024/state.js" as="script"><link rel="preload" href="/_nuxt/static/1634315267/articles/mpodlasin/483024/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1634315267/manifest.js" as="script">
+/*purgecss end ignore*/</style><link rel="preload" href="/_nuxt/static/1634315825/articles/mpodlasin/483024/state.js" as="script"><link rel="preload" href="/_nuxt/static/1634315825/articles/mpodlasin/483024/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1634315825/manifest.js" as="script">
   </head>
   <body >
     <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div><div><nav class="py-4"><div class="max-w-7xl mx-auto px-8"><div class="flex items-center justify-between h-16"><div class="flex items-center"><div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 50 62.5" enable-background="new 0 0 50 50" xml:space="preserve"><path fill="#FFFFFF" d="M25,1C11.745,1,1,11.745,1,25s10.745,24,24,24s24-10.745,24-24S38.255,1,25,1z M17.887,38.646  c0.097,0.099,0.097,0.257-0.001,0.354c-0.049,0.049-0.112,0.073-0.176,0.073s-0.128-0.024-0.177-0.073L3.767,25.177  c-0.028-0.028-0.031-0.067-0.042-0.103c-0.008-0.025-0.03-0.047-0.03-0.073s0.022-0.048,0.03-0.073  c0.012-0.036,0.014-0.075,0.042-0.103l13.766-13.823c0.098-0.099,0.256-0.098,0.354-0.001c0.098,0.098,0.098,0.256,0.001,0.354  L4.297,25.001L17.887,38.646z M46.232,25.178c0,0-0.001,0-0.002,0l-13.765,13.82c-0.049,0.049-0.112,0.073-0.177,0.073  c-0.063,0-0.128-0.024-0.177-0.073c-0.098-0.097-0.098-0.255,0-0.354l13.591-13.645L32.112,11.354c-0.098-0.098-0.098-0.256,0-0.354  c0.098-0.097,0.256-0.097,0.354,0.001L46.23,24.823c0.001,0,0.002,0,0.002,0c0.049,0.049,0.073,0.113,0.073,0.177  S46.281,25.129,46.232,25.178z"></path></svg> <h1 class="text-white text-2xl px-2 pb-2">CodeLabs.</h1></div> <div class="hidden md:block"><div class="ml-10 flex items-baseline space-x-4"><a href="/" class="
@@ -1804,7 +1786,797 @@ aside .info .content[data-v-29ea5fa2]{
             rounded-md
             text-base
             font-medium
-          ">Sponsor</a></div></div></nav></div> <div class="page-wrapper" data-v-3bf13c85><div class="article-content-wrapper" data-v-3bf13c85><article data-fetch-key="data-v-25febe66:0" class="article-block" data-v-25febe66 data-v-3bf13c85><div class="error-block" data-v-118d0980 data-v-25febe66><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-118d0980 data-v-118d0980><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-118d0980 data-v-118d0980></path></svg> <h2 data-v-118d0980>invalid json response body at https://dev.to/api/articles/483024 reason: Unexpected token R in JSON at position 0</h2></div></article> <div class="aside-username-wrapper" data-v-3bf13c85><aside class="aside-username-block" data-v-29ea5fa2 data-v-3bf13c85><div class="username-heading loading" data-v-29ea5fa2><div class="vue-content-placeholders vue-content-placeholders-is-animated" data-v-29ea5fa2><div class="vue-content-placeholders-heading" data-v-29ea5fa2><div class="vue-content-placeholders-heading__img"></div> <div class="vue-content-placeholders-heading__content"><div class="vue-content-placeholders-heading__title"></div> <div class="vue-content-placeholders-heading__subtitle"></div></div></div></div></div> <div class="info" data-v-29ea5fa2><div class="vue-content-placeholders vue-content-placeholders-is-animated" data-v-29ea5fa2><div class="vue-content-placeholders-text" data-v-29ea5fa2><div class="vue-content-placeholders-text__line"></div><div class="vue-content-placeholders-text__line"></div><div class="vue-content-placeholders-text__line"></div></div></div></div></aside></div></div> <div class="comments-block" data-v-54aa1ab4 data-v-3bf13c85><!----> <a href="https://dev.to/mpodlasin/undefined" target="_blank" rel="nofollow noopener noreferer" class="add-comment" data-v-54aa1ab4>
+          ">Sponsor</a></div></div></nav></div> <div class="page-wrapper" data-v-3bf13c85><div class="article-content-wrapper" data-v-3bf13c85><article data-fetch-key="data-v-25febe66:0" class="article-block" data-v-25febe66 data-v-3bf13c85><header data-v-25febe66><h1 data-v-25febe66>Functional Programming in JS: Functor - Monad's little brother</h1> <div class="tags" data-v-25febe66><a href="/articles/t/javascript" class="tag" data-v-25febe66>
+          #javascript
+        </a><a href="/articles/t/functional" class="tag" data-v-25febe66>
+          #functional
+        </a><a href="/articles/t/webdev" class="tag" data-v-25febe66>
+          #webdev
+        </a><a href="/articles/t/codenewbie" class="tag" data-v-25febe66>
+          #codenewbie
+        </a></div> <div class="image-wrapper" data-v-25febe66><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--wT3xBxGV--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/1ttk0mnvkjzgzfv0ovh2.jpg" alt="Functional Programming in JS: Functor - Monad's little brother" data-v-25febe66></div> <div class="meta" data-v-25febe66><div class="scl" data-v-25febe66><span data-v-25febe66><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-25febe66 data-v-25febe66><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-25febe66 data-v-25febe66></path></svg>
+            118
+          </span> <span class="comments" data-v-25febe66><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-25febe66 data-v-25febe66><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-25febe66 data-v-25febe66></path></svg>
+            8
+          </span></div> <time data-v-25febe66>Oct 17 '20</time></div></header> <div class="content" data-v-25febe66><p>So you have heard about monads. You've read some tutorials, seen some examples, yet you still can't quite wrap your head around them.</p>
+
+<p>It's interesting, because for me the concept of monad never seemed <em>that</em> challenging. And I believe that's because before learning about monads, I've learned about functors first.</p>
+
+<p>The thing is, learning about monads without knowing and understanding functors, is like learning about Redux without knowing and understanding React. It's just doesn't make sense.</p>
+
+<p>Functors are much simpler than monads. On top of that, all instances of monads are actually functors as well. Moreover, functors are actually interesting on their own. After learning them, you will start seeing functors everywhere, which will enable you to create elegant programming patterns and APIs.</p>
+
+<p>So if you ever had trouble getting into programming with monads, read my article about functors. We will start with a bit of light theory and later we will show a practical example of how functors can be utilized to write cleaner, more readable code.</p>
+
+<p>If, after reading this article, you decide that it was helpful to you, subscribe to me on <a href="https://twitter.com/m_podlasin">Twitter</a> for more content on JavaScript, React and functional programming.</p>
+
+<p>Let's get started!</p>
+
+<h2>
+  <a name="what-are-functors" href="#what-are-functors" class="anchor">
+  </a>
+  What are functors?
+</h2>
+
+<p>In functional programming we have all those weird, esoteric concepts with fancy names. Functors. Monads. Applicative functors. Semigroups. Monoids.</p>
+
+<p>They sound abstract and mathematical (not without a reason), which scares off newcomers.</p>
+
+<p>So what really are those things?</p>
+
+<p>You can think of them as nothing more than an adequate of design patterns or interfaces in object oriented programming. They are simply a way to notice some commonality in the code we are writing and making this commonality explicit.</p>
+
+<p>So, for example, a very popular pattern <em>and</em> an interface in object oriented languages is an iterable. It's simply a thing that can be iterated over. Even simpler - a thing that can be used in a for loop.</p>
+
+<p>When programmers started writing programs with for loops, they have noticed that you can iterate over many different data structures. Arrays, linked lists, various types of dictionaries, graphs, generators etc. The list goes on.</p>
+
+<p>Those data structures are often vastly different in nature and serve completely different purposes, but they have a thing in common - we can write a for loop which somehow iterates over their elements.</p>
+
+<p>So those weird things in functional programming, like functors and monads, were created with a similar viewpoint. We notice that there are some commonalities in our code, so we actually introduce them to the codebase in an explicit way.</p>
+
+<p>This makes programming easier. It's simpler to manipulate various data structures if they have similar APIs. Imagine each car having a completely different steering mechanism. It would be so tough to switch between cars! But because cars, no matter how different - from tiny minicars to massive trucks - are steered very similarly, it makes driving them much easier. </p>
+
+<p>In the same way, using data structures which obey common interfaces is much easier as well.</p>
+
+<p>On top of that, if we have defined a general interface, we can now try to write code that works on <em>all</em> instances of that interface. For example it should be possible to transform each instance of an iterable into a list of specified length. After all, we can simply iterate over a data structure with a for loop and step by step place it's elements inside a new list.</p>
+
+<p>We can write a function like that just once, instead of writing it each time for each instance of the iterable interface. Functors and monads have these capabilities as well. For example Haskell's standard library is full of functions that work on all instances of various abstract interfaces. This makes reusing code very easy, eliminating the need to write similarly looking functions many times.</p>
+
+<h2>
+  <a name="concept-of-a-functor-on-js-examples" href="#concept-of-a-functor-on-js-examples" class="anchor">
+  </a>
+  Concept of a functor on JS examples.
+</h2>
+
+<p>So with that introduction out of the way, we are now ready to present what <em>exactly</em> are functors.</p>
+
+<p>Functors are simply things that can be mapped over.</p>
+
+<p>This might seem like a very abstract sentence, so let's motivate it with a few examples.</p>
+
+<p>When you hear about "mapping things", you probably immediately think about <code>map</code> method available on JavaScript arrays. This method allows you to take a function and apply it on each element of the array. A new array gets created and its elements are results returned from successive calls to our function.</p>
+
+<p>Let's say we want to transform an array of numbers into an array of strings. <code>map</code> method allows us to do it easily:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">arrayOfNumbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+
+<span class="kd">const</span> <span class="nx">arrayOfStrings</span> <span class="o">=</span> <span class="nx">arrayOfNumbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">+</span> <span class="dl">''</span><span class="p">);</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>The arrow function <code>num =&gt; num + ''</code> converts a number to a string in a straightforward way.</p>
+
+<p>So when we apply this function via map to our array, we get as a result <code>["1", "2", "3"]</code>. Easy.</p>
+
+<p>It's also interesting to note that if the array is empty, <code>map</code> still works properly. Since there are no elements to map, it just returns an empty array again.</p>
+
+<p>This might not sound like much, but note that a corner case - an empty array - is handled for us here, without having to manually check if there are actually any elements in the array.</p>
+
+<p>So - according to our definition - because we can map arrays, array is indeed an instance of a functor.</p>
+
+<p>Are there any other functors in native JavaScript?</p>
+
+<p>You might be surprised to find out that Promises are also functors. "But why? - you might ask - Promises don't have a map method on them like arrays do!"</p>
+
+<p>And that's true. But note that <code>then</code> method on Promises also allows you to map a value stored inside a Promise. Let's say that now instead of the array of numbers, we have a Promise that stores a number. We can use the same function that we used on the array to change that number into a string:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">promiseWithNumber</span> <span class="o">=</span> <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">promiseWithString</span> <span class="o">=</span> <span class="nx">promiseWithNumber</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">+</span> <span class="dl">''</span><span class="p">);</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>As a result we get a Promise that resolves to a value <code>"5"</code>.</p>
+
+<p>Compare the code with Promises and with arrays and note just how similar it is in both syntax and behavior:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">arrayOfStrings</span> <span class="o">=</span> <span class="nx">arrayOfNumbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">+</span> <span class="dl">''</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">promiseWithString</span> <span class="o">=</span> <span class="nx">primiseWithNumber</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">+</span> <span class="dl">''</span><span class="p">);</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>What obfuscates this similarity is the fact that Promise <code>then</code> method is a do-it-all method. It is used for mapping, for side effects and for monad-like behavior. </p>
+
+<p>From a functional point of view it would be a cleaner design if Promises simply had a dedicated <code>map</code> method that obeyed some stricter rules:</p>
+
+<ul>
+<li>you couldn't (or at least shouldn't) do any side effects inside it,</li>
+<li>you couldn't (or at least shouldn't) return a Promise again inside that function.</li>
+</ul>
+
+<p>Then the similarity would be much more obvious:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">arrayOfStrings</span> <span class="o">=</span> <span class="nx">arrayOfNumbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">+</span> <span class="dl">''</span><span class="p">);</span>
+
+<span class="c1">// now it's a map!</span>
+<span class="kd">const</span> <span class="nx">promiseWithString</span> <span class="o">=</span> <span class="nx">promiseWithNumber</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">+</span> <span class="dl">''</span><span class="p">);</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>But this doesn't change the fact that with <code>then</code> you still can achieve a functor-like behavior. So for all intents and purposes it's totally okay to think about a Promise as an another instance of a functor interface.</p>
+
+<h2>
+  <a name="coming-up-with-our-own-functors" href="#coming-up-with-our-own-functors" class="anchor">
+  </a>
+  Coming up with our own functors.
+</h2>
+
+<p>Honestly I don't know any other good examples of functors in native JavaScript. If you do, please let me know in the comments!</p>
+
+<p>But this doesn't mean we are done. We can introduce functors in our own, custom code. In fact, this will be the biggest practical advantage of knowing functors for you. Introducing functor behavior to your data structures will allow you to write cleaner and more reusable code, just how <code>map</code> allows you to do it with arrays.</p>
+
+<p>The first approach could be to introduce mapping to some other native JavaScript data structure.</p>
+
+<p>For example there is no native <code>map</code> method for JavaScript objects. That's because when writing such method you would have to make some not so obvious design decisions. But because we are writing our own <code>map</code> here, we can just do whatever we wish.</p>
+
+<p>So how mapping of an object could look like? It's probably the best to think of an example. Let's assume we still want to use our <code>num =&gt; num + ''</code> function, which maps numbers to strings.</p>
+
+<p>If we get an object where the values are numbers:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">objectWithNumbers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="na">c</span><span class="p">:</span> <span class="mi">3</span>
+<span class="p">};</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>we want to return an object of the same shape, but with strings instead of numbers:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">objectWithStrings</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">a</span><span class="p">:</span> <span class="dl">"</span><span class="s2">1</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">b</span><span class="p">:</span> <span class="dl">"</span><span class="s2">2</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">c</span><span class="p">:</span> <span class="dl">"</span><span class="s2">3</span><span class="dl">"</span><span class="p">,</span>
+<span class="p">};</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>What we can do, is to use an <code>Object.entries</code> method to get both keys and values of <code>numbersObject</code>. Then, based on those values, we will create a new object, with values mapped by <code>num =&gt; num + ''</code> function.</p>
+
+<p>Because it is a bad practice to add new methods to native JS prototypes, we will simply create a <code>mapObject</code> function, which will accept two arguments - an object which we want to map and a function that does the actual mapping:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">mapObject</span> <span class="o">=</span> <span class="p">(</span><span class="nx">object</span><span class="p">,</span> <span class="nx">fn</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">entries</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">object</span><span class="p">);</span>
+    <span class="kd">const</span> <span class="nx">mappedObject</span> <span class="o">=</span> <span class="p">{};</span>
+
+    <span class="nx">entries</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(([</span><span class="nx">key</span><span class="p">,</span> <span class="nx">value</span><span class="p">])</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="c1">// here is where the mapping is happening!</span>
+        <span class="nx">mappedObject</span><span class="p">[</span><span class="nx">key</span><span class="p">]</span> <span class="o">=</span> <span class="nx">fn</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+    <span class="p">});</span>
+
+    <span class="k">return</span> <span class="nx">mappedObject</span><span class="p">;</span>
+<span class="p">};</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Then, if we run this example:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">objectWithNumbers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">a</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+    <span class="na">b</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="na">c</span><span class="p">:</span> <span class="mi">3</span>
+<span class="p">};</span>
+
+<span class="kd">const</span> <span class="nx">objectWithStrings</span> <span class="o">=</span> <span class="nx">mapObject</span><span class="p">(</span><span class="nx">objectWithNumbers</span><span class="p">,</span> <span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">+</span> <span class="dl">''</span><span class="p">);</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>we will indeed get a result that we expect.</p>
+
+<p>So our collection of functors just got bigger.  We can map arrays, promises and objects:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">arrayOfStrings</span> <span class="o">=</span> <span class="nx">arrayOfNumbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">+</span> <span class="dl">''</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">promiseWithString</span> <span class="o">=</span> <span class="nx">promiseWithNumber</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">+</span> <span class="dl">''</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">objectWithStrings</span> <span class="o">=</span> <span class="nx">mapObject</span><span class="p">(</span><span class="nx">objectWithNumbers</span><span class="p">,</span> <span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">+</span> <span class="dl">''</span><span class="p">);</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>In the spirit or reusability, let's give a name to our <code>num =&gt; num + ''</code> function and use that name in the examples:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">numberToString</span> <span class="o">=</span> <span class="nx">num</span> <span class="o">=&gt;</span> <span class="nx">num</span> <span class="o">+</span> <span class="dl">''</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">arrayOfStrings</span> <span class="o">=</span> <span class="nx">arrayOfNumbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">numberToString</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">promiseWithString</span> <span class="o">=</span> <span class="nx">promiseWithNumber</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">numberToString</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">objectWithStrings</span> <span class="o">=</span> <span class="nx">mapObject</span><span class="p">(</span><span class="nx">objectWithNumbers</span><span class="p">,</span> <span class="nx">numberToString</span><span class="p">);</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>This way you can see just how reusable and composable our code is now. We can use <code>numberToString</code> function not only directly on numbers, but also on anything that is a functor containing numbers - arrays of numbers, promises with numbers, objects with numbers etc.</p>
+
+<p>Let's create yet another instance of a functor.</p>
+
+<p>This time, instead of creating a map function for already existing data structure, we will create our own data structure and ensure that it will be a functor, by providing it with a <code>map</code> method.</p>
+
+<p>We will write a Maybe data structure, which is extremely popular in functional programming. Perhaps you have heard it being called "Maybe monad". And indeed, Maybe is a monad, but it is also a functor, and that's the aspect of Maybe that we will focus on in this article.</p>
+
+<p>Maybe is a data structure which represents a value that may or may not exist. It is basically a replacement for <code>null</code> or <code>undefined</code>. If something can be either <code>null</code> or <code>undefined</code>, we will use Maybe instead.</p>
+
+<p>And indeed, in our implementation of Maybe we will simply use <code>null</code> to represent a value that does not exist:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">class</span> <span class="nx">Maybe</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">value</span> <span class="o">=</span> <span class="nx">value</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">static</span> <span class="nx">just</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">value</span> <span class="o">===</span> <span class="kc">null</span> <span class="o">||</span> <span class="nx">value</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">)</span> <span class="p">{</span>
+           <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">"</span><span class="s2">Can't construct a value from null/undefined</span><span class="dl">"</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Maybe</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">static</span> <span class="nx">nothing</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Maybe</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>As you can see, Maybe is simply a wrapper for a value, with two static methods. </p>
+
+<p><code>Maybe.just</code> allows you to create a Maybe data structure with an actual value inside (that's why we do checks for <code>null</code> and <code>undefined</code>).</p>
+
+<p>On the other hand, <code>Maybe.nothing</code> simply creates a Maybe with a null value inside (which we interpret as "no value").</p>
+
+<p>At this point such data structure might not seem very useful. That's precisely because it is not a functor yet! So let's make it a functor, by writing a map method:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">class</span> <span class="nx">Maybe</span> <span class="p">{</span>
+    <span class="c1">// nothing changes here</span>
+
+    <span class="nx">map</span><span class="p">(</span><span class="nx">fn</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">value</span> <span class="o">===</span> <span class="kc">null</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="k">this</span><span class="p">;</span>
+        <span class="p">}</span>
+
+        <span class="k">return</span> <span class="k">new</span> <span class="nx">Maybe</span><span class="p">(</span><span class="nx">fn</span><span class="p">(</span><span class="nx">value</span><span class="p">));</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Note that map method here is immutable - it does not modify an instance on which it is called, but rather it creates a new instance of Maybe or just returns the previous, unmodified value.</p>
+
+<p>If Maybe has a <code>null</code> inside, it simply returns the same value - a Maybe with <code>null</code>.</p>
+
+<p>If however Maybe contains some actual value, then <code>map</code> calls <code>fn</code> mapper on that value and creates a new Maybe with a mapped value inside.</p>
+
+<p>This might seem like a lot, so let's play around with our newly created Maybe data structure:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">maybeNumber</span> <span class="o">=</span> <span class="nx">Maybe</span><span class="p">.</span><span class="nx">just</span><span class="p">(</span><span class="mi">5</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">maybeString</span> <span class="o">=</span> <span class="nx">maybeNumber</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">numberToString</span><span class="p">);</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Here we create a Maybe with an actual value inside - a number 5. Than we can use <code>numberToString</code> to map it to a Maybe with a string <code>"5"</code> inside.</p>
+
+<p>But in real code it might turn out that there is a <code>null</code> in our Maybe. The fun part is that we don't have to manually check for that case. <code>map</code> will do it for us:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">numberMaybe</span> <span class="o">=</span> <span class="nx">Maybe</span><span class="p">.</span><span class="nx">just</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">stringMaybe</span> <span class="o">=</span> <span class="nx">numberMaybe</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">numberToString</span><span class="p">);</span> <span class="c1">// this does not crash!</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Because null value is handled in the <code>map</code> method itself, we really don't have to think anymore if there really is a value inside our Maybe. We can do operations on that "maybe value" without any checks and ifs.</p>
+
+<p>Compare this with a typical use of a <code>null</code> value, where -  before any operation - we have to check if a value is really there:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">numberOrNull</span> <span class="o">=</span> <span class="cm">/* this is either a number or null, we don't know */</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">stringOrNull</span> <span class="o">=</span> <span class="nx">numberOrNull</span> <span class="o">===</span> <span class="kc">null</span> <span class="p">?</span> 
+    <span class="kc">null</span> <span class="p">:</span> 
+    <span class="nx">numberToString</span><span class="p">(</span><span class="nx">numberOrNull</span><span class="p">);</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Those checks are incredibly awkward, especially when such a  value is used in many places in the codebase. Maybe allows you do this check only once - inside a map method - and then not think about it ever again.</p>
+
+<p>And note once more just how similar this API is to our previous instances of a functor:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">arrayOfStrings</span> <span class="o">=</span> <span class="nx">arrayOfNumbers</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">numberToString</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">promiseWithString</span> <span class="o">=</span> <span class="nx">promiseWithNumber</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">numberToString</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">objectWithStrings</span> <span class="o">=</span> <span class="nx">mapObject</span><span class="p">(</span><span class="nx">objectWithNumbers</span><span class="p">,</span> <span class="nx">numberToString</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">maybeString</span> <span class="o">=</span> <span class="nx">maybeNumber</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">numberToString</span><span class="p">);</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Even though Maybe is something that works completely different from an array or a Promise, we can program with all those data structures using the same mental model.</p>
+
+<p>Note also that all of our functor instances have some kind of corner case handling built in:</p>
+
+<p><code>map</code> for arrays deals with the case of an empty array. <code>mapObject</code> deals with empty objects. <code>Promise.then</code> deals with Promises that were rejected. <code>Maybe.map</code> deals with a <code>null</code> value.</p>
+
+<p>So not only we get a common API for multitude of data structures, we also get corner cases handled for us, so that we don't have to think about them anymore. How cool is that?</p>
+
+<p>It is surprising that we achieved so much capabilities with such a simple concept - "a thing that can be mapped". It shouldn't be surprising that more complex interfaces in functional programming (like monads for example) are even more powerful and give even more benefits. </p>
+
+<p>But that's a story for another article...</p>
+
+<h2>
+  <a name="functor-laws" href="#functor-laws" class="anchor">
+  </a>
+  Functor laws
+</h2>
+
+<p>If you've already read about functors or monads before, you might have noticed that we omitted something. Monads (and functors as well) have famously some "laws" associated with them. </p>
+
+<p>They resemble mathematical laws and are also something that successfully scares away people from learning functional programming. After all we just want to code, not do maths!</p>
+
+<p>But it's important to understand that those laws are simply an equivalent of saying "this data structures is written in a reasonable way". Or, in another words, "this data structure is not stupid".</p>
+
+<p>Let's see an example.</p>
+
+<p>The first law for functors (there are two) states that if we take an identity function (which is just a function that returns it's argument):<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">identity</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">=&gt;</span> <span class="nx">a</span><span class="p">;</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>and we put it inside a <code>map</code> method, this method will then return our data structure unchanged. Or rather it will return a new data structure, but with exactly the same shape as the previous one.</p>
+
+<p>Indeed, if we call array's map with an identity, we will just get the same array again:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">map</span><span class="p">(</span><span class="nx">identity</span><span class="p">)</span> <span class="c1">// this returns [1, 2, 3] again</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>But what if creators of JavaScript wanted to make the language a little bit more interesting and decided that <code>map</code> would return values in... reverse order?</p>
+
+<p>For example this code:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">map</span><span class="p">(</span><span class="nx">numberToString</span><span class="p">)</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>would return <code>["3", "2", "1"]</code> array.</p>
+
+<p>Then clearly:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">].</span><span class="nx">map</span><span class="p">(</span><span class="nx">identity</span><span class="p">)</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>would return a <code>[3, 2, 1]</code> array. But this is not the same array anymore! We have failed the first functor law!</p>
+
+<p>So you can see that this law simply doesn't allow people to write dumb <code>map</code> functions!</p>
+
+<p>This is also the case with the second law, which states that mapping two functions one after the other:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="nx">someFunctor</span>
+    <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">firstFunction</span><span class="p">)</span>
+    <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">secondFunction</span><span class="p">)</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>should result in the same value as running those two functions <em>once</em> inside a map:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="nx">someFunctor</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">value</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">firstFunction</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">secondFunction</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path fill="#fff" d="M0 180V56c0-13.3 10.7-24 24-24h124c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H64v84c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12zM288 44v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12V56c0-13.3-10.7-24-24-24H300c-6.6 0-12 5.4-12 12zm148 276h-40c-6.6 0-12 5.4-12 12v84h-84c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24V332c0-6.6-5.4-12-12-12zM160 468v-40c0-6.6-5.4-12-12-12H64v-84c0-6.6-5.4-12-12-12H12c-6.6 0-12 5.4-12 12v124c0 13.3 10.7 24 24 24h124c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512" class="highlight-action highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path fill="#fff" d="M436 192H312c-13.3 0-24-10.7-24-24V44c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v84h84c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm-276-24V44c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v84H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h124c13.3 0 24-10.7 24-24zm0 300V344c0-13.3-10.7-24-24-24H12c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h84v84c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-84h84c6.6 0 12-5.4 12-12v-40c0-6.6-5.4-12-12-12H312c-13.3 0-24 10.7-24 24v124c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>As an exercise, try to check if our reverse <code>map</code> satisfies this condition or not.</p>
+
+<h2>
+  <a name="dont-think-about-the-laws-too-much" href="#dont-think-about-the-laws-too-much" class="anchor">
+  </a>
+  Don't think about the laws TOO much
+</h2>
+
+<p>I have seen plenty of articles like "Promise is not actually a monad" etc. </p>
+
+<p>And indeed those articles have some merit, but I believe that you shouldn't think about functor or monad laws <em>too</em> much. After all, as I've shown, they are here to simply ensure that a data structure is not written in an absurd way.</p>
+
+<p>But if a data structure doesn't <em>fully</em> satisfy functor or monad laws, I still believe that it is valuable to think about it as a functor or monad. </p>
+
+<p>That's because in day to day programming what is the most valuable is a functor as a design pattern (or interface), not as a mathematical concept. We are not trying to write here some academic code and then mathematically prove it's correctness. We are just trying to write code that is a bit more robust and more pleasant to read. That's all.</p>
+
+<p>So even though - for example - a Promise might not <em>really</em> be a monad, I still think it is a great example of a monad, because it presents how "monadic" style might be used to deal with asynchronicity in an elegant manner.</p>
+
+<p>So don't be a math geek. Stay pragmatic. :)</p>
+
+<h2>
+  <a name="conclusion" href="#conclusion" class="anchor">
+  </a>
+  Conclusion
+</h2>
+
+<p>I hope that at this point a functor is not a mysterious concept for you anymore.</p>
+
+<p>Which means you are ready to learn about monads! After understanding functors, learning monads is really just about making some changes to our design of a functor.</p>
+
+<p>Leave me a comment if you would like to see a monad tutorial in a style similar to this article.</p>
+
+<p>Also, if you enjoyed reading the article, subscribe to me on <a href="https://twitter.com/m_podlasin">Twitter</a> for more content on JavaScript, React and functional programming.</p>
+
+<p>Thanks for reading and have a great day!</p>
+
+<p><span>(Cover Photo by <a href="https://unsplash.com/@thejohnnyme?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nikola Johnny Mirkovic</a> on <a href="https://unsplash.com/s/photos/comparison?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>)</span></p>
+
+</div></article> <div class="aside-username-wrapper" data-v-3bf13c85><aside class="aside-username-block" data-v-29ea5fa2 data-v-3bf13c85><div class="username-heading loading" data-v-29ea5fa2><div class="vue-content-placeholders vue-content-placeholders-is-animated" data-v-29ea5fa2><div class="vue-content-placeholders-heading" data-v-29ea5fa2><div class="vue-content-placeholders-heading__img"></div> <div class="vue-content-placeholders-heading__content"><div class="vue-content-placeholders-heading__title"></div> <div class="vue-content-placeholders-heading__subtitle"></div></div></div></div></div> <div class="info" data-v-29ea5fa2><div class="vue-content-placeholders vue-content-placeholders-is-animated" data-v-29ea5fa2><div class="vue-content-placeholders-text" data-v-29ea5fa2><div class="vue-content-placeholders-text__line"></div><div class="vue-content-placeholders-text__line"></div><div class="vue-content-placeholders-text__line"></div></div></div></div></aside></div></div> <div class="comments-block" data-v-54aa1ab4 data-v-3bf13c85><!----> <a href="https://dev.to/mpodlasin/functional-programming-in-js-functor-monad-s-little-brother-3053" target="_blank" rel="nofollow noopener noreferer" class="add-comment" data-v-54aa1ab4>
     Add comment
   </a></div></div> <footer class="w-full py-8"><div class="max-w-screen-xl mx-auto px-4"><ul class="
         max-w-screen-md
@@ -1970,6 +2742,6 @@ aside .info .content[data-v-29ea5fa2]{
         justify-center
       ">
       Created by Samar
-    </div></div></footer></div></div></div><script defer src="/_nuxt/static/1634315267/articles/mpodlasin/483024/state.js"></script><script src="/_nuxt/548109a.js" defer></script><script src="/_nuxt/c3ddcce.js" defer></script><script src="/_nuxt/84567ea.js" defer></script><script src="/_nuxt/ad2e88f.js" defer></script><script src="/_nuxt/ad0ee30.js" defer></script>
+    </div></div></footer></div></div></div><script defer src="/_nuxt/static/1634315825/articles/mpodlasin/483024/state.js"></script><script src="/_nuxt/548109a.js" defer></script><script src="/_nuxt/c3ddcce.js" defer></script><script src="/_nuxt/84567ea.js" defer></script><script src="/_nuxt/ad2e88f.js" defer></script><script src="/_nuxt/ad0ee30.js" defer></script>
   </body>
 </html>
