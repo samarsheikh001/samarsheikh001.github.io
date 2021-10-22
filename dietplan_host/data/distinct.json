@@ -1,0 +1,64 @@
+[
+  {
+    "id": 361,
+    "title": "Upper Body Workout beginner",
+    "description": "Feel rejuvenated and refreshed with a 11min Upper Body Workout beginner alongside coach Ahimsa.",
+    "category": "weight_loss",
+    "type": "upper_body",
+    "duration": "11",
+    "calories": "60",
+    "level": "beginner",
+    "created_at": "2021-06-22T11:07:12.144Z",
+    "updated_at": "2021-06-22T11:07:12.277Z",
+    "preview": "https://api.hadew.com/uploads/Upper_Body_Workout_beginner-min_c405208522.png",
+    "rest": null,
+    "author": {
+      "id": 12,
+      "firstName": "Ahimsa ",
+      "lastName": "Studio ",
+      "category": "Workout plan",
+      "description": null,
+      "created_at": "2021-06-22T09:56:06.442Z",
+      "updated_at": "2021-06-22T09:56:17.325Z",
+      "links": [],
+      "avatar": null
+    },
+    "workouts": [
+      {
+        "id": 502,
+        "name": "Upper Body Workout beginner",
+        "repeatCount": null,
+        "rest": null,
+        "workout_exercises": [
+          {
+            "id": 1411,
+            "exercise": {
+              "id": 322,
+              "title": "Upper Body Workout beginner",
+              "video1": null,
+              "video2": "https://vimeo.com/565537046",
+              "instructions": "Upper Body Workout beginner",
+              "alternative": null,
+              "created_at": "2021-06-21T09:47:51.452Z",
+              "updated_at": "2021-06-22T10:50:15.469Z",
+              "tips": null,
+              "video1Preview": null,
+              "video2Preview": null,
+              "video1Views": 0,
+              "video2Views": 0,
+              "video1Id": null,
+              "video2Id": null,
+              "video1file": null,
+              "video2file": null
+            },
+            "repsDuration": null,
+            "additionalInfo": null,
+            "duration": null
+          }
+        ]
+      }
+    ],
+    "tag_workout_plans": [],
+    "isFavourite": false
+  }
+]
