@@ -1,7 +1,7 @@
 <!doctype html>
 <html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
   <head >
-    <title>Mobile articles</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" name="format-detection" content="telephone=no"><meta data-n-head="ssr" data-hid="charset" charset="utf-8"><meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="preconnect" href="https://fonts.gstatic.com"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap"><link data-n-head="ssr" data-hid="shortcut-icon" rel="shortcut icon" href="/_nuxt/icons/icon_64x64.e3e9fb.png"><link data-n-head="ssr" data-hid="apple-touch-icon" rel="apple-touch-icon" href="/_nuxt/icons/icon_512x512.e3e9fb.png" sizes="512x512"><link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.f9c56d04.json" data-hid="manifest"><link rel="preload" href="/_nuxt/548109a.js" as="script"><link rel="preload" href="/_nuxt/84567ea.js" as="script"><link rel="preload" href="/_nuxt/ad2e88f.js" as="script"><link rel="preload" href="/_nuxt/ad0ee30.js" as="script"><link rel="preload" href="/_nuxt/7ace8c1.js" as="script"><style data-vue-ssr-id="54b08540:0 a57b151a:0 1239d49d:0 bc0f4dfc:0 f66e701c:0 7dbd20ba:0">/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com*/
+    <title>Mobile articles</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" name="format-detection" content="telephone=no"><meta data-n-head="ssr" data-hid="charset" charset="utf-8"><meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="preconnect" href="https://fonts.gstatic.com"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap"><link data-n-head="ssr" data-hid="shortcut-icon" rel="shortcut icon" href="/_nuxt/icons/icon_64x64.e3e9fb.png"><link data-n-head="ssr" data-hid="apple-touch-icon" rel="apple-touch-icon" href="/_nuxt/icons/icon_512x512.e3e9fb.png" sizes="512x512"><link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.f9c56d04.json" data-hid="manifest"><link rel="preload" href="/_nuxt/548109a.js" as="script"><link rel="preload" href="/_nuxt/84567ea.js" as="script"><link rel="preload" href="/_nuxt/ad2e88f.js" as="script"><link rel="preload" href="/_nuxt/a9b0fbe.js" as="script"><link rel="preload" href="/_nuxt/7ace8c1.js" as="script"><style data-vue-ssr-id="54b08540:0 a57b151a:0 1239d49d:0 bc0f4dfc:0 f66e701c:0 4313f9fb:0">/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com*/
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -1485,23 +1485,63 @@ body{
 
 /*purgecss end ignore*/
 /*purgecss start ignore*/
-.error-block[data-v-118d0980]{
+article[data-v-562cf112]{
+  border-radius:1rem;
+  overflow:hidden;
+  cursor:pointer
+}
+article .image-wrapper[data-v-562cf112]{
+  position:relative;
+  padding-bottom:56.25%
+}
+article .image-wrapper img[data-v-562cf112]{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  -o-object-fit:cover;
+     object-fit:cover
+}
+article .content[data-v-562cf112]{
+  background:#666;
+  padding:1rem
+}
+article .content h1[data-v-562cf112]{
+  margin-bottom:1rem
+}
+article .content .tags[data-v-562cf112]{
   display:flex;
-  flex-direction:column;
+  flex-wrap:wrap;
+  margin-bottom:.5rem
+}
+article .content .tags .tag[data-v-562cf112]{
+  line-height:1;
+  padding:.5rem;
+  margin:0 .5rem .5rem 0;
+  border-radius:.25rem
+}
+article .content .tags .tag[data-v-562cf112]:active{
+  background:transparent
+}
+article .content .meta[data-v-562cf112]{
+  display:flex;
   align-items:center;
-  padding:2rem
+  justify-content:space-between
 }
-svg[data-v-118d0980]{
-  width:3rem;
-  height:3rem;
-  margin-bottom:1rem;
-  opacity:.75
+article .content .meta .scl[data-v-562cf112]{
+  display:flex
 }
-h2[data-v-118d0980]{
-  text-align:center
+article .content .meta .scl span[data-v-562cf112]{
+  display:flex;
+  align-items:center;
+  margin-right:1rem
+}
+article .content .meta .scl span svg[data-v-562cf112]{
+  margin-right:.25rem
 }
 
-/*purgecss end ignore*/</style><link rel="preload" href="/_nuxt/static/1634315825/articles/t/mobile/state.js" as="script"><link rel="preload" href="/_nuxt/static/1634315825/articles/t/mobile/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1634315825/manifest.js" as="script">
+/*purgecss end ignore*/</style><link rel="preload" href="/_nuxt/static/1634322943/articles/t/mobile/state.js" as="script"><link rel="preload" href="/_nuxt/static/1634322943/articles/t/mobile/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1634322943/manifest.js" as="script">
   </head>
   <body >
     <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div><div><nav class="py-4"><div class="max-w-7xl mx-auto px-8"><div class="flex items-center justify-between h-16"><div class="flex items-center"><div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 50 62.5" enable-background="new 0 0 50 50" xml:space="preserve"><path fill="#FFFFFF" d="M25,1C11.745,1,1,11.745,1,25s10.745,24,24,24s24-10.745,24-24S38.255,1,25,1z M17.887,38.646  c0.097,0.099,0.097,0.257-0.001,0.354c-0.049,0.049-0.112,0.073-0.176,0.073s-0.128-0.024-0.177-0.073L3.767,25.177  c-0.028-0.028-0.031-0.067-0.042-0.103c-0.008-0.025-0.03-0.047-0.03-0.073s0.022-0.048,0.03-0.073  c0.012-0.036,0.014-0.075,0.042-0.103l13.766-13.823c0.098-0.099,0.256-0.098,0.354-0.001c0.098,0.098,0.098,0.256,0.001,0.354  L4.297,25.001L17.887,38.646z M46.232,25.178c0,0-0.001,0-0.002,0l-13.765,13.82c-0.049,0.049-0.112,0.073-0.177,0.073  c-0.063,0-0.128-0.024-0.177-0.073c-0.098-0.097-0.098-0.255,0-0.354l13.591-13.645L32.112,11.354c-0.098-0.098-0.098-0.256,0-0.354  c0.098-0.097,0.256-0.097,0.354,0.001L46.23,24.823c0.001,0,0.002,0,0.002,0c0.049,0.049,0.073,0.113,0.073,0.177  S46.281,25.129,46.232,25.178z"></path></svg> <h1 class="text-white text-2xl px-2 pb-2">CodeLabs.</h1></div> <div class="hidden md:block"><div class="ml-10 flex items-baseline space-x-4"><a href="/" class="
@@ -1513,7 +1553,7 @@ h2[data-v-118d0980]{
                   rounded-md
                   text-sm
                   font-medium
-                 bg-white text-gray-800">Home</a><a href="Articles" class="
+                 nuxt-link-active bg-white text-gray-800">Home</a><a href="/articles/t/Articles" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1522,7 +1562,7 @@ h2[data-v-118d0980]{
                   rounded-md
                   text-sm
                   font-medium
-                ">Articles</a><a href="Lessons" class="
+                ">Articles</a><a href="/articles/t/Lessons" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1531,7 +1571,7 @@ h2[data-v-118d0980]{
                   rounded-md
                   text-sm
                   font-medium
-                ">Lessons</a><a href="Courses" class="
+                ">Lessons</a><a href="/articles/t/Courses" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1540,7 +1580,7 @@ h2[data-v-118d0980]{
                   rounded-md
                   text-sm
                   font-medium
-                ">Courses</a><a href="Pricing" class="
+                ">Courses</a><a href="/articles/t/Pricing" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1549,7 +1589,7 @@ h2[data-v-118d0980]{
                   rounded-md
                   text-sm
                   font-medium
-                ">Pricing</a><a href="Sponsor" class="
+                ">Pricing</a><a href="/articles/t/Sponsor" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1577,7 +1617,7 @@ h2[data-v-118d0980]{
             rounded-md
             text-base
             font-medium
-           text-gray-800 bg-white">Home</a><a href="Articles" class="
+           nuxt-link-active text-gray-800 bg-white">Home</a><a href="/articles/t/Articles" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1587,7 +1627,7 @@ h2[data-v-118d0980]{
             rounded-md
             text-base
             font-medium
-          ">Articles</a><a href="Lessons" class="
+          ">Articles</a><a href="/articles/t/Lessons" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1597,7 +1637,7 @@ h2[data-v-118d0980]{
             rounded-md
             text-base
             font-medium
-          ">Lessons</a><a href="Courses" class="
+          ">Lessons</a><a href="/articles/t/Courses" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1607,7 +1647,7 @@ h2[data-v-118d0980]{
             rounded-md
             text-base
             font-medium
-          ">Courses</a><a href="Pricing" class="
+          ">Courses</a><a href="/articles/t/Pricing" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1617,7 +1657,7 @@ h2[data-v-118d0980]{
             rounded-md
             text-base
             font-medium
-          ">Pricing</a><a href="Sponsor" class="
+          ">Pricing</a><a href="/articles/t/Sponsor" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1627,7 +1667,1793 @@ h2[data-v-118d0980]{
             rounded-md
             text-base
             font-medium
-          ">Sponsor</a></div></div></nav></div> <div data-fetch-key="data-v-eae44a42:0" class="page-wrapper" data-v-eae44a42><div class="error-block" data-v-118d0980 data-v-eae44a42><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-118d0980 data-v-118d0980><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-118d0980 data-v-118d0980></path></svg> <h2 data-v-118d0980>invalid json response body at https://dev.to/api/articles?tag=mobile&amp;top=365&amp;page=1 reason: Unexpected token R in JSON at position 0</h2></div> <!----></div> <footer class="w-full py-8"><div class="max-w-screen-xl mx-auto px-4"><ul class="
+          ">Sponsor</a></div></div></nav></div> <div data-fetch-key="data-v-eae44a42:0" class="page-wrapper" data-v-eae44a42><div class="article-cards-wrapper" data-v-eae44a42><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--wXO6NBBR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/s25p2qlvufznfjzfzn48.jpg" alt="How to View Your Live Localhost From Your Laptop on Your Mobile Device" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/brendamichellle/536831" data-v-562cf112><h1 data-v-562cf112>How to View Your Live Localhost From Your Laptop on Your Mobile Device</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/webdev" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #webdev
+          </span></a><a href="/articles/t/android" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #android
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/vscode" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #vscode
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            311
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            23
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Dec 8 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--8sCpfMxE--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/dfzcly8ayy79700cdzgq.jpeg" alt="You Are Using Emojis The Wrong Way" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/iamludal/583163" data-v-562cf112><h1 data-v-562cf112>You Are Using Emojis The Wrong Way</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/webdev" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #webdev
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/a11y" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #a11y
+          </span></a><a href="/articles/t/twitter" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #twitter
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            211
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            35
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jan 27
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--VqTBT07d--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/im63g9n740fswjwdmgm8.png" alt="Forem's Approach to Decentralized Social Media on Mobile" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/717273" data-v-562cf112><h1 data-v-562cf112>Forem's Approach to Decentralized Social Media on Mobile</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/meta" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #meta
+          </span></a><a href="/articles/t/forem" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #forem
+          </span></a><a href="/articles/t/ios" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #ios
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            178
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            3
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jun 3
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Sj9mdu65--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/05xylqzo4i052gscy89g.png" alt="Forem for iOS is here! ✨ " data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/peter/709601" data-v-562cf112><h1 data-v-562cf112>Forem for iOS is here! ✨ </h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/forem" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #forem
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/meta" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #meta
+          </span></a><a href="/articles/t/ios" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #ios
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            141
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            14
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jun 3
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--rU7A13dv--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/62f6prxu4ftuig84a1c5.png" alt="How to Do a Device Based Code Split in React" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/moubi/507849" data-v-562cf112><h1 data-v-562cf112>How to Do a Device Based Code Split in React</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/react" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #react
+          </span></a><a href="/articles/t/javascript" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #javascript
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/webdev" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #webdev
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            138
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            4
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Nov 6 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--x2azjpWO--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uh7ifbin28qawo325isw.png" alt="10 Steps that will help you turn your idea into a product. Part 1" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/skob/767781" data-v-562cf112><h1 data-v-562cf112>10 Steps that will help you turn your idea into a product. Part 1</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/flutter" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #flutter
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/productivity" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #productivity
+          </span></a><a href="/articles/t/startup" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #startup
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            119
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            7
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jul 22
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/537922.png" alt="Expo SDK 40 is now available" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/expoteam/537922" data-v-562cf112><h1 data-v-562cf112>Expo SDK 40 is now available</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/react" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #react
+          </span></a><a href="/articles/t/reactnative" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #reactnative
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            84
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            13
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Dec 9 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--4k0GNNc6--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/b30lka4p8l5p4nagdxz6.jpg" alt="Top Free Photo &amp; Video Editing Apps for 2021" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/stephanreynolds/727711" data-v-562cf112><h1 data-v-562cf112>Top Free Photo &amp; Video Editing Apps for 2021</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/ios" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #ios
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/iphone" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #iphone
+          </span></a><a href="/articles/t/ipad" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #ipad
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            70
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            8
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jun 14
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--TwqlYnGU--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uck0ntlvsqanp1lzshzb.png" alt="Mastering Flutter: Create a plugin" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/theotherdevs/623768" data-v-562cf112><h1 data-v-562cf112>Mastering Flutter: Create a plugin</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/flutter" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #flutter
+          </span></a><a href="/articles/t/tutorial" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #tutorial
+          </span></a><a href="/articles/t/dart" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #dart
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            68
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            1
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Mar 3
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--uOENjwGi--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/oq5jju0s07d6pv9ut9q8.jpg" alt="How to Build a React Native App in 2021 📱(Part I)" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/cristianrita/494193" data-v-562cf112><h1 data-v-562cf112>How to Build a React Native App in 2021 📱(Part I)</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/reactnative" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #reactnative
+          </span></a><a href="/articles/t/react" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #react
+          </span></a><a href="/articles/t/javascript" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #javascript
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            65
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            7
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Oct 27 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--QgQe_18n--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/mhmdm7b90j0pakz02ugn.jpeg" alt="100vh problem with iOS Safari" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/maciejtrzcinski/541319" data-v-562cf112><h1 data-v-562cf112>100vh problem with iOS Safari</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/javascript" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #javascript
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/css" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #css
+          </span></a><a href="/articles/t/ios" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #ios
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            65
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            10
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Dec 13 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--sRkj1rcX--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/1ijj44758gmxwjg1sl74.jpeg" alt="How much does a web or mobile application costs in 2021?" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/remitache/576883" data-v-562cf112><h1 data-v-562cf112>How much does a web or mobile application costs in 2021?</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/programming" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #programming
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/webdev" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #webdev
+          </span></a><a href="/articles/t/devops" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #devops
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            55
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            2
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jan 20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ygdv_Dca--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/huxr0ikoa6xr9pnahc9w.png" alt="10 Reasons to Choose Ionic for Mobile Development" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/maxlynch/768687" data-v-562cf112><h1 data-v-562cf112>10 Reasons to Choose Ionic for Mobile Development</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/ionic" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #ionic
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/javascript" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #javascript
+          </span></a><a href="/articles/t/webdev" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #webdev
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            48
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            8
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jul 22
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ZFSdTPx1--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dc55apsnvhjdm17kpg8r.jpg" alt="Improving Mobile App Performance with a Powerful Database " data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/margo_hdb/768682" data-v-562cf112><h1 data-v-562cf112>Improving Mobile App Performance with a Powerful Database </h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/webdev" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #webdev
+          </span></a><a href="/articles/t/database" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #database
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/programming" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #programming
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            41
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            0
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jul 22
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--rHa6Fmkg--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/6cuoskric9fdqa36eqv0.png" alt="Tips and Ideas for DigitalOcean Hackathon" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/harshhhdev/541806" data-v-562cf112><h1 data-v-562cf112>Tips and Ideas for DigitalOcean Hackathon</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/dohackathon" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #dohackathon
+          </span></a><a href="/articles/t/webdev" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #webdev
+          </span></a><a href="/articles/t/productivity" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #productivity
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            40
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            4
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Dec 14 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--csCIPWic--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://blog.zack.computer/_next/image%3Furl%3Dhttps%253A%252F%252Fcdn.hashnode.com%252Fres%252Fhashnode%252Fimage%252Fupload%252Fv1626708839953%252FU-Kf3gAE6.jpeg%253Fw%253D1600%2526h%253D840%2526fit%253Dcrop%2526crop%253Dentropy%2526auto%253Dcompress%252Cformat%2526format%253Dwebp%26w%3D3840%26q%3D75" alt="Your Product Shouldn't Be an App" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/zackdotcomputer/763552" data-v-562cf112><h1 data-v-562cf112>Your Product Shouldn't Be an App</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/startup" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #startup
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/productivity" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #productivity
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            40
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            4
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jul 19
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--UYrN1mis--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wutstj0gfxd6cm3fg0e8.jpg" alt="Top 5 Programming Skills Worth Learning in 2021" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/brockherion/661419" data-v-562cf112><h1 data-v-562cf112>Top 5 Programming Skills Worth Learning in 2021</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/functional" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #functional
+          </span></a><a href="/articles/t/devops" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #devops
+          </span></a><a href="/articles/t/docker" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #docker
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            39
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            4
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Apr 10
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--r7S-xLoj--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://i.imgur.com/rmbgdRy.png" alt="Building a React Native app from scratch" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/mauro_codes/636031" data-v-562cf112><h1 data-v-562cf112>Building a React Native app from scratch</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/react" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #react
+          </span></a><a href="/articles/t/javascript" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #javascript
+          </span></a><a href="/articles/t/reactnative" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #reactnative
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            37
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            1
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Mar 16
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--JRAjMaz1--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://images.unsplash.com/photo-1529528744093-6f8abeee511d%3Fixlib%3Drb-1.2.1%26ixid%3DMXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D3300%26q%3D80" alt="How Expo solved 90% of our mobile deployment issues" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/margaridadinis/615456" data-v-562cf112><h1 data-v-562cf112>How Expo solved 90% of our mobile deployment issues</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/reactnative" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #reactnative
+          </span></a><a href="/articles/t/expo" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #expo
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/app" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #app
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            36
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            7
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Feb 23
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/543594.png" alt="Expo Application Services (EAS): Build and Submit" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/expoteam/543594" data-v-562cf112><h1 data-v-562cf112>Expo Application Services (EAS): Build and Submit</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/react" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #react
+          </span></a><a href="/articles/t/reactnative" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #reactnative
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/webdev" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #webdev
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            35
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            1
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Dec 15 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/730437.png" alt="React Native Vs. Flutter: The Key Differences Every Mobile App Developer Should Know In 2021 [Guide For Beginners]" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/anaflatlogic/730437" data-v-562cf112><h1 data-v-562cf112>React Native Vs. Flutter: The Key Differences Every Mobile App Developer Should Know In 2021 [Guide For Beginners]</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/reactnative" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #reactnative
+          </span></a><a href="/articles/t/flutter" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #flutter
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/react" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #react
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            30
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            2
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jun 16
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/462207.png" alt="Build Your First for iOS &amp; Android App with Xamarin and Visual Studio" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/jamesmontemagno/462207" data-v-562cf112><h1 data-v-562cf112>Build Your First for iOS &amp; Android App with Xamarin and Visual Studio</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/csharp" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #csharp
+          </span></a><a href="/articles/t/dotnet" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #dotnet
+          </span></a><a href="/articles/t/xamarin" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #xamarin
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            30
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            0
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Nov 23 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--M5ySWlDc--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/k8ad7p8ek0a42uwksqf1.png" alt="Deep linking in React Native app with React Navigation v5" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/techtalks/528620" data-v-562cf112><h1 data-v-562cf112>Deep linking in React Native app with React Navigation v5</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/javascript" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #javascript
+          </span></a><a href="/articles/t/reactnative" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #reactnative
+          </span></a><a href="/articles/t/react" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #react
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            30
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            2
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Nov 30 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--3clqVJiq--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7cgcrapp6u08hmtjek1f.jpg" alt="App Customer Service" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/abdullaharik/613591" data-v-562cf112><h1 data-v-562cf112>App Customer Service</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/ios" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #ios
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/node" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #node
+          </span></a><a href="/articles/t/api" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #api
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            28
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            7
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Feb 21
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/635840.png" alt="Why should you use isolates in Flutter?" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/alphamikle/635840" data-v-562cf112><h1 data-v-562cf112>Why should you use isolates in Flutter?</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/flutter" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #flutter
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/dart" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #dart
+          </span></a><a href="/articles/t/isolate" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #isolate
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            28
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            2
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Mar 15
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--7Gtehkh5--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ts3nzoxpynezbthei2rn.png" alt="3 Best Courses to Learn React Native For Free" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/suhailkakar/780139" data-v-562cf112><h1 data-v-562cf112>3 Best Courses to Learn React Native For Free</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/reactnative" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #reactnative
+          </span></a><a href="/articles/t/react" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #react
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/javascript" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #javascript
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            26
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            1
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Aug 3
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--xvYO2P6p--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/kn25csuzkulouuudb422.png" alt="Introducing Dart 2 language features: mixins, enums, and more" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/amandaeducative/496118" data-v-562cf112><h1 data-v-562cf112>Introducing Dart 2 language features: mixins, enums, and more</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/dart" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #dart
+          </span></a><a href="/articles/t/flutter" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #flutter
+          </span></a><a href="/articles/t/google" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #google
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            26
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            1
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Oct 23 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/689178.png" alt="Simplify your Flutter app with Provider" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/carlmobiledev/689178" data-v-562cf112><h1 data-v-562cf112>Simplify your Flutter app with Provider</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/flutter" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #flutter
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/firstpost" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #firstpost
+          </span></a><a href="/articles/t/dart" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #dart
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            25
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            2
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jun 11
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/739461.png" alt="How to use Bugfender on Flutter" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/bugfenderapp/739461" data-v-562cf112><h1 data-v-562cf112>How to use Bugfender on Flutter</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a><a href="/articles/t/technology" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #technology
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            25
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            1
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jun 26
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--7JW2KeTi--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/1ddhpdblf9ono5vlc8tn.png" alt="11 Best Checklist for A Successful Mobile App Development " data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/sneha321/551455" data-v-562cf112><h1 data-v-562cf112>11 Best Checklist for A Successful Mobile App Development </h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/android" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #android
+          </span></a><a href="/articles/t/ios" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #ios
+          </span></a><a href="/articles/t/apps" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #apps
+          </span></a><a href="/articles/t/mobile" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #mobile
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            24
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            0
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Dec 30 '20
+          </span></time></div></div></article></div></div> <!----></div> <footer class="w-full py-8"><div class="max-w-screen-xl mx-auto px-4"><ul class="
         max-w-screen-md
         mx-auto
         text-lg
@@ -1791,6 +3617,6 @@ h2[data-v-118d0980]{
         justify-center
       ">
       Created by Samar
-    </div></div></footer></div></div></div><script defer src="/_nuxt/static/1634315825/articles/t/mobile/state.js"></script><script src="/_nuxt/548109a.js" defer></script><script src="/_nuxt/7ace8c1.js" defer></script><script src="/_nuxt/84567ea.js" defer></script><script src="/_nuxt/ad2e88f.js" defer></script><script src="/_nuxt/ad0ee30.js" defer></script>
+    </div></div></footer></div></div></div><script defer src="/_nuxt/static/1634322943/articles/t/mobile/state.js"></script><script src="/_nuxt/548109a.js" defer></script><script src="/_nuxt/7ace8c1.js" defer></script><script src="/_nuxt/84567ea.js" defer></script><script src="/_nuxt/ad2e88f.js" defer></script><script src="/_nuxt/a9b0fbe.js" defer></script>
   </body>
 </html>

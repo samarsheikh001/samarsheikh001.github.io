@@ -1,7 +1,7 @@
 <!doctype html>
 <html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
   <head >
-    <title>codelearn_website</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" name="format-detection" content="telephone=no"><meta data-n-head="ssr" data-hid="charset" charset="utf-8"><meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="preconnect" href="https://fonts.gstatic.com"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap"><link data-n-head="ssr" data-hid="shortcut-icon" rel="shortcut icon" href="/_nuxt/icons/icon_64x64.e3e9fb.png"><link data-n-head="ssr" data-hid="apple-touch-icon" rel="apple-touch-icon" href="/_nuxt/icons/icon_512x512.e3e9fb.png" sizes="512x512"><link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.f9c56d04.json" data-hid="manifest"><link rel="preload" href="/_nuxt/548109a.js" as="script"><link rel="preload" href="/_nuxt/84567ea.js" as="script"><link rel="preload" href="/_nuxt/ad2e88f.js" as="script"><link rel="preload" href="/_nuxt/ad0ee30.js" as="script"><link rel="preload" href="/_nuxt/c3ddcce.js" as="script"><style data-vue-ssr-id="54b08540:0 a57b151a:0 1239d49d:0 bc0f4dfc:0 59be0982:0 4d321698:0 7dbd20ba:0 3c003464:0 6cfba90a:0">/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com*/
+    <title>Local State Management with Apollo Client</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" name="format-detection" content="telephone=no"><meta data-n-head="ssr" data-hid="charset" charset="utf-8"><meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="preconnect" href="https://fonts.gstatic.com"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap"><link data-n-head="ssr" data-hid="shortcut-icon" rel="shortcut icon" href="/_nuxt/icons/icon_64x64.e3e9fb.png"><link data-n-head="ssr" data-hid="apple-touch-icon" rel="apple-touch-icon" href="/_nuxt/icons/icon_512x512.e3e9fb.png" sizes="512x512"><link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.f9c56d04.json" data-hid="manifest"><link rel="preload" href="/_nuxt/548109a.js" as="script"><link rel="preload" href="/_nuxt/84567ea.js" as="script"><link rel="preload" href="/_nuxt/ad2e88f.js" as="script"><link rel="preload" href="/_nuxt/a9b0fbe.js" as="script"><link rel="preload" href="/_nuxt/c3ddcce.js" as="script"><style data-vue-ssr-id="54b08540:0 a57b151a:0 1239d49d:0 bc0f4dfc:0 59be0982:0 4d321698:0 3c003464:0 6cfba90a:0">/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com*/
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -1594,24 +1594,6 @@ header .meta .scl .comments[data-v-25febe66]{
 
 /*purgecss end ignore*/
 /*purgecss start ignore*/
-.error-block[data-v-118d0980]{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  padding:2rem
-}
-svg[data-v-118d0980]{
-  width:3rem;
-  height:3rem;
-  margin-bottom:1rem;
-  opacity:.75
-}
-h2[data-v-118d0980]{
-  text-align:center
-}
-
-/*purgecss end ignore*/
-/*purgecss start ignore*/
 aside[data-v-29ea5fa2]{
   padding:1rem;
   border-radius:1rem
@@ -1678,7 +1660,7 @@ aside .info .content[data-v-29ea5fa2]{
   background:transparent
 }
 
-/*purgecss end ignore*/</style><link rel="preload" href="/_nuxt/static/1634315825/articles/pahund/537375/state.js" as="script"><link rel="preload" href="/_nuxt/static/1634315825/articles/pahund/537375/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1634315825/manifest.js" as="script">
+/*purgecss end ignore*/</style><link rel="preload" href="/_nuxt/static/1634322943/articles/pahund/537375/state.js" as="script"><link rel="preload" href="/_nuxt/static/1634322943/articles/pahund/537375/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1634322943/manifest.js" as="script">
   </head>
   <body >
     <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div><div><nav class="py-4"><div class="max-w-7xl mx-auto px-8"><div class="flex items-center justify-between h-16"><div class="flex items-center"><div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 50 62.5" enable-background="new 0 0 50 50" xml:space="preserve"><path fill="#FFFFFF" d="M25,1C11.745,1,1,11.745,1,25s10.745,24,24,24s24-10.745,24-24S38.255,1,25,1z M17.887,38.646  c0.097,0.099,0.097,0.257-0.001,0.354c-0.049,0.049-0.112,0.073-0.176,0.073s-0.128-0.024-0.177-0.073L3.767,25.177  c-0.028-0.028-0.031-0.067-0.042-0.103c-0.008-0.025-0.03-0.047-0.03-0.073s0.022-0.048,0.03-0.073  c0.012-0.036,0.014-0.075,0.042-0.103l13.766-13.823c0.098-0.099,0.256-0.098,0.354-0.001c0.098,0.098,0.098,0.256,0.001,0.354  L4.297,25.001L17.887,38.646z M46.232,25.178c0,0-0.001,0-0.002,0l-13.765,13.82c-0.049,0.049-0.112,0.073-0.177,0.073  c-0.063,0-0.128-0.024-0.177-0.073c-0.098-0.097-0.098-0.255,0-0.354l13.591-13.645L32.112,11.354c-0.098-0.098-0.098-0.256,0-0.354  c0.098-0.097,0.256-0.097,0.354,0.001L46.23,24.823c0.001,0,0.002,0,0.002,0c0.049,0.049,0.073,0.113,0.073,0.177  S46.281,25.129,46.232,25.178z"></path></svg> <h1 class="text-white text-2xl px-2 pb-2">CodeLabs.</h1></div> <div class="hidden md:block"><div class="ml-10 flex items-baseline space-x-4"><a href="/" class="
@@ -1690,7 +1672,7 @@ aside .info .content[data-v-29ea5fa2]{
                   rounded-md
                   text-sm
                   font-medium
-                 bg-white text-gray-800">Home</a><a href="Articles" class="
+                 nuxt-link-active bg-white text-gray-800">Home</a><a href="/articles/pahund/Articles" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1699,7 +1681,7 @@ aside .info .content[data-v-29ea5fa2]{
                   rounded-md
                   text-sm
                   font-medium
-                ">Articles</a><a href="Lessons" class="
+                ">Articles</a><a href="/articles/pahund/Lessons" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1708,7 +1690,7 @@ aside .info .content[data-v-29ea5fa2]{
                   rounded-md
                   text-sm
                   font-medium
-                ">Lessons</a><a href="Courses" class="
+                ">Lessons</a><a href="/articles/pahund/Courses" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1717,7 +1699,7 @@ aside .info .content[data-v-29ea5fa2]{
                   rounded-md
                   text-sm
                   font-medium
-                ">Courses</a><a href="Pricing" class="
+                ">Courses</a><a href="/articles/pahund/Pricing" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1726,7 +1708,7 @@ aside .info .content[data-v-29ea5fa2]{
                   rounded-md
                   text-sm
                   font-medium
-                ">Pricing</a><a href="Sponsor" class="
+                ">Pricing</a><a href="/articles/pahund/Sponsor" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1754,7 +1736,7 @@ aside .info .content[data-v-29ea5fa2]{
             rounded-md
             text-base
             font-medium
-           text-gray-800 bg-white">Home</a><a href="Articles" class="
+           nuxt-link-active text-gray-800 bg-white">Home</a><a href="/articles/pahund/Articles" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1764,7 +1746,7 @@ aside .info .content[data-v-29ea5fa2]{
             rounded-md
             text-base
             font-medium
-          ">Articles</a><a href="Lessons" class="
+          ">Articles</a><a href="/articles/pahund/Lessons" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1774,7 +1756,7 @@ aside .info .content[data-v-29ea5fa2]{
             rounded-md
             text-base
             font-medium
-          ">Lessons</a><a href="Courses" class="
+          ">Lessons</a><a href="/articles/pahund/Courses" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1784,7 +1766,7 @@ aside .info .content[data-v-29ea5fa2]{
             rounded-md
             text-base
             font-medium
-          ">Courses</a><a href="Pricing" class="
+          ">Courses</a><a href="/articles/pahund/Pricing" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1794,7 +1776,7 @@ aside .info .content[data-v-29ea5fa2]{
             rounded-md
             text-base
             font-medium
-          ">Pricing</a><a href="Sponsor" class="
+          ">Pricing</a><a href="/articles/pahund/Sponsor" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1804,7 +1786,569 @@ aside .info .content[data-v-29ea5fa2]{
             rounded-md
             text-base
             font-medium
-          ">Sponsor</a></div></div></nav></div> <div class="page-wrapper" data-v-3bf13c85><div class="article-content-wrapper" data-v-3bf13c85><article data-fetch-key="data-v-25febe66:0" class="article-block" data-v-25febe66 data-v-3bf13c85><div class="error-block" data-v-118d0980 data-v-25febe66><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-118d0980 data-v-118d0980><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-118d0980 data-v-118d0980></path></svg> <h2 data-v-118d0980>invalid json response body at https://dev.to/api/articles/537375 reason: Unexpected token R in JSON at position 0</h2></div></article> <div class="aside-username-wrapper" data-v-3bf13c85><aside class="aside-username-block" data-v-29ea5fa2 data-v-3bf13c85><div class="username-heading loading" data-v-29ea5fa2><div class="vue-content-placeholders vue-content-placeholders-is-animated" data-v-29ea5fa2><div class="vue-content-placeholders-heading" data-v-29ea5fa2><div class="vue-content-placeholders-heading__img"></div> <div class="vue-content-placeholders-heading__content"><div class="vue-content-placeholders-heading__title"></div> <div class="vue-content-placeholders-heading__subtitle"></div></div></div></div></div> <div class="info" data-v-29ea5fa2><div class="vue-content-placeholders vue-content-placeholders-is-animated" data-v-29ea5fa2><div class="vue-content-placeholders-text" data-v-29ea5fa2><div class="vue-content-placeholders-text__line"></div><div class="vue-content-placeholders-text__line"></div><div class="vue-content-placeholders-text__line"></div></div></div></div></aside></div></div> <div class="comments-block" data-v-54aa1ab4 data-v-3bf13c85><!----> <a href="https://dev.to/pahund/undefined" target="_blank" rel="nofollow noopener noreferer" class="add-comment" data-v-54aa1ab4>
+          ">Sponsor</a></div></div></nav></div> <div class="page-wrapper" data-v-3bf13c85><div class="article-content-wrapper" data-v-3bf13c85><article data-fetch-key="data-v-25febe66:0" class="article-block" data-v-25febe66 data-v-3bf13c85><header data-v-25febe66><h1 data-v-25febe66>Local State Management with Apollo Client</h1> <div class="tags" data-v-25febe66><a href="/articles/t/javascript" class="tag" data-v-25febe66>
+          #javascript
+        </a><a href="/articles/t/graphql" class="tag" data-v-25febe66>
+          #graphql
+        </a><a href="/articles/t/apollo" class="tag" data-v-25febe66>
+          #apollo
+        </a><a href="/articles/t/react" class="tag" data-v-25febe66>
+          #react
+        </a></div> <div class="image-wrapper" data-v-25febe66><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--N6TgyGqO--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/vrb4re0xt7w83qngym92.png" alt="Local State Management with Apollo Client" data-v-25febe66></div> <div class="meta" data-v-25febe66><div class="scl" data-v-25febe66><span data-v-25febe66><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-25febe66 data-v-25febe66><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-25febe66 data-v-25febe66></path></svg>
+            13
+          </span> <span class="comments" data-v-25febe66><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-25febe66 data-v-25febe66><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-25febe66 data-v-25febe66></path></svg>
+            0
+          </span></div> <time data-v-25febe66>Dec 9 '20</time></div></header> <div class="content" data-v-25febe66><p><em>I'm building a social media network and collaboration tool based on mind maps, documenting my work in this series of blog posts. Follow me if you're interested in what I've learned along the way about building web apps with React, Tailwind CSS, Firebase, Apollo/GraphQL, three.js and TypeScript.</em></p>
+
+<h1>
+  <a name="todays-goal" href="#todays-goal">
+  </a>
+  Today's Goal
+</h1>
+
+<p>In my <a href="https://dev.to/pahund/the-nuffshell-coding-diary-6ij">previous posts</a>, I've built a 3D mind map, using React and three.js. </p>
+
+<p>For this project, I've used <a href="%5D(https://dev.to/pahund/the-nuffshell-coding-diary-6ij)">CodeSandbox</a> exclusisvely for coding and I just love it! It works just like VS Code, but runs completely in the browser and lets me share my code easily in my blog posts.</p>
+
+<p>Just one thing that bothered me as I worked on my mind map: Performance issues. The nature of rendering an interactive 3D model involves having a loop that continuously updates, running 60 times per second. CodeSandbox seems to have problems with this when my demo is running in the preview window, writing code slows down and becomes a pain.</p>
+
+<p>To fix this, I'm going to add a “pause” button to my mind map demo that I can use to start/stop the rendering loop.</p>
+
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--ifTtXPFW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/u25t6hpb7r2ytd60eyo5.gif" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ifTtXPFW--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/u25t6hpb7r2ytd60eyo5.gif" alt="Pause button" loading="lazy"></a></p>
+
+<h1>
+  <a name="picking-a-state-management-library" href="#picking-a-state-management-library">
+  </a>
+  Picking a State Management Library
+</h1>
+
+<p>I know I'm going to have to add some way of managing application state to my React app at some point. My plan is to ultimately have a web app where users log in to collaborate on mind maps with others. </p>
+
+<p>My “pause” button is the first use case that actually requires an application state, so it's time to think about state management.</p>
+
+<p>I've been using <a href="https://redux.js.org">Redux</a> in my day job for five years now. Some people think it's overly complicated. I disagree, especially with the latest version of <a href="https://redux-toolkit.js.org">Redux Toolkit</a>, it's become a lot easier to adopt and use.</p>
+
+<p>For small projects, I also like <a href="https://github.com/pmndrs/zustand">Zustand</a> a lot – much more light-weight than Redux. </p>
+
+<p>Then <a href="https://recoiljs.org">Recoil</a> popped up this year and looks really promising, especially considering it is backed by Facebook, the company behind React.</p>
+
+<p>However, for my collaborative mind mapping project, I've decided to go with <a href="https://www.apollographql.com/apollo-client">Apollo Client</a>. </p>
+
+<p>This is much more than just a state management library. Apollo is a framework for storing and fetching data with <a href="https://graphql.org">GraphQL</a>, an API query language.</p>
+
+<p>I will need to store my users' mind map data in a database. GraphQL is a great way to access this stored data that I've been wanting to try out for a long time now.</p>
+
+<p>Toggling my 3D animation loop on and off can, of course, be achieved much, much easier with far less overhead. Sooner or later, though, it is going to pay off to have one framework for managing my local application state and remote data storage. </p>
+
+<p><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--Ngv-h2Fy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/7i1rj3lcu4no3rtjx2ur.gif" class="article-body-image-wrapper"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Ngv-h2Fy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_66%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/7i1rj3lcu4no3rtjx2ur.gif" alt="Cracking a nut with a sledgehammer" loading="lazy"></a></p>
+
+<p>So let's play <a href="https://en.wikipedia.org/wiki/Rube_Goldberg">Rube Goldberg</a> and crack a nut with a sledgehammer – let's toggle a single boolean value with Apollo Client!</p>
+
+<h1>
+  <a name="recommended-reading" href="#recommended-reading">
+  </a>
+  Recommended Reading
+</h1>
+
+<p>I'm not going to detail out every single step in today's blog post, I don't want to bore you to death. That being said, if you want to use Appollo Client for local state managment in your own app, I highly recommend this article:</p>
+
+<ul>
+<li><a href="https://www.apollographql.com/blog/local-state-management-with-reactive-variables/">Local State Management with Reactive Variables</a></li>
+</ul>
+
+<p>This was published by the makers of Apollo and is the most up-to-date and comprehensive tutorial I've found. </p>
+
+<p>When you google “apollo local state management”, you'll come across quite a few more – I found that they were almost all outdated. </p>
+
+<p>There is a library <a href="https://www.apollographql.com/docs/link/links/state/">apollo-link-state</a> that is deprecated now, because Apollo Client now supports managing local state out of the box.</p>
+
+<h1>
+  <a name="the-code" href="#the-code">
+  </a>
+  The Code
+</h1>
+
+<h2>
+  <a name="apolloprovider" href="#apolloprovider">
+  </a>
+  ApolloProvider
+</h2>
+
+<p>After adding the npm packages <a href="https://www.npmjs.com/package/@apollo/client">@apollo/client</a> and <a href="https://www.npmjs.com/package/graphql">graphql</a> to my project, the first step is to initialize the client and add an ApolloProvider component:</p>
+
+<p><em><a href="https://codesandbox.io/s/step-21-local-state-with-apollo-part-6-181dt?file=/src/index.js">index.js</a></em><br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">ReactDOM</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react-dom</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">ApolloClient</span><span class="p">,</span> <span class="nx">ApolloProvider</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@apollo/client</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">cache</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./storage</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">App</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./App</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ApolloClient</span><span class="p">({</span>
+  <span class="nx">cache</span>
+<span class="p">});</span>
+
+<span class="kd">const</span> <span class="nx">rootElement</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">root</span><span class="dl">'</span><span class="p">);</span>
+<span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+  <span class="o">&lt;</span><span class="nx">React</span><span class="p">.</span><span class="nx">StrictMode</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">ApolloProvider</span> <span class="nx">client</span><span class="o">=</span><span class="p">{</span><span class="nx">client</span><span class="p">}</span><span class="o">&gt;</span>
+      <span class="o">&lt;</span><span class="nx">App</span> <span class="o">/&gt;</span>
+    <span class="o">&lt;</span><span class="sr">/ApolloProvider</span><span class="err">&gt;
+</span>  <span class="o">&lt;</span><span class="sr">/React.StrictMode&gt;</span><span class="err">,
+</span>  <span class="nx">rootElement</span>
+<span class="p">);</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<h2>
+  <a name="cache" href="#cache">
+  </a>
+  Cache
+</h2>
+
+<p>Notice how the client in the code example above is initialized with a cache. The cache, in Apollo Client, is the central module for managing data:</p>
+
+<p><em><a href="https://codesandbox.io/s/step-21-local-state-with-apollo-part-6-181dt?file=/src/storage/cache.ts">cache.ts</a></em><br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight typescript"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">InMemoryCache</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@apollo/client</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">appConfigVar</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./appConfig</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">cache</span><span class="p">:</span> <span class="nx">InMemoryCache</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">InMemoryCache</span><span class="p">({</span>
+  <span class="na">typePolicies</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">Query</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">fields</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">appConfig</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nx">read</span><span class="p">()</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nx">appConfigVar</span><span class="p">();</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">cache</span><span class="p">;</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Note how the cache module is written in TypeScript. So far, I've been using JavaScript for my project. The tutorial I'm following along is written in TypeScript. I was planning to convert to TypeScript at some point, anyway, so I decide to use TypeScript for the Apollo modules in my project.</p>
+
+<h2>
+  <a name="reactive-variables" href="#reactive-variables">
+  </a>
+  Reactive Variables
+</h2>
+
+<p>The <code>appConfigVar</code> in my cache is a <a href="https://www.apollographql.com/docs/react/local-state/reactive-variables/">reactive variable</a>. This is where the magic happens – the idea is to create reactive variables for everything that is stored locally, i.e. not through a GraphQL API.</p>
+
+<p><em><a href="https://codesandbox.io/s/step-21-local-state-with-apollo-part-6-181dt?file=/src/storage/appConfig/appConfigVar.ts">appConfigVar.ts</a></em><br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight typescript"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">makeVar</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@apollo/client</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">AppConfig</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./AppConfig</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">initialAppConfig</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./initialAppConfig</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">appConfigVar</span> <span class="o">=</span> <span class="nx">makeVar</span><span class="o">&lt;</span><span class="nx">AppConfig</span><span class="o">&gt;</span><span class="p">(</span><span class="nx">initialAppConfig</span><span class="p">);</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">appConfigVar</span><span class="p">;</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<h2>
+  <a name="appconfig-interface" href="#appconfig-interface">
+  </a>
+  AppConfig Interface
+</h2>
+
+<p>In TypeScript, we define types or interfaces to help the compiler check if everything is typed correctly.</p>
+
+<p><em><a href="https://codesandbox.io/s/step-21-local-state-with-apollo-part-6-181dt?file=/src/storage/appConfig/AppConfig.ts">AppConfig.ts</a></em><br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight typescript"><code><span class="kr">interface</span> <span class="nx">AppConfig</span> <span class="p">{</span>
+  <span class="nl">isPaused</span><span class="p">:</span> <span class="nx">boolean</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">AppConfig</span><span class="p">;</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>As you can see, I'm using <code>AppConfig</code> objects to store the state of my application. So far, this contains only one boolean value, <code>isPaused</code>. The nut I'm cracking with my sledgehammer.</p>
+
+<h2>
+  <a name="initial-app-config" href="#initial-app-config">
+  </a>
+  Initial App Config
+</h2>
+
+<p>In <em>appConfigVar.ts</em>, I'm using <em>initalAppConfig</em> to set up my reactive variable.</p>
+
+<p><em><a href="https://codesandbox.io/s/step-21-local-state-with-apollo-part-6-181dt?file=/src/storage/appConfig/initialAppConfig.ts">initialAppConfig</a></em><br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight typescript"><code><span class="k">import</span> <span class="nx">AppConfig</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./AppConfig</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">initialAppConfig</span><span class="p">:</span> <span class="nx">AppConfig</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span>
+  <span class="nb">window</span><span class="p">.</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">getItem</span><span class="p">(</span><span class="dl">'</span><span class="s1">nuffshell.appConfig</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">)</span> <span class="o">||</span> <span class="p">{</span>
+  <span class="na">isPaused</span><span class="p">:</span> <span class="kc">false</span>
+<span class="p">};</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">initialAppConfig</span><span class="p">;</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>I want my app state to be persistent, even when I reload the page in the browser. To achieve that, I'm storing it in the browser's <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">localStorage</a>.</p>
+
+<p>When the app config reactive var is initialized, I'm checking the local storage for a previously saved app config. If there is one, I'm using this, otherwise, I use a default one, with <code>isPaused: false</code>.</p>
+
+<h2>
+  <a name="query-to-get-the-app-config" href="#query-to-get-the-app-config">
+  </a>
+  Query to Get the App Config
+</h2>
+
+<p>To get the app config, I define a GraphQL query:</p>
+
+<p><em><a href="https://codesandbox.io/s/step-21-local-state-with-apollo-part-6-181dt?file=/src/storage/appConfig/GetAppConfig.ts">GetAppConfig.ts</a></em><br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight typescript"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">gql</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@apollo/client</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">GetAppConfig</span> <span class="o">=</span> <span class="nx">gql</span><span class="s2">`
+  query GetAppConfig {
+    appConfig @client {
+      isPaused
+    }
+  }
+`</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">GetAppConfig</span><span class="p">;</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>Notice the <code>@client</code> part in the query definition – this tells Apollo Client that the app config comes from a local state, i.e. it does not have to be fetched through the GraphQL API.</p>
+
+<h2>
+  <a name="custom-hook" href="#custom-hook">
+  </a>
+  Custom Hook
+</h2>
+
+<p>I've decided to write a custom hook to wrap up all that Apollo goodness and to be able to conveniently use it from my React components:</p>
+
+<p><em><a href="https://codesandbox.io/s/step-21-local-state-with-apollo-part-6-181dt?file=/src/storage/appConfig/useAppConfig.ts">useAppConfig.ts</a></em><br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight typescript"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useQuery</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@apollo/client</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">appConfigVar</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./appConfigVar</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">GetAppConfig</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./GetAppConfig</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">saveAppConfig</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./saveAppConfig</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">useAppConfig</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span>
+    <span class="na">data</span><span class="p">:</span> <span class="p">{</span> <span class="nx">appConfig</span> <span class="p">}</span>
+  <span class="p">}</span> <span class="o">=</span> <span class="nx">useQuery</span><span class="p">(</span><span class="nx">GetAppConfig</span><span class="p">);</span>
+
+  <span class="k">return</span> <span class="p">{</span>
+    <span class="na">isPaused</span><span class="p">:</span> <span class="nx">appConfig</span><span class="p">.</span><span class="nx">isPaused</span><span class="p">,</span>
+    <span class="nx">togglePause</span><span class="p">()</span> <span class="p">{</span>
+      <span class="nx">appConfigVar</span><span class="p">({</span> <span class="p">...</span><span class="nx">appConfig</span><span class="p">,</span> <span class="na">isPaused</span><span class="p">:</span> <span class="o">!</span><span class="nx">appConfig</span><span class="p">.</span><span class="nx">isPaused</span> <span class="p">});</span>
+      <span class="nx">saveAppConfig</span><span class="p">();</span>
+    <span class="p">}</span>
+  <span class="p">};</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>As you can see, I'm using the <a href="https://www.apollographql.com/docs/react/api/react/hooks/#usequery">useQuery</a> hook from the Apollo Client to get the current value of the app config by passing my <code>GetAppConfig</code> query.</p>
+
+<p>My hook returns an object that allows React components to get the current state (is the app paused?) and toggle the pause on/off.</p>
+
+<h2>
+  <a name="persisting-the-config-in-local-storage" href="#persisting-the-config-in-local-storage">
+  </a>
+  Persisting the Config in Local Storage
+</h2>
+
+<p>In my custom hook, I'm calling this function <a href="https://codesandbox.io/s/step-21-local-state-with-apollo-part-6-181dt?file=/src/storage/appConfig/saveAppConfig.ts">saveAppConfig</a> to store my config in the browser's local storage:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight typescript"><code><span class="k">import</span> <span class="nx">appConfigVar</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./appConfigVar</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">saveAppConfig</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nb">window</span><span class="p">.</span><span class="nx">localStorage</span><span class="p">.</span><span class="nx">setItem</span><span class="p">(</span>
+    <span class="dl">'</span><span class="s1">nuffshell.appConfig</span><span class="dl">'</span><span class="p">,</span>
+    <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">appConfigVar</span><span class="p">())</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<h2>
+  <a name="toggle-button-component" href="#toggle-button-component">
+  </a>
+  Toggle Button Component
+</h2>
+
+<p>Here's the <code>useAppConfig</code> in action, in the <a href="https://codesandbox.io/s/step-21-local-state-with-apollo-part-6-181dt?file=/src/features/pauseButton/PauseButton.js">PauseButton</a> component:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">useAppConfig</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">../../storage/appConfig</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">styles</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./PauseButton.module.css</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">PauseButton</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span> <span class="nx">isPaused</span><span class="p">,</span> <span class="nx">togglePause</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">useAppConfig</span><span class="p">();</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;</span><span class="nx">button</span> <span class="nx">className</span><span class="o">=</span><span class="p">{</span><span class="nx">styles</span><span class="p">.</span><span class="nx">PauseButton</span><span class="p">}</span> <span class="nx">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">togglePause</span><span class="p">}</span><span class="o">&gt;</span>
+      <span class="p">{</span><span class="nx">isPaused</span> <span class="p">?</span> <span class="dl">'</span><span class="s1">unpause</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">'</span><span class="s1">pause</span><span class="dl">'</span><span class="p">}</span>
+    <span class="o">&lt;</span><span class="sr">/button</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<h2>
+  <a name="adding-the-button" href="#adding-the-button">
+  </a>
+  Adding the Button
+</h2>
+
+<p>I'm adding this button component to my <a href="https://codesandbox.io/s/step-21-local-state-with-apollo-part-6-181dt?file=/src/App.js">App</a> component:<br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">createRef</span><span class="p">,</span> <span class="nx">useEffect</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">PauseButton</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./features/pauseButton</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">renderMindMap</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./renderMindMap</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="nx">divRef</span> <span class="o">=</span> <span class="nx">createRef</span><span class="p">();</span>
+  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">renderMindMap</span><span class="p">(</span><span class="nx">divRef</span><span class="p">.</span><span class="nx">current</span><span class="p">),</span> <span class="p">[</span><span class="nx">divRef</span><span class="p">]);</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="o">&lt;&gt;</span>
+      <span class="o">&lt;</span><span class="nx">PauseButton</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="nx">div</span> <span class="nx">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">divRef</span><span class="p">}</span> <span class="sr">/</span><span class="err">&gt;
+</span>    <span class="o">&lt;</span><span class="sr">/</span><span class="err">&gt;
+</span>  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<h2>
+  <a name="pausing-the-3d-rendering" href="#pausing-the-3d-rendering">
+  </a>
+  Pausing the 3D Rendering
+</h2>
+
+<p>Finally, inside the loop that runs 60 times per second to re-render my 3D model, I can get the current state, asking: Is the app paused?</p>
+
+<p><em><a href="https://codesandbox.io/s/step-21-local-state-with-apollo-part-6-181dt?file=/src/renderMindMap.js">renderMindMap.js</a></em><br>
+</p>
+
+<div class="highlight js-code-highlight">
+<pre class="highlight javascript"><code><span class="p">(</span><span class="kd">function</span> <span class="nx">animate</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span> <span class="nx">isPaused</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">appConfigVar</span><span class="p">();</span>
+  <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">isPaused</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">graph</span><span class="p">.</span><span class="nx">tickFrame</span><span class="p">();</span>
+    <span class="nx">controls</span><span class="p">.</span><span class="nx">update</span><span class="p">();</span>
+    <span class="nx">renderer</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="nx">scene</span><span class="p">,</span> <span class="nx">camera</span><span class="p">);</span>
+  <span class="p">}</span>
+  <span class="nx">requestAnimationFrame</span><span class="p">(</span><span class="nx">animate</span><span class="p">);</span>
+<span class="p">})();</span>
+</code></pre>
+<div class="highlight__panel js-actions-panel">
+<div class="highlight__panel-action js-fullscreen-code-action">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+</svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewbox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+</svg>
+
+</div>
+</div>
+</div>
+
+
+
+<p>In this case, I'm not using the <code>useAppConfig</code> hook, because this is not a React component. I can simply get the app config by calling my reactive variable <code>appConfigVar</code>.</p>
+
+<h1>
+  <a name="the-result" href="#the-result">
+  </a>
+  The Result
+</h1>
+
+<p>Wow, what a wild ride – so much code for such a little thing to achieve! Even old-school Redux is simpler. I hope it will be worth it in the long run, when I fetch and write user data through a GraphQL API and can then handle everything through Apollo.</p>
+
+<p><iframe src="https://codesandbox.io/embed/181dt" style="width:100%; height:calc(300px + 8vw); border:0; border-radius: 4px; overflow:hidden;" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media; usb" loading="lazy" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin">
+</iframe>
+</p>
+
+<h1>
+  <a name="to-be-continued" href="#to-be-continued">
+  </a>
+  To Be Continued…
+</h1>
+
+<p>I'm planning to turn my mind map into a social media network and collaboration tool and will continue to blog about my progress in follow-up articles. Stay tuned!</p>
+
+</div></article> <div class="aside-username-wrapper" data-v-3bf13c85><aside class="aside-username-block" data-v-29ea5fa2 data-v-3bf13c85><div class="username-heading loading" data-v-29ea5fa2><div class="vue-content-placeholders vue-content-placeholders-is-animated" data-v-29ea5fa2><div class="vue-content-placeholders-heading" data-v-29ea5fa2><div class="vue-content-placeholders-heading__img"></div> <div class="vue-content-placeholders-heading__content"><div class="vue-content-placeholders-heading__title"></div> <div class="vue-content-placeholders-heading__subtitle"></div></div></div></div></div> <div class="info" data-v-29ea5fa2><div class="vue-content-placeholders vue-content-placeholders-is-animated" data-v-29ea5fa2><div class="vue-content-placeholders-text" data-v-29ea5fa2><div class="vue-content-placeholders-text__line"></div><div class="vue-content-placeholders-text__line"></div><div class="vue-content-placeholders-text__line"></div></div></div></div></aside></div></div> <div class="comments-block" data-v-54aa1ab4 data-v-3bf13c85><!----> <a href="https://dev.to/pahund/local-state-management-with-apollo-client-14lf" target="_blank" rel="nofollow noopener noreferer" class="add-comment" data-v-54aa1ab4>
     Add comment
   </a></div></div> <footer class="w-full py-8"><div class="max-w-screen-xl mx-auto px-4"><ul class="
         max-w-screen-md
@@ -1970,6 +2514,6 @@ aside .info .content[data-v-29ea5fa2]{
         justify-center
       ">
       Created by Samar
-    </div></div></footer></div></div></div><script defer src="/_nuxt/static/1634315825/articles/pahund/537375/state.js"></script><script src="/_nuxt/548109a.js" defer></script><script src="/_nuxt/c3ddcce.js" defer></script><script src="/_nuxt/84567ea.js" defer></script><script src="/_nuxt/ad2e88f.js" defer></script><script src="/_nuxt/ad0ee30.js" defer></script>
+    </div></div></footer></div></div></div><script defer src="/_nuxt/static/1634322943/articles/pahund/537375/state.js"></script><script src="/_nuxt/548109a.js" defer></script><script src="/_nuxt/c3ddcce.js" defer></script><script src="/_nuxt/84567ea.js" defer></script><script src="/_nuxt/ad2e88f.js" defer></script><script src="/_nuxt/a9b0fbe.js" defer></script>
   </body>
 </html>

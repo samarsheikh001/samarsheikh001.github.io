@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/angha_ramdohokar_0b6505c2/837787", {data:[{}],fetch:{"data-v-25febe66:0":{_error:{message:"invalid json response body at https:\u002F\u002Fdev.to\u002Fapi\u002Farticles\u002F837787 reason: Unexpected token R in JSON at position 0",type:"invalid-json",statusCode:500}}},mutations:[]});

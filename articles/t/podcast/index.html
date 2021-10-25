@@ -1,7 +1,7 @@
 <!doctype html>
 <html data-n-head-ssr lang="en" data-n-head="%7B%22lang%22:%7B%22ssr%22:%22en%22%7D%7D">
   <head >
-    <title>Podcast articles</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" name="format-detection" content="telephone=no"><meta data-n-head="ssr" data-hid="charset" charset="utf-8"><meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="preconnect" href="https://fonts.gstatic.com"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap"><link data-n-head="ssr" data-hid="shortcut-icon" rel="shortcut icon" href="/_nuxt/icons/icon_64x64.e3e9fb.png"><link data-n-head="ssr" data-hid="apple-touch-icon" rel="apple-touch-icon" href="/_nuxt/icons/icon_512x512.e3e9fb.png" sizes="512x512"><link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.f9c56d04.json" data-hid="manifest"><link rel="preload" href="/_nuxt/548109a.js" as="script"><link rel="preload" href="/_nuxt/84567ea.js" as="script"><link rel="preload" href="/_nuxt/ad2e88f.js" as="script"><link rel="preload" href="/_nuxt/ad0ee30.js" as="script"><link rel="preload" href="/_nuxt/7ace8c1.js" as="script"><style data-vue-ssr-id="54b08540:0 a57b151a:0 1239d49d:0 bc0f4dfc:0 f66e701c:0 7dbd20ba:0">/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com*/
+    <title>Podcast articles</title><meta data-n-head="ssr" charset="utf-8"><meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1"><meta data-n-head="ssr" data-hid="description" name="description" content=""><meta data-n-head="ssr" name="format-detection" content="telephone=no"><meta data-n-head="ssr" data-hid="charset" charset="utf-8"><meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes"><meta data-n-head="ssr" data-hid="og:type" name="og:type" property="og:type" content="website"><link data-n-head="ssr" rel="icon" type="image/x-icon" href="/favicon.ico"><link data-n-head="ssr" rel="preconnect" href="https://fonts.gstatic.com"><link data-n-head="ssr" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&amp;display=swap"><link data-n-head="ssr" data-hid="shortcut-icon" rel="shortcut icon" href="/_nuxt/icons/icon_64x64.e3e9fb.png"><link data-n-head="ssr" data-hid="apple-touch-icon" rel="apple-touch-icon" href="/_nuxt/icons/icon_512x512.e3e9fb.png" sizes="512x512"><link data-n-head="ssr" rel="manifest" href="/_nuxt/manifest.f9c56d04.json" data-hid="manifest"><link rel="preload" href="/_nuxt/548109a.js" as="script"><link rel="preload" href="/_nuxt/84567ea.js" as="script"><link rel="preload" href="/_nuxt/ad2e88f.js" as="script"><link rel="preload" href="/_nuxt/a9b0fbe.js" as="script"><link rel="preload" href="/_nuxt/7ace8c1.js" as="script"><style data-vue-ssr-id="54b08540:0 a57b151a:0 1239d49d:0 bc0f4dfc:0 f66e701c:0 4313f9fb:0">/*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com*/
 
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -1485,23 +1485,63 @@ body{
 
 /*purgecss end ignore*/
 /*purgecss start ignore*/
-.error-block[data-v-118d0980]{
+article[data-v-562cf112]{
+  border-radius:1rem;
+  overflow:hidden;
+  cursor:pointer
+}
+article .image-wrapper[data-v-562cf112]{
+  position:relative;
+  padding-bottom:56.25%
+}
+article .image-wrapper img[data-v-562cf112]{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  -o-object-fit:cover;
+     object-fit:cover
+}
+article .content[data-v-562cf112]{
+  background:#666;
+  padding:1rem
+}
+article .content h1[data-v-562cf112]{
+  margin-bottom:1rem
+}
+article .content .tags[data-v-562cf112]{
   display:flex;
-  flex-direction:column;
+  flex-wrap:wrap;
+  margin-bottom:.5rem
+}
+article .content .tags .tag[data-v-562cf112]{
+  line-height:1;
+  padding:.5rem;
+  margin:0 .5rem .5rem 0;
+  border-radius:.25rem
+}
+article .content .tags .tag[data-v-562cf112]:active{
+  background:transparent
+}
+article .content .meta[data-v-562cf112]{
+  display:flex;
   align-items:center;
-  padding:2rem
+  justify-content:space-between
 }
-svg[data-v-118d0980]{
-  width:3rem;
-  height:3rem;
-  margin-bottom:1rem;
-  opacity:.75
+article .content .meta .scl[data-v-562cf112]{
+  display:flex
 }
-h2[data-v-118d0980]{
-  text-align:center
+article .content .meta .scl span[data-v-562cf112]{
+  display:flex;
+  align-items:center;
+  margin-right:1rem
+}
+article .content .meta .scl span svg[data-v-562cf112]{
+  margin-right:.25rem
 }
 
-/*purgecss end ignore*/</style><link rel="preload" href="/_nuxt/static/1634315825/articles/t/podcast/state.js" as="script"><link rel="preload" href="/_nuxt/static/1634315825/articles/t/podcast/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1634315825/manifest.js" as="script">
+/*purgecss end ignore*/</style><link rel="preload" href="/_nuxt/static/1634322943/articles/t/podcast/state.js" as="script"><link rel="preload" href="/_nuxt/static/1634322943/articles/t/podcast/payload.js" as="script"><link rel="preload" href="/_nuxt/static/1634322943/manifest.js" as="script">
   </head>
   <body >
     <div data-server-rendered="true" id="__nuxt"><!----><div id="__layout"><div><div><nav class="py-4"><div class="max-w-7xl mx-auto px-8"><div class="flex items-center justify-between h-16"><div class="flex items-center"><div class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 50 62.5" enable-background="new 0 0 50 50" xml:space="preserve"><path fill="#FFFFFF" d="M25,1C11.745,1,1,11.745,1,25s10.745,24,24,24s24-10.745,24-24S38.255,1,25,1z M17.887,38.646  c0.097,0.099,0.097,0.257-0.001,0.354c-0.049,0.049-0.112,0.073-0.176,0.073s-0.128-0.024-0.177-0.073L3.767,25.177  c-0.028-0.028-0.031-0.067-0.042-0.103c-0.008-0.025-0.03-0.047-0.03-0.073s0.022-0.048,0.03-0.073  c0.012-0.036,0.014-0.075,0.042-0.103l13.766-13.823c0.098-0.099,0.256-0.098,0.354-0.001c0.098,0.098,0.098,0.256,0.001,0.354  L4.297,25.001L17.887,38.646z M46.232,25.178c0,0-0.001,0-0.002,0l-13.765,13.82c-0.049,0.049-0.112,0.073-0.177,0.073  c-0.063,0-0.128-0.024-0.177-0.073c-0.098-0.097-0.098-0.255,0-0.354l13.591-13.645L32.112,11.354c-0.098-0.098-0.098-0.256,0-0.354  c0.098-0.097,0.256-0.097,0.354,0.001L46.23,24.823c0.001,0,0.002,0,0.002,0c0.049,0.049,0.073,0.113,0.073,0.177  S46.281,25.129,46.232,25.178z"></path></svg> <h1 class="text-white text-2xl px-2 pb-2">CodeLabs.</h1></div> <div class="hidden md:block"><div class="ml-10 flex items-baseline space-x-4"><a href="/" class="
@@ -1513,7 +1553,7 @@ h2[data-v-118d0980]{
                   rounded-md
                   text-sm
                   font-medium
-                 bg-white text-gray-800">Home</a><a href="Articles" class="
+                 nuxt-link-active bg-white text-gray-800">Home</a><a href="/articles/t/Articles" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1522,7 +1562,7 @@ h2[data-v-118d0980]{
                   rounded-md
                   text-sm
                   font-medium
-                ">Articles</a><a href="Lessons" class="
+                ">Articles</a><a href="/articles/t/Lessons" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1531,7 +1571,7 @@ h2[data-v-118d0980]{
                   rounded-md
                   text-sm
                   font-medium
-                ">Lessons</a><a href="Courses" class="
+                ">Lessons</a><a href="/articles/t/Courses" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1540,7 +1580,7 @@ h2[data-v-118d0980]{
                   rounded-md
                   text-sm
                   font-medium
-                ">Courses</a><a href="Pricing" class="
+                ">Courses</a><a href="/articles/t/Pricing" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1549,7 +1589,7 @@ h2[data-v-118d0980]{
                   rounded-md
                   text-sm
                   font-medium
-                ">Pricing</a><a href="Sponsor" class="
+                ">Pricing</a><a href="/articles/t/Sponsor" class="
                   text-gray-300
                   hover:border-white
                   border border-transparent
@@ -1577,7 +1617,7 @@ h2[data-v-118d0980]{
             rounded-md
             text-base
             font-medium
-           text-gray-800 bg-white">Home</a><a href="Articles" class="
+           nuxt-link-active text-gray-800 bg-white">Home</a><a href="/articles/t/Articles" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1587,7 +1627,7 @@ h2[data-v-118d0980]{
             rounded-md
             text-base
             font-medium
-          ">Articles</a><a href="Lessons" class="
+          ">Articles</a><a href="/articles/t/Lessons" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1597,7 +1637,7 @@ h2[data-v-118d0980]{
             rounded-md
             text-base
             font-medium
-          ">Lessons</a><a href="Courses" class="
+          ">Lessons</a><a href="/articles/t/Courses" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1607,7 +1647,7 @@ h2[data-v-118d0980]{
             rounded-md
             text-base
             font-medium
-          ">Courses</a><a href="Pricing" class="
+          ">Courses</a><a href="/articles/t/Pricing" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1617,7 +1657,7 @@ h2[data-v-118d0980]{
             rounded-md
             text-base
             font-medium
-          ">Pricing</a><a href="Sponsor" class="
+          ">Pricing</a><a href="/articles/t/Sponsor" class="
             text-gray-300
             border border-transparent
             hover:border-white
@@ -1627,7 +1667,1463 @@ h2[data-v-118d0980]{
             rounded-md
             text-base
             font-medium
-          ">Sponsor</a></div></div></nav></div> <div data-fetch-key="data-v-eae44a42:0" class="page-wrapper" data-v-eae44a42><div class="error-block" data-v-118d0980 data-v-eae44a42><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-118d0980 data-v-118d0980><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-118d0980 data-v-118d0980></path></svg> <h2 data-v-118d0980>invalid json response body at https://dev.to/api/articles?tag=podcast&amp;top=365&amp;page=1 reason: Unexpected token R in JSON at position 0</h2></div> <!----></div> <footer class="w-full py-8"><div class="max-w-screen-xl mx-auto px-4"><ul class="
+          ">Sponsor</a></div></div></nav></div> <div data-fetch-key="data-v-eae44a42:0" class="page-wrapper" data-v-eae44a42><div class="article-cards-wrapper" data-v-eae44a42><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--9Gd0nBlG--/c_imagga_scale,f_auto,fl_progressive,h_420,q_66,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/2fx3qohg1oy31cge0p15.gif" alt="5 Podcasts every Dev must listen to" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/mindninjax/546962" data-v-562cf112><h1 data-v-562cf112>5 Podcasts every Dev must listen to</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/watercooler" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #watercooler
+          </span></a><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/productivity" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #productivity
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            214
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            33
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Dec 19 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--0RN9g5S1--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/zoxvbu0494gq3sxtjp4v.png" alt="Node v15, Hacktoberfest Controversy, Tech Issues on U.S. Ballots, &amp; more on the DevNews podcast!" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/joshpuetz/500520" data-v-562cf112><h1 data-v-562cf112>Node v15, Hacktoberfest Controversy, Tech Issues on U.S. Ballots, &amp; more on the DevNews podcast!</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/news" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #news
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            92
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            2
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Oct 29 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--yIzgICCf--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/noqsd7bis9i0tur4e3w6.png" alt="Demystifying DevRel with Nader Dabit, Christina Gorton &amp; Pachi Carlson" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/743317" data-v-562cf112><h1 data-v-562cf112>Demystifying DevRel with Nader Dabit, Christina Gorton &amp; Pachi Carlson</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/devrel" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #devrel
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            85
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            4
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jun 30
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--4_TCw0mC--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tmcf404ghrq8yge431e0.png" alt="The History of the Cloud with Jeffrey Meyerson &amp;	Kelsey Hightower" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/730496" data-v-562cf112><h1 data-v-562cf112>The History of the Cloud with Jeffrey Meyerson &amp;	Kelsey Hightower</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/cloud" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #cloud
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            72
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            3
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jun 23
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ghW9vmU4--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ch7zzzftfxldhzkx4b2q.png" alt="The Forem Product Roadmap — with Lisa Sy &amp; Vaidehi Joshi " data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/695299" data-v-562cf112><h1 data-v-562cf112>The Forem Product Roadmap — with Lisa Sy &amp; Vaidehi Joshi </h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/forem" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #forem
+          </span></a><a href="/articles/t/opensource" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #opensource
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            68
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            7
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            May 12
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/740413.png" alt="Ultimate List of Web Development Podcasts" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/tuckertriggs/740413" data-v-562cf112><h1 data-v-562cf112>Ultimate List of Web Development Podcasts</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/design" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #design
+          </span></a><a href="/articles/t/webdev" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #webdev
+          </span></a><a href="/articles/t/devops" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #devops
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            62
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            0
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jun 26
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ryyCWyfR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/t2ax78tocay0otjv8e6s.png" alt="Improving Your Onboarding For Early Career Devs with Carolyn Stransky &amp; John Britton" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/537904" data-v-562cf112><h1 data-v-562cf112>Improving Your Onboarding For Early Career Devs with Carolyn Stransky &amp; John Britton</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            58
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            0
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Dec 9 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--NmGlLWwj--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/tul3noy17j3pt8xs9qdc.png" alt="DevDiscuss Season 4 Premiere: Meetings Worth Making with Andy Goodman" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/598141" data-v-562cf112><h1 data-v-562cf112>DevDiscuss Season 4 Premiere: Meetings Worth Making with Andy Goodman</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            57
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            1
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Feb 10
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--0RN9g5S1--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/zoxvbu0494gq3sxtjp4v.png" alt="NATO Condemns Cyberattack, Pegasus Cyber Espionage Tool, Steam’s New Console, &amp; more on DevNews!" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/thepracticaldev/768064" data-v-562cf112><h1 data-v-562cf112>NATO Condemns Cyberattack, Pegasus Cyber Espionage Tool, Steam’s New Console, &amp; more on DevNews!</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/news" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #news
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            56
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            0
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jul 22
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--MQnuhwBI--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/32lgwj6b2ywshg3kc65x.png" alt="My top 10 podcast to listen as a developer" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/leamsigc/551304" data-v-562cf112><h1 data-v-562cf112>My top 10 podcast to listen as a developer</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/topten" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #topten
+          </span></a><a href="/articles/t/node" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #node
+          </span></a><a href="/articles/t/python" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #python
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            54
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            2
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Dec 24 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/673255.png" alt="What would you like to know most about the future of the Forem product? Answer for the chance to be featured on our podcast!" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/graciegregory/673255" data-v-562cf112><h1 data-v-562cf112>What would you like to know most about the future of the Forem product? Answer for the chance to be featured on our podcast!</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/forem" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #forem
+          </span></a><a href="/articles/t/meta" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #meta
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            48
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            9
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Apr 20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--7pzriCnl--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/zoi7jglppr7ss98zpnql.png" alt="DevDiscuss Finale: &quot;Working remotely and working under quarantine are *different*.&quot;" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/556754" data-v-562cf112><h1 data-v-562cf112>DevDiscuss Finale: &quot;Working remotely and working under quarantine are *different*.&quot;</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            47
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            1
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Dec 30 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--wtHbtvbO--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rclqxhawbzj87orxj3wa.png" alt="Code Splitting with Laurie Barth" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/616362" data-v-562cf112><h1 data-v-562cf112>Code Splitting with Laurie Barth</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            45
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            3
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Feb 24
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--DJrj8qMc--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9h8ly0nd9grql9za35jv.png" alt="We Need to Fix Anti-Harassment Tooling with Tracy Chou and Chloe Condon" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/630373" data-v-562cf112><h1 data-v-562cf112>We Need to Fix Anti-Harassment Tooling with Tracy Chou and Chloe Condon</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/shecoded" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #shecoded
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            44
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            2
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Mar 10
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--YUNVyrGG--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/e53rikuobnwcuoyerf7i.png" alt="Debunking Linux Myths with Rob Frelow and Amber Jones" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/637684" data-v-562cf112><h1 data-v-562cf112>Debunking Linux Myths with Rob Frelow and Amber Jones</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/linux" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #linux
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            44
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            2
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Mar 17
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--xiIGV_wy--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/gtah2w82t7f69e9t6e7c.png" alt="Web architecture lessons from mobile apps with Matt Biilmann" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/702412" data-v-562cf112><h1 data-v-562cf112>Web architecture lessons from mobile apps with Matt Biilmann</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/jamstack" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #jamstack
+          </span></a><a href="/articles/t/netlify" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #netlify
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            43
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            1
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            May 19
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--N1xnXAU7--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/2ywo6o5nks7pdac2rk5l.png" alt="How to Gamify Coding with Charlotte Cheng &amp; Kevin Whinnery" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/543686" data-v-562cf112><h1 data-v-562cf112>How to Gamify Coding with Charlotte Cheng &amp; Kevin Whinnery</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            40
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            0
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Dec 16 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--P6tbAnVN--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://i.imgur.com/YHdLLJz.png" alt="4 podcasts for aspiring entrepreneurs" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/paulasantamaria/591871" data-v-562cf112><h1 data-v-562cf112>4 podcasts for aspiring entrepreneurs</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/career" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #career
+          </span></a><a href="/articles/t/entrepreneurship" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #entrepreneurship
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            40
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            4
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Feb 4
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--W9B3LobZ--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/z3c2a9gu11oy2m718lt1.png" alt="A11yship is multi-dimensional — with Crystal Preston Watson and Marcy Sutton" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/644626" data-v-562cf112><h1 data-v-562cf112>A11yship is multi-dimensional — with Crystal Preston Watson and Marcy Sutton</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/a11y" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #a11y
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            38
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            2
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Mar 24
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--0q-ucH7U--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/5pwanucj25o9d2z9zqiy.png" alt="What Makes a Good Designer? with Lisa Sy &amp; Kuan Luo" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/550186" data-v-562cf112><h1 data-v-562cf112>What Makes a Good Designer? with Lisa Sy &amp; Kuan Luo</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            37
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            1
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Dec 23 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--5122d-TR--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/mdeca7tj2rnywkd2jm7g.png" alt="New season of DevDiscuss! S3E1, Developing in Minecraft &amp; Roblox" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/512374" data-v-562cf112><h1 data-v-562cf112>New season of DevDiscuss! S3E1, Developing in Minecraft &amp; Roblox</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            36
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            17
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Nov 11 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/491071.png" alt="Building a Podcast Site using Gatsby, React, Netlify, and Amazon S3" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/vincentntang/491071" data-v-562cf112><h1 data-v-562cf112>Building a Podcast Site using Gatsby, React, Netlify, and Amazon S3</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/gatsby" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #gatsby
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/react" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #react
+          </span></a><a href="/articles/t/rss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #rss
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            36
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            3
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Nov 15 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--sCgAK76R--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wut11d47tmph6ajs76bj.png" alt="Soft Skills Can Be Hard — with Liana Felt and Kristen Palana" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/650647" data-v-562cf112><h1 data-v-562cf112>Soft Skills Can Be Hard — with Liana Felt and Kristen Palana</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/career" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #career
+          </span></a><a href="/articles/t/softskills" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #softskills
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            35
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            0
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Mar 31
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/612300.png" alt="Do you use Linux? Answer for the chance to appear on the DevDiscuss podcast!" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/graciegregory/612300" data-v-562cf112><h1 data-v-562cf112>Do you use Linux? Answer for the chance to appear on the DevDiscuss podcast!</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/linux" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #linux
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            32
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            39
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Feb 19
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--zl6tSUyW--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qkh9try8rhgufnj0fvdy.png" alt="Combining Music and Code with Amirreza Amouie and Jérémie Astor" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/624252" data-v-562cf112><h1 data-v-562cf112>Combining Music and Code with Amirreza Amouie and Jérémie Astor</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            31
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            2
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Mar 3
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--0RN9g5S1--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/zoxvbu0494gq3sxtjp4v.png" alt="COVID Tracking Project, Apple's Reduced App Store Commission, Tesla's Security Flaws &amp; more on DevNews!" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/joshpuetz/524326" data-v-562cf112><h1 data-v-562cf112>COVID Tracking Project, Apple's Reduced App Store Commission, Tesla's Security Flaws &amp; more on DevNews!</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/news" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #news
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            30
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            0
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Nov 26 '20
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/693265.png" alt="Making Money with Code" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/thejoezack/693265" data-v-562cf112><h1 data-v-562cf112>Making Money with Code</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/career" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #career
+          </span></a><a href="/articles/t/webdev" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #webdev
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            30
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            1
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            May 11
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--0RN9g5S1--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/zoxvbu0494gq3sxtjp4v.png" alt="Basecamp Backlash, Remote Work Increasing Harassment, Linux Kernel Submission Ban, &amp; more on DevNews!" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/joshpuetz/680672" data-v-562cf112><h1 data-v-562cf112>Basecamp Backlash, Remote Work Increasing Harassment, Linux Kernel Submission Ban, &amp; more on DevNews!</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/news" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #news
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            30
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            1
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Apr 29
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://dev.to/social_previews/article/781553.png" alt="Svelte is Here to Stay" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/mikhailkaran/781553" data-v-562cf112><h1 data-v-562cf112>Svelte is Here to Stay</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/svelte" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #svelte
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/javascript" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #javascript
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            28
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            0
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Aug 4
+          </span></time></div></div></article></div><div class="w-1/2 article-card-block" data-v-562cf112 data-v-eae44a42><article data-v-562cf112><div class="image-wrapper" data-v-562cf112><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--Wsv5QyZW--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/g8uubbqzbm158ohwihaq.png" alt="Hardware Hacking with Charlyn Gonda &amp; Sophy Wong" data-v-562cf112></div> <div class="content" data-v-562cf112><a href="/articles/ben/723193" data-v-562cf112><h1 data-v-562cf112>Hardware Hacking with Charlyn Gonda &amp; Sophy Wong</h1></a> <div class="tags" data-v-562cf112><a href="/articles/t/discuss" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #discuss
+          </span></a><a href="/articles/t/podcast" aria-current="page" class="tag nuxt-link-exact-active nuxt-link-active" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #podcast
+          </span></a><a href="/articles/t/hardware" class="tag" data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              font-medium
+              bg-white
+              text-black
+            " data-v-562cf112><svg fill="currentColor" viewBox="0 0 8 8" class="-ml-0.5 mr-1.5 h-2 w-2 text-black" data-v-562cf112><circle cx="4" cy="4" r="3" data-v-562cf112></circle></svg>
+            #hardware
+          </span></a></div> <div class="meta" data-v-562cf112><div class="scl" data-v-562cf112><span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M16.4444 3C14.6733 3 13.0333 3.94162 12 5.34C10.9667 3.94162 9.32667 3 7.55556 3C4.49222 3 2 5.52338 2 8.625C2 14.8024 11.0267 20.586 11.4122 20.829C11.5922 20.9426 11.7956 21 12 21C12.2044 21 12.4078 20.9426 12.5878 20.829C12.9733 20.586 22 14.8024 22 8.625C22 5.52338 19.5078 3 16.4444 3Z" fill="#FF0000" data-v-562cf112></path></svg>
+
+            28
+          </span> <span data-v-562cf112><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-562cf112><path d="M6.11765 22H4.94118L5.64706 21.05C6.11765 20.3969 6.41176 19.5656 6.58824 18.5563C3.64706 17.1906 2 14.6375 2 11.3125C2 6.20625 5.82353 3 12 3C18.1765 3 22 6.20625 22 11.3125C22 16.5375 18.2353 19.625 12 19.625H11.5882C10.6471 20.7531 9 22 6.11765 22ZM12 4.1875C6.47059 4.1875 3.17647 6.85937 3.17647 11.3125C3.17647 15.1125 5.47059 16.8938 7.41177 17.6656L7.82353 17.8437L7.76471 18.3187C7.64706 19.2687 7.47059 20.1 7.11765 20.8125C9.05882 20.575 10.1765 19.5656 10.8235 18.7344L11 18.4969H12C19.9412 18.4969 20.8235 13.5094 20.8235 11.3719C20.8235 6.85938 17.5294 4.1875 12 4.1875Z" fill="black" data-v-562cf112></path></svg>
+            0
+          </span></div> <time data-v-562cf112><span class="
+              inline-flex
+              items-center
+              px-2.5
+              py-0.5
+              rounded-full
+              text-xs
+              font-medium
+              bg-gray-100
+              text-gray-800
+            " data-v-562cf112>
+            Jun 9
+          </span></time></div></div></article></div></div> <!----></div> <footer class="w-full py-8"><div class="max-w-screen-xl mx-auto px-4"><ul class="
         max-w-screen-md
         mx-auto
         text-lg
@@ -1791,6 +3287,6 @@ h2[data-v-118d0980]{
         justify-center
       ">
       Created by Samar
-    </div></div></footer></div></div></div><script defer src="/_nuxt/static/1634315825/articles/t/podcast/state.js"></script><script src="/_nuxt/548109a.js" defer></script><script src="/_nuxt/7ace8c1.js" defer></script><script src="/_nuxt/84567ea.js" defer></script><script src="/_nuxt/ad2e88f.js" defer></script><script src="/_nuxt/ad0ee30.js" defer></script>
+    </div></div></footer></div></div></div><script defer src="/_nuxt/static/1634322943/articles/t/podcast/state.js"></script><script src="/_nuxt/548109a.js" defer></script><script src="/_nuxt/7ace8c1.js" defer></script><script src="/_nuxt/84567ea.js" defer></script><script src="/_nuxt/ad2e88f.js" defer></script><script src="/_nuxt/a9b0fbe.js" defer></script>
   </body>
 </html>

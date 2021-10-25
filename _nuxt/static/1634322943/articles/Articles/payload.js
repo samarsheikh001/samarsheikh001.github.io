@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/Articles", {data:[{}],fetch:{"data-v-49ca9df0:0":{_error:{message:"Cannot set property 'statusCode' of undefined",statusCode:500}},"data-v-b6897c7e:0":{articles:[]}},mutations:[]});
