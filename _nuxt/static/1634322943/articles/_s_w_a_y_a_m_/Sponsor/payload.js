@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/articles/_s_w_a_y_a_m_/Sponsor", {data:[{}],fetch:{"data-v-25febe66:0":{_error:{message:"Cannot set property 'statusCode' of undefined",statusCode:500}}},mutations:[]});
