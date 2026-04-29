@@ -3,743 +3,443 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Samar Sheikh — Engineer &amp; Performance Marketer</title>
+<title>Samar Sheikh — Resume</title>
 <link rel="icon" href="favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --bg:#f4f2ec;
-    --panel:#fbfaf6;
+    --paper:#fbfaf6;
+    --bg:#eeece4;
     --ink:#111110;
-    --ink-2:#54524d;
+    --ink-2:#5a5852;
+    --ink-3:#8a877f;
     --rule:#1a1a18;
-    --hair:rgba(17,17,16,.12);
-    --accent:#ff4a1c;
-    --accent-soft:#fff1ec;
+    --hair:#d8d5cb;
+    --accent:#c43a17;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{background:var(--bg);color:var(--ink);}
   body{
     font-family:"Bricolage Grotesque", system-ui, sans-serif;
     font-weight:400;
-    font-size:16px;
+    font-size:14px;
     line-height:1.5;
     -webkit-font-smoothing:antialiased;
     text-rendering:optimizeLegibility;
-    overflow-x:hidden;
-    font-feature-settings:"ss01" on, "ss02" on;
+    padding:32px 16px 48px;
   }
   ::selection{background:var(--accent);color:white}
-  a{color:inherit;text-decoration:none}
+  a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--hair)}
+  a:hover{color:var(--accent); border-color:var(--accent)}
 
-  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;letter-spacing:0}
-  .serif-it{font-family:"Instrument Serif", serif; font-style:italic;}
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;}
 
-  /* ——— frame ——— */
-  .page{
-    max-width:1200px;
+  /* ——— sheet ——— */
+  .sheet{
+    max-width:880px;
     margin:0 auto;
-    padding:48px 56px 80px;
+    background:var(--paper);
+    padding:56px 64px;
+    border:1px solid var(--hair);
+    box-shadow:0 1px 0 rgba(0,0,0,.02), 0 30px 60px -30px rgba(0,0,0,.12);
   }
 
-  /* ——— top nav strip ——— */
-  .top{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    font-family:"JetBrains Mono",monospace;
-    font-size:12px;
-    color:var(--ink-2);
-    margin-bottom:80px;
-  }
-  .top .dot{
-    display:inline-block;width:8px;height:8px;border-radius:50%;
-    background:var(--accent);
-    margin-right:8px;vertical-align:1px;
-    box-shadow:0 0 0 4px var(--accent-soft);
-    animation:pulse 2s ease-in-out infinite;
-  }
-  @keyframes pulse{
-    0%,100%{box-shadow:0 0 0 4px var(--accent-soft)}
-    50%{box-shadow:0 0 0 8px transparent}
-  }
-  .top nav{display:flex;gap:24px}
-  .top nav a{position:relative; transition:color .2s}
-  .top nav a:hover{color:var(--accent)}
-
-  /* ——— hero ——— */
-  .hero{
+  /* ——— header ——— */
+  header.head{
     display:grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap:48px;
+    grid-template-columns: 1fr auto;
+    gap:24px;
     align-items:end;
-    padding-bottom:48px;
-    border-bottom:1px solid var(--rule);
+    padding-bottom:18px;
+    border-bottom:2px solid var(--rule);
+    margin-bottom:24px;
   }
-  .hero h1{
+  header.head h1{
     font-family:"Bricolage Grotesque", sans-serif;
     font-variation-settings:"opsz" 96;
-    font-weight:500;
-    font-size: clamp(56px, 9.5vw, 156px);
-    line-height:.9;
-    letter-spacing:-0.045em;
-  }
-  .hero h1 .it{
-    font-family:"Instrument Serif", serif;
-    font-style:italic;
-    font-weight:400;
-    color:var(--accent);
-    letter-spacing:-0.02em;
-  }
-  .hero .role-tag{
-    display:inline-flex; align-items:center; gap:10px;
-    font-family:"JetBrains Mono",monospace;
-    font-size:12px;
-    color:var(--ink-2);
-    margin-bottom:24px;
-    padding:6px 12px;
-    border:1px solid var(--hair);
-    border-radius:999px;
-    background:var(--panel);
-  }
-  .hero .role-tag::before{
-    content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);
-  }
-  .hero .lede{
-    font-size:18px;
-    line-height:1.5;
-    color:var(--ink);
-    max-width:42ch;
-  }
-  .hero .lede b{
     font-weight:600;
-    background:linear-gradient(180deg, transparent 60%, var(--accent-soft) 60%);
-    padding:0 2px;
+    font-size:54px;
+    line-height:1;
+    letter-spacing:-0.04em;
   }
-
-  /* ——— testimonial ——— */
-  .praise{
-    margin:32px 0 64px;
-    padding:36px 40px;
-    background:var(--ink);
-    color:#f4f2ec;
-    border-radius:18px;
-    display:grid;
-    grid-template-columns: auto 1fr auto;
-    gap:32px;
-    align-items:center;
-    position:relative;
-    overflow:hidden;
-  }
-  .praise::after{
-    content:"";
-    position:absolute;
-    inset:auto -40px -80px auto;
-    width:280px;height:280px;
-    background:radial-gradient(circle, var(--accent), transparent 70%);
-    opacity:.35;
-    pointer-events:none;
-  }
-  .praise .qmark{
-    font-family:"Instrument Serif", serif;
-    font-style:italic;
-    font-size:120px;
-    line-height:.5;
-    color:var(--accent);
-    align-self:start;
-    margin-top:18px;
-  }
-  .praise blockquote{
-    font-family:"Instrument Serif", serif;
-    font-style:italic;
-    font-weight:400;
-    font-size:clamp(22px, 2.4vw, 30px);
-    line-height:1.3;
-    letter-spacing:-0.01em;
-  }
-  .praise cite{
-    font-style:normal;
-    font-family:"JetBrains Mono",monospace;
-    font-size:11px;
-    text-align:right;
-    line-height:1.7;
-    color:rgba(244,242,236,.7);
-    white-space:nowrap;
-    z-index:1;
-  }
-  .praise cite b{display:block; color:#f4f2ec; font-weight:500; font-size:13px;}
-
-  /* ——— section header ——— */
-  .sec-head{
-    display:flex;
-    align-items:baseline;
-    gap:16px;
-    margin-bottom:32px;
-  }
-  .sec-head .num{
+  header.head .role{
     font-family:"JetBrains Mono",monospace;
     font-size:12px;
-    color:var(--accent);
-    letter-spacing:.05em;
-  }
-  .sec-head h2{
-    font-family:"Bricolage Grotesque", sans-serif;
-    font-variation-settings:"opsz" 32;
-    font-weight:500;
-    font-size:32px;
-    letter-spacing:-0.025em;
-  }
-  .sec-head .h-rule{
-    flex:1; height:1px; background:var(--hair); align-self:center;
-  }
-
-  /* ——— layout body ——— */
-  section.work{margin-top:80px}
-
-  /* experience cards */
-  .exp{display:flex; flex-direction:column; gap:20px;}
-  .role-card{
-    background:var(--panel);
-    border:1px solid var(--hair);
-    border-radius:16px;
-    padding:32px;
-    transition:transform .25s ease, border-color .25s ease;
-    position:relative;
-  }
-  .role-card:hover{
-    border-color:var(--ink);
-    transform:translateY(-2px);
-  }
-  .role-card .head{
-    display:flex;
-    justify-content:space-between;
-    align-items:start;
-    gap:24px;
-    margin-bottom:14px;
-    flex-wrap:wrap;
-  }
-  .role-card h3{
-    font-family:"Bricolage Grotesque", sans-serif;
-    font-variation-settings:"opsz" 32;
-    font-weight:500;
-    font-size:24px;
-    letter-spacing:-0.02em;
-    line-height:1.2;
-  }
-  .role-card h3 em{
-    font-family:"Instrument Serif", serif;
-    font-style:italic;
-    font-weight:400;
-    color:var(--accent);
-  }
-  .role-card .when{
-    font-family:"JetBrains Mono",monospace;
-    font-size:11px;
     color:var(--ink-2);
-    white-space:nowrap;
-    padding-top:6px;
+    margin-top:8px;
+    letter-spacing:.02em;
   }
-  .role-card .where{
+  header.head .role b{color:var(--accent); font-weight:500}
+  header.head .contact{
     font-family:"JetBrains Mono",monospace;
     font-size:11.5px;
+    line-height:1.85;
     color:var(--ink-2);
-    margin-bottom:12px;
+    text-align:right;
   }
-  .role-card .where b{color:var(--ink); font-weight:500}
-  .role-card p{
-    font-size:15.5px;
-    line-height:1.55;
-    color:var(--ink);
-    max-width:68ch;
-    margin-bottom:14px;
+  header.head .contact a{
+    color:var(--ink); border-bottom:0;
   }
-  .role-card .pull{
-    border-left:3px solid var(--accent);
-    background:var(--accent-soft);
-    padding:14px 18px;
-    margin:14px 0;
-    font-family:"Instrument Serif", serif;
-    font-style:italic;
-    font-size:18px;
-    line-height:1.4;
-    border-radius:4px;
-  }
-  .role-card .pull cite{
-    display:block;
-    margin-top:8px;
-    font-style:normal;
-    font-family:"JetBrains Mono",monospace;
-    font-size:10.5px;
-    color:var(--ink-2);
-    letter-spacing:.05em;
-  }
-  .role-card ul{
-    list-style:none;
-    margin:8px 0;
-  }
-  .role-card li{
-    position:relative;
-    padding-left:22px;
-    margin-bottom:8px;
+  header.head .contact a:hover{color:var(--accent)}
+  header.head .contact .l{color:var(--ink-3); display:inline-block; min-width:38px;}
+
+  /* ——— summary ——— */
+  .summary{
     font-size:15px;
     line-height:1.55;
+    color:var(--ink);
+    padding:0 0 22px;
+    margin-bottom:28px;
+    border-bottom:1px solid var(--hair);
     max-width:68ch;
   }
-  .role-card li::before{
-    content:"→";
+  .summary b{font-weight:600}
+
+  /* ——— two col body ——— */
+  .body{
+    display:grid;
+    grid-template-columns: 2.1fr 1fr;
+    gap:48px;
+  }
+
+  /* ——— section ——— */
+  section{margin-bottom:30px}
+  section:last-child{margin-bottom:0}
+  h2.sec{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    color:var(--ink-2);
+    padding-bottom:8px;
+    border-bottom:1px solid var(--rule);
+    margin-bottom:14px;
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+  }
+  h2.sec span{color:var(--accent); font-weight:500}
+
+  /* ——— role ——— */
+  .role{
+    margin-bottom:22px;
+    padding-bottom:22px;
+    border-bottom:1px dotted var(--hair);
+  }
+  .role:last-child{border-bottom:0; padding-bottom:0; margin-bottom:0}
+
+  .role .top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:16px;
+    margin-bottom:2px;
+    flex-wrap:wrap;
+  }
+  .role h3{
+    font-family:"Bricolage Grotesque", sans-serif;
+    font-variation-settings:"opsz" 24;
+    font-weight:600;
+    font-size:17px;
+    letter-spacing:-0.012em;
+    line-height:1.25;
+  }
+  .role h3 .at{color:var(--accent); font-weight:500}
+  .role .when{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    color:var(--ink-2);
+    white-space:nowrap;
+  }
+  .role .where{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    color:var(--ink-2);
+    margin-bottom:8px;
+  }
+  .role .where b{color:var(--ink); font-weight:500}
+  .role p{
+    font-size:14px;
+    line-height:1.55;
+    margin-bottom:8px;
+    color:var(--ink);
+  }
+  .role ul{
+    list-style:none;
+    margin:6px 0 0;
+  }
+  .role li{
+    position:relative;
+    padding-left:14px;
+    margin-bottom:5px;
+    font-size:13.5px;
+    line-height:1.5;
+  }
+  .role li::before{
+    content:"·";
     position:absolute; left:0; top:0;
     color:var(--accent);
-    font-weight:500;
+    font-weight:700;
+    font-size:18px;
+    line-height:1;
   }
-  .role-card .stack{
-    display:flex; flex-wrap:wrap; gap:6px;
-    margin-top:18px;
-    padding-top:18px;
-    border-top:1px dashed var(--hair);
+  .role li b{font-weight:600}
+  .role .stack{
+    display:flex; flex-wrap:wrap; gap:5px;
+    margin-top:10px;
   }
   .pill{
     font-family:"JetBrains Mono",monospace;
-    font-size:11px;
-    padding:4px 10px;
-    background:transparent;
+    font-size:10.5px;
+    padding:2px 8px;
     border:1px solid var(--hair);
     color:var(--ink-2);
-    border-radius:999px;
-    transition:all .2s;
+    border-radius:3px;
   }
-  .pill:hover{border-color:var(--accent); color:var(--accent)}
-  .pill.solid{background:var(--ink); color:var(--bg); border-color:var(--ink)}
-  .pill.accent{background:var(--accent); color:white; border-color:var(--accent)}
 
-  /* ——— projects grid ——— */
-  .projects{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap:20px;
+  /* — testimonial — */
+  .quote{
+    border-left:3px solid var(--accent);
+    padding:10px 0 10px 16px;
+    margin:14px 0 4px;
+    background:transparent;
   }
-  .proj{
-    background:var(--panel);
-    border:1px solid var(--hair);
-    border-radius:16px;
-    padding:28px;
-    display:flex; flex-direction:column;
-    min-height:260px;
-    transition:all .25s ease;
-    position:relative;
-    overflow:hidden;
-  }
-  .proj::before{
-    content:""; position:absolute;
-    inset:0 0 auto 0; height:3px;
-    background:var(--accent);
-    transform:scaleX(0); transform-origin:left;
-    transition:transform .35s ease;
-  }
-  .proj:hover{border-color:var(--ink); transform:translateY(-3px)}
-  .proj:hover::before{transform:scaleX(1)}
-  .proj .top-row{
-    display:flex; justify-content:space-between; align-items:start;
-    margin-bottom:14px;
-  }
-  .proj .url{
-    font-family:"JetBrains Mono",monospace;
-    font-size:11px;
-    color:var(--ink-2);
-  }
-  .proj .arrow{
-    width:36px;height:36px;
-    border-radius:50%;
-    border:1px solid var(--hair);
-    display:grid; place-items:center;
-    transition:all .25s;
-  }
-  .proj:hover .arrow{
-    background:var(--accent); color:white; border-color:var(--accent);
-    transform:rotate(-45deg);
-  }
-  .proj h3{
-    font-family:"Bricolage Grotesque", sans-serif;
-    font-variation-settings:"opsz" 48;
-    font-weight:500;
-    font-size:28px;
-    letter-spacing:-0.025em;
-    line-height:1.05;
+  .quote p{
+    font-size:14px;
+    font-style:italic;
+    line-height:1.5;
+    color:var(--ink);
     margin-bottom:6px;
   }
-  .proj h3 em{
-    font-family:"Instrument Serif", serif;
-    font-style:italic;
-    font-weight:400;
-    color:var(--accent);
-  }
-  .proj .tag{
+  .quote cite{
+    display:block;
     font-family:"JetBrains Mono",monospace;
-    font-size:11px;
+    font-size:10.5px;
+    font-style:normal;
     color:var(--ink-2);
-    margin-bottom:14px;
   }
-  .proj p{
+  .quote cite b{color:var(--ink); font-weight:500}
+
+  /* ——— project ——— */
+  .proj{margin-bottom:14px}
+  .proj:last-child{margin-bottom:0}
+  .proj .top{
+    display:flex; justify-content:space-between; align-items:baseline; gap:12px;
+    margin-bottom:2px;
+  }
+  .proj h4{
+    font-family:"Bricolage Grotesque", sans-serif;
+    font-weight:600;
     font-size:14.5px;
-    line-height:1.55;
-    color:var(--ink);
-    margin-bottom:16px;
-    flex:1;
+    letter-spacing:-0.005em;
   }
-  .proj p b{font-weight:600; color:var(--accent)}
-  .proj .stack{display:flex; flex-wrap:wrap; gap:5px; margin-top:auto}
+  .proj h4 .accent{color:var(--accent)}
+  .proj .url{
+    font-family:"JetBrains Mono",monospace;
+    font-size:10.5px;
+    color:var(--ink-2);
+    border-bottom:0;
+  }
+  .proj .url:hover{color:var(--accent)}
+  .proj p{
+    font-size:13px;
+    line-height:1.5;
+    color:var(--ink);
+  }
+  .proj p b{font-weight:600}
 
   /* ——— sidebar ——— */
-  section.about{
-    margin-top:80px;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:48px;
-  }
-  .panel{
-    background:var(--panel);
-    border:1px solid var(--hair);
-    border-radius:16px;
-    padding:28px;
-  }
-  .panel h4{
-    font-family:"JetBrains Mono",monospace;
-    font-size:11px;
-    color:var(--ink-2);
-    margin-bottom:14px;
-    letter-spacing:.05em;
-  }
-  .panel h4 b{color:var(--accent); font-weight:500; margin-right:8px}
-  .panel p{font-size:15.5px; line-height:1.55; margin-bottom:10px}
-  .panel ul{list-style:none}
-  .panel li{
-    display:flex; justify-content:space-between; align-items:center;
-    padding:10px 0;
-    border-bottom:1px solid var(--hair);
-    font-size:15px;
-  }
-  .panel li:last-child{border-bottom:0}
-  .panel li b{font-weight:500}
-  .panel li span{
-    font-family:"JetBrains Mono",monospace;
-    font-size:11px;
-    color:var(--ink-2);
-  }
-  .panel .pill-cloud{display:flex; flex-wrap:wrap; gap:6px}
-
-  /* ——— footer / cta ——— */
-  .cta{
-    margin-top:80px;
-    padding:60px;
-    background:var(--ink);
-    color:var(--bg);
-    border-radius:24px;
-    display:grid;
-    grid-template-columns: 1fr auto;
-    gap:40px;
-    align-items:center;
-    position:relative;
-    overflow:hidden;
-  }
-  .cta::before{
-    content:"";
-    position:absolute;
-    inset:auto -100px -200px -100px;
-    height:400px;
-    background:radial-gradient(ellipse at center, var(--accent), transparent 60%);
-    opacity:.18;
-    pointer-events:none;
-  }
-  .cta h3{
-    font-family:"Bricolage Grotesque", sans-serif;
-    font-variation-settings:"opsz" 64;
-    font-weight:400;
-    font-size:clamp(36px, 5vw, 56px);
-    letter-spacing:-0.035em;
-    line-height:1;
-    max-width:14ch;
-  }
-  .cta h3 em{
-    font-family:"Instrument Serif", serif;
-    font-style:italic;
-    color:var(--accent);
-    font-weight:400;
-  }
-  .cta .actions{display:flex; gap:12px; flex-direction:column}
-  .btn{
-    display:inline-flex; align-items:center; gap:10px;
-    padding:14px 24px;
-    border-radius:999px;
-    font-family:"JetBrains Mono",monospace;
+  aside .panel{margin-bottom:26px}
+  aside h2.sec{margin-bottom:10px}
+  aside p{font-size:13px; line-height:1.55; color:var(--ink);}
+  aside ul{list-style:none;}
+  aside .kv li{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    padding:5px 0;
+    border-bottom:1px dotted var(--hair);
     font-size:13px;
-    font-weight:500;
-    transition:all .25s;
-    border:1px solid rgba(244,242,236,.2);
-    z-index:1;
+    gap:10px;
   }
-  .btn.primary{background:var(--accent); color:white; border-color:var(--accent)}
-  .btn.primary:hover{transform:translateY(-2px); box-shadow:0 8px 24px rgba(255,74,28,.4)}
-  .btn.ghost{color:var(--bg)}
-  .btn.ghost:hover{background:rgba(244,242,236,.08); border-color:var(--bg)}
+  aside .kv li:last-child{border-bottom:0}
+  aside .kv li b{font-weight:500}
+  aside .kv li span{
+    font-family:"JetBrains Mono",monospace;
+    font-size:10.5px;
+    color:var(--ink-2);
+    white-space:nowrap;
+  }
+  aside .pill-cloud{display:flex; flex-wrap:wrap; gap:4px}
+  aside .pill-cloud .pill{font-size:10.5px}
+  aside .pill.solid{background:var(--ink); color:var(--paper); border-color:var(--ink)}
+  aside .pill.accent{background:var(--accent); color:white; border-color:var(--accent)}
 
+  /* ——— footer ——— */
   .foot{
-    margin-top:40px;
+    margin-top:36px;
+    padding-top:14px;
+    border-top:1px solid var(--hair);
     display:flex; justify-content:space-between;
     font-family:"JetBrains Mono",monospace;
-    font-size:11px;
-    color:var(--ink-2);
+    font-size:10.5px;
+    color:var(--ink-3);
   }
-
-  /* ——— animations ——— */
-  @keyframes rise{
-    from{opacity:0; transform:translateY(16px)}
-    to{opacity:1; transform:none}
-  }
-  .reveal{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
-  .d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.3s}
-  .d4{animation-delay:.45s}.d5{animation-delay:.6s}.d6{animation-delay:.75s}
 
   /* ——— responsive ——— */
-  @media (max-width:900px){
-    .page{padding:24px 20px 48px}
-    .top{margin-bottom:48px; flex-wrap:wrap; gap:12px}
-    .top nav{gap:14px}
-    .hero{grid-template-columns:1fr; gap:24px; align-items:start}
-    .praise{grid-template-columns:1fr; gap:14px; padding:28px}
-    .praise .qmark{font-size:72px; margin-top:0}
-    .praise cite{text-align:left; white-space:normal}
-    .projects{grid-template-columns:1fr}
-    section.about{grid-template-columns:1fr}
-    .cta{grid-template-columns:1fr; padding:36px}
-    .role-card{padding:22px}
-    .role-card .head{flex-direction:column; gap:6px}
-    .role-card .when{padding-top:0}
+  @media (max-width:780px){
+    body{padding:16px 8px 24px}
+    .sheet{padding:32px 24px}
+    header.head{grid-template-columns:1fr; align-items:start}
+    header.head .contact{text-align:left}
+    header.head h1{font-size:42px}
+    .body{grid-template-columns:1fr; gap:28px}
+    .role .top, .proj .top{flex-direction:column; gap:2px}
   }
 
+  /* ——— print ——— */
   @media print{
-    body{background:white}
-    .top, .cta, .foot{display:none}
-    .page{padding:0; max-width:none}
-    .role-card, .panel, .proj{break-inside:avoid; border:1px solid #ccc !important; box-shadow:none}
-    .praise{background:white !important; color:black !important; border:2px solid black; border-radius:0}
-    .praise blockquote, .praise cite{color:black !important}
-    .reveal{animation:none}
+    @page{ size:A4; margin:14mm }
+    html,body{background:white}
+    body{padding:0; font-size:11pt;}
+    .sheet{
+      border:0; box-shadow:none; padding:0; max-width:none; background:white;
+    }
+    a{color:var(--ink) !important}
+    .role, .proj, section{break-inside:avoid}
   }
 </style>
 </head>
 <body>
 
-<main class="page">
+<main class="sheet">
 
-  <!-- top -->
-  <div class="top reveal d1">
-    <div><span class="dot"></span>Available for new work · 2026</div>
-    <nav>
-      <a href="#work">work</a>
-      <a href="#projects">projects</a>
-      <a href="#about">about</a>
-      <a href="mailto:hello@samar.computer">contact</a>
-    </nav>
-  </div>
-
-  <!-- hero -->
-  <section class="hero">
+  <header class="head">
     <div>
-      <span class="role-tag reveal d1">Engineer · Performance Marketer · Operator</span>
-      <h1 class="reveal d2">Samar<br/><span class="it">Sheikh.</span></h1>
+      <h1>Samar Sheikh</h1>
+      <div class="role">Engineer · Performance Marketer · <b>Meta Ads</b> Specialist</div>
     </div>
-    <div class="reveal d3">
-      <p class="lede">
-        I build the tools that make <b>ad spend legible</b> — and run the campaigns that put the dollars to work.
-        Equally at home inside a Meta Ads Manager and inside the codebase that wraps it.
-      </p>
-      <div style="margin-top:28px; display:flex; flex-direction:column; gap:6px; font-family:'JetBrains Mono',monospace; font-size:12.5px;">
-        <a href="mailto:hello@samar.computer">↗ hello@samar.computer</a>
-        <a href="https://github.com/samarsheikh001">↗ github.com/samarsheikh001</a>
-        <span style="color:var(--ink-2)">⌖ Mumbai, India</span>
-      </div>
+    <div class="contact">
+      <div><span class="l">email</span><a href="mailto:hello@samar.computer">hello@samar.computer</a></div>
+      <div><span class="l">site</span><a href="https://samarsheikh001.github.io">samarsheikh001.github.io</a></div>
+      <div><span class="l">git</span><a href="https://github.com/samarsheikh001">github.com/samarsheikh001</a></div>
+      <div><span class="l">city</span>Mumbai, India</div>
     </div>
-  </section>
+  </header>
 
-  <!-- testimonial -->
-  <aside class="praise reveal d4">
-    <div class="qmark">"</div>
-    <blockquote>
-      Samar is hard-working, proactive, and writes genuinely clean code — the kind of engineer you trust to ship.
-    </blockquote>
-    <cite><b>Jack Dorsey</b>Co-founder<br/>Twitter · Block</cite>
-  </aside>
+  <p class="summary">
+    Engineer who runs the campaigns and writes the code that wraps them. Built ad-insights tooling for clients spending <b>thousands of USD per day</b> on Meta. Equally comfortable inside Ads Manager and inside the funnel underneath it. Operator-grade understanding of Meta's policies, account-health rules, and what actually moves a campaign at scale.
+  </p>
 
-  <!-- experience -->
-  <section class="work" id="work">
-    <div class="sec-head reveal d2">
-      <span class="num">01 /</span>
-      <h2>Selected work</h2>
-      <span class="h-rule"></span>
-    </div>
+  <div class="body">
 
-    <div class="exp">
+    <main>
 
-      <article class="role-card reveal d3">
-        <div class="head">
-          <div>
-            <h3>Engineer &amp; Ads Strategist · <em>Loops GTM</em></h3>
-            <div class="where"><b>loopsgtm.com</b> · Performance marketing for high-spend clients</div>
+      <section>
+        <h2 class="sec">Experience <span>01</span></h2>
+
+        <article class="role">
+          <div class="top">
+            <h3>Engineer &amp; Ads Strategist <span class="at">— Loops GTM</span></h3>
+            <span class="when">RECENT</span>
           </div>
-          <div class="when">RECENT</div>
-        </div>
-        <p>Worked directly with clients spending <b>thousands of USD per day</b> on Meta Ads. Built the tooling that gave them a real picture of their spend — and then used that picture to fix what was actually broken.</p>
-        <div class="pull">
-          The campaigns weren't the problem. The funnel was. We just couldn't see it until we built the lens.
-        </div>
-        <ul>
-          <li>Built an <b>ad-insights tool</b> that surfaced wasted spend, creative fatigue, and audience overlap across active Meta campaigns.</li>
-          <li>Used the tool to find and patch <b>funnel leaks</b> — checkout drop-offs, broken Pixel events, mis-attributed conversions — that ad ops alone couldn't see.</li>
-          <li>Advised clients on Meta strategy directly: campaign structure, creative testing cadence, and account-health practices that keep spend flowing.</li>
-        </ul>
-        <div class="stack">
-          <span class="pill solid">Meta Marketing API</span>
-          <span class="pill">TypeScript</span>
-          <span class="pill">Next.js</span>
-          <span class="pill">Postgres</span>
-          <span class="pill">Pixel · CAPI</span>
-        </div>
-      </article>
-
-      <article class="role-card reveal d4">
-        <div class="head">
-          <div>
-            <h3>Engineer · <em>Invy</em></h3>
-            <div class="where"><b>invy.com</b> · Worked under <b>Jack Dorsey</b> (co-founder, Twitter)</div>
+          <div class="where"><b>loopsgtm.com</b> · Performance marketing for high-spend clients</div>
+          <p>Worked directly with clients spending thousands of USD per day on Meta Ads. Built the tooling that gave them a real picture of their spend, then used it to fix what was actually broken.</p>
+          <ul>
+            <li>Built an <b>ad-insights tool</b> surfacing wasted spend, creative fatigue, and audience overlap across active Meta campaigns.</li>
+            <li>Used it to identify and patch <b>funnel leaks</b> — checkout drop-offs, broken Pixel events, mis-attributed conversions — that ad ops alone couldn't see.</li>
+            <li>Advised clients on Meta strategy: campaign structure, creative testing cadence, account-health practices that keep spend flowing.</li>
+          </ul>
+          <div class="stack">
+            <span class="pill">Meta Marketing API</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">Next.js</span>
+            <span class="pill">Postgres</span>
+            <span class="pill">Pixel · CAPI</span>
           </div>
-          <div class="when">EARLIER</div>
-        </div>
-        <p>Joined early and wore the hats that needed wearing. Built features, fixed the foundations, and learned what it actually takes to keep a product alive between release notes.</p>
-        <div class="pull">
-          Samar is hard-working, proactive, and writes genuinely clean code.
-          <cite>— Jack Dorsey</cite>
-        </div>
-        <ul>
-          <li>Shipped product surfaces and the APIs behind them; refactored as the company found its shape.</li>
-          <li>Worked closely with the founding team — short cycles, sharp feedback, real users.</li>
-          <li>Earned a written testimonial from Jack on work ethic, initiative, and code quality.</li>
-        </ul>
-        <div class="stack">
-          <span class="pill">TypeScript</span>
-          <span class="pill">React</span>
-          <span class="pill">Node</span>
-          <span class="pill">Postgres</span>
-        </div>
-      </article>
+        </article>
 
-      <article class="role-card reveal d5">
-        <div class="head">
-          <div>
-            <h3>Performance Marketing · <em>Own Startups &amp; Side Projects</em></h3>
-            <div class="where"><b>Meta Ads</b> · Lead Gen · Hard-won lessons</div>
+        <article class="role">
+          <div class="top">
+            <h3>Engineer <span class="at">— Invy</span></h3>
+            <span class="when">EARLIER</span>
           </div>
-          <div class="when">ONGOING</div>
-        </div>
-        <p>Run my own campaigns end-to-end across personal startups and projects. The kind of operator experience you only get by spending real money, watching it work, and occasionally watching it not.</p>
-        <ul>
-          <li><b>madedaily.in</b> — drove ~100 qualified leads on ₹7,000 ad spend (≈ ₹70/lead) for a meal-subscription business.</li>
-          <li>Ran multiple successful Meta campaigns for own products; learned what "scale" actually costs in creative volume.</li>
-          <li><b>Got several FB ad accounts banned</b> along the way — and now know exactly why. Including the unwritten rule: never run Meta Ads from your own developer / personal Facebook account, even though Meta allows it. Their algorithm shadow-bans you, your campaigns show "active" but stop delivering.</li>
-        </ul>
-        <div class="stack">
-          <span class="pill accent">Meta Ads</span>
-          <span class="pill">Creative Testing</span>
-          <span class="pill">Lead Gen</span>
-          <span class="pill">Account Health</span>
-        </div>
-      </article>
+          <div class="where"><b>invy.com</b> · Worked under <b>Jack Dorsey</b> (co-founder, Twitter)</div>
+          <p>Joined early. Built features, fixed foundations, and shipped product surfaces alongside the founding team — short cycles, sharp feedback, real users.</p>
+          <ul>
+            <li>Shipped product surfaces and the APIs behind them; refactored as the company found its shape.</li>
+            <li>Earned a written testimonial from Jack on work ethic, initiative, and code quality.</li>
+          </ul>
+          <div class="quote">
+            <p>"Samar is hard-working, proactive, and writes genuinely clean code — the kind of engineer you trust to ship."</p>
+            <cite>— <b>Jack Dorsey</b>, Co-founder, Twitter &amp; Block</cite>
+          </div>
+          <div class="stack">
+            <span class="pill">TypeScript</span>
+            <span class="pill">React</span>
+            <span class="pill">Node</span>
+            <span class="pill">Postgres</span>
+          </div>
+        </article>
 
-    </div>
-  </section>
+        <article class="role">
+          <div class="top">
+            <h3>Performance Marketing <span class="at">— Own Startups &amp; Side Projects</span></h3>
+            <span class="when">ONGOING</span>
+          </div>
+          <div class="where">Meta Ads · Lead Gen · Hard-won lessons</div>
+          <p>Run my own campaigns end-to-end across personal startups. The kind of operator experience you only get by spending real money and watching what works.</p>
+          <ul>
+            <li><b>madedaily.in</b> — drove ~100 qualified leads on ₹7,000 ad spend (≈ ₹70/lead) for a meal-subscription business.</li>
+            <li>Ran multiple successful Meta campaigns for own products; learned what scale costs in creative volume.</li>
+            <li><b>Banned-account expertise</b> — got several FB ad accounts banned and now know exactly why. Including the unwritten rule: never run Meta Ads from a personal/dev FB account, even though Meta allows it. The algorithm shadow-bans you, campaigns show "active" but stop delivering.</li>
+          </ul>
+        </article>
+      </section>
 
-  <!-- projects -->
-  <section class="work" id="projects">
-    <div class="sec-head reveal d2">
-      <span class="num">02 /</span>
-      <h2>Personal projects</h2>
-      <span class="h-rule"></span>
-    </div>
+      <section>
+        <h2 class="sec">Projects <span>02</span></h2>
 
-    <div class="projects">
+        <article class="proj">
+          <div class="top">
+            <h4><span class="accent">jun</span>.so — AI workflow automation</h4>
+            <a class="url" href="https://jun.so">jun.so ↗</a>
+          </div>
+          <p>Describe a workflow in plain English, Jun connects the apps and runs it 24/7. Claude-routed task planning, 500+ integrations, self-healing runs. Designed and shipped end-to-end as a solo project.</p>
+        </article>
 
-      <a href="https://jun.so" class="proj reveal d3">
-        <div class="top-row">
-          <span class="url">jun.so</span>
-          <span class="arrow">→</span>
-        </div>
-        <h3><em>jun</em>.so</h3>
-        <div class="tag">AI WORKFLOW AUTOMATION · SOLO BUILD</div>
-        <p>Describe a workflow in plain English, Jun connects the apps and runs it 24/7. Claude-routed task planning, 500+ integrations, self-healing runs that recover from upstream API drift.</p>
-        <div class="stack">
-          <span class="pill">Claude</span><span class="pill">Next.js</span><span class="pill">TypeScript</span><span class="pill">Postgres</span>
-        </div>
-      </a>
+        <article class="proj">
+          <div class="top">
+            <h4><span class="accent">made</span>daily.in — meal subscription</h4>
+            <a class="url" href="https://madedaily.in">madedaily.in ↗</a>
+          </div>
+          <p>High-protein Indian meals, fresh-cooked daily. Helped my cousin's family business find its first cohort of customers — <b>~100 leads on ₹7,000 in Meta ad spend</b>.</p>
+        </article>
 
-      <a href="https://madedaily.in" class="proj reveal d3">
-        <div class="top-row">
-          <span class="url">madedaily.in</span>
-          <span class="arrow">→</span>
-        </div>
-        <h3><em>made</em>daily</h3>
-        <div class="tag">MEAL SUBSCRIPTION · META ADS CASE</div>
-        <p>High-protein Indian meals, fresh-cooked daily. Helped take it from launch to its first cohort — <b>~100 leads on ₹7,000 spend</b>. Proof one well-cut creative beats raw budget.</p>
-        <div class="stack">
-          <span class="pill">Meta Ads</span><span class="pill">Lead Gen</span><span class="pill">Creative Strategy</span>
-        </div>
-      </a>
+        <article class="proj">
+          <div class="top">
+            <h4><span class="accent">serp</span>.so — "Own the SERP"</h4>
+            <a class="url" href="https://serp.so">serp.so ↗</a>
+          </div>
+          <p>SEO &amp; competitive-intelligence platform. Real-time tracking across 800+ keywords, content scoring against competitors, keyword-gap analysis.</p>
+        </article>
 
-      <a href="https://serp.so" class="proj reveal d4">
-        <div class="top-row">
-          <span class="url">serp.so</span>
-          <span class="arrow">→</span>
-        </div>
-        <h3><em>serp</em>.so</h3>
-        <div class="tag">"OWN THE SERP" · SEO INTELLIGENCE</div>
-        <p>Search-results analysis platform. Tracks ranking movement across 800+ keywords, scores content against competitors, surfaces keyword gaps, turns raw SERP data into the next thing to write.</p>
-        <div class="stack">
-          <span class="pill">Next.js</span><span class="pill">SERP APIs</span><span class="pill">LLM scoring</span>
-        </div>
-      </a>
+        <article class="proj">
+          <div class="top">
+            <h4><span class="accent">out</span>search.io — SEO on autopilot</h4>
+            <a class="url" href="https://outsearch.io">outsearch.io ↗</a>
+          </div>
+          <p>Picks keywords, drafts the article, generates images, auto-publishes to WordPress / Webflow — daily, 150+ languages. Built-in backlink-exchange to lift domain authority.</p>
+        </article>
+      </section>
 
-      <a href="https://outsearch.io" class="proj reveal d4">
-        <div class="top-row">
-          <span class="url">outsearch.io</span>
-          <span class="arrow">→</span>
-        </div>
-        <h3><em>out</em>search</h3>
-        <div class="tag">SEO ON AUTOPILOT · CONTENT &amp; PUBLISHING</div>
-        <p>Picks keywords, drafts the article, generates images, auto-publishes to WordPress or Webflow — daily, in 150+ languages. Built-in backlink-exchange to lift domain authority.</p>
-        <div class="stack">
-          <span class="pill">Next.js</span><span class="pill">LLMs</span><span class="pill">CMS APIs</span><span class="pill">Image Gen</span>
-        </div>
-      </a>
+    </main>
 
-    </div>
-  </section>
-
-  <!-- about -->
-  <section class="about" id="about">
-    <div class="panel reveal d3">
-      <h4><b>03 /</b>Approach</h4>
-      <p style="font-size:18px; line-height:1.45; font-family:'Instrument Serif', serif; font-style:italic; color:var(--ink); margin-bottom:18px;">
-        Most ad spend dies in the gap between Ads Manager and the funnel underneath it.
-      </p>
-      <p>I close that gap — with code when it pays, with a creative test when it doesn't.</p>
-
-      <h4 style="margin-top:28px"><b>·</b>What I actually know</h4>
-      <p>Meta Ads at scale: campaign structure, creative iteration, audience strategy, attribution. Plus the unwritten rules — what gets accounts shadow-banned, why your "active" campaigns sometimes aren't, and how to keep ad accounts healthy when you're moving fast.</p>
-    </div>
-
-    <div style="display:flex; flex-direction:column; gap:24px;">
-
-      <div class="panel reveal d4">
-        <h4><b>04 /</b>Toolbox</h4>
+    <aside>
+      <section class="panel">
+        <h2 class="sec">Skills</h2>
         <div class="pill-cloud">
           <span class="pill solid">Meta Ads</span>
           <span class="pill solid">Marketing API</span>
@@ -747,38 +447,53 @@
           <span class="pill">Pixel / CAPI</span>
           <span class="pill">UTM Hygiene</span>
           <span class="pill">Creative Testing</span>
+          <span class="pill">Account Health</span>
           <span class="pill">TypeScript</span>
           <span class="pill">Next.js</span>
           <span class="pill">Node</span>
           <span class="pill">Python</span>
           <span class="pill">Postgres</span>
+          <span class="pill">SQL</span>
           <span class="pill">PostHog</span>
           <span class="pill">GA4</span>
         </div>
-      </div>
+      </section>
 
-      <div class="panel reveal d5">
-        <h4><b>05 /</b>Schooling &amp; off-hours</h4>
-        <ul>
+      <section class="panel">
+        <h2 class="sec">Education</h2>
+        <ul class="kv">
           <li><b>B.S. Computer Science</b><span>India · Completed</span></li>
         </ul>
-        <p style="margin-top:14px; color:var(--ink-2)">Outside the screen: farming and fermenting things. There's something honest about food that takes a season to grow and a month to turn — a useful counterweight to software, where everything ships in an afternoon.</p>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- cta -->
-  <section class="cta reveal d6">
-    <h3>Got <em>spend</em> that isn't pulling its weight?</h3>
-    <div class="actions">
-      <a href="mailto:hello@samar.computer" class="btn primary">→ hello@samar.computer</a>
-      <a href="https://github.com/samarsheikh001" class="btn ghost">↗ github.com/samarsheikh001</a>
-    </div>
-  </section>
+      <section class="panel">
+        <h2 class="sec">Highlights</h2>
+        <ul class="kv">
+          <li><b>Testimonial · Jack Dorsey</b><span>Invy</span></li>
+          <li><b>Clients @ $1k+/day spend</b><span>Loops GTM</span></li>
+          <li><b>~₹70 / lead</b><span>madedaily</span></li>
+          <li><b>4 live products</b><span>solo</span></li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2 class="sec">Off-hours</h2>
+        <p>Farming and fermenting. A useful counterweight to software, where everything ships in an afternoon.</p>
+      </section>
+
+      <section class="panel">
+        <h2 class="sec">Languages</h2>
+        <ul class="kv">
+          <li><b>English</b><span>native</span></li>
+        </ul>
+      </section>
+    </aside>
+
+  </div>
 
   <div class="foot">
-    <span>© 2026 Samar Sheikh</span>
-    <span>Built in a single index.html</span>
+    <span>Samar Sheikh · Resume · 2026</span>
+    <span>samarsheikh001.github.io</span>
   </div>
 
 </main>
