@@ -313,6 +313,59 @@
     margin-top:14px;display:flex;flex-wrap:wrap;gap:6px;
   }
 
+  /* — praise / testimonial banner — */
+  .praise{
+    margin: 4px 0 -8px;
+    padding: 22px 28px;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    background:
+      repeating-linear-gradient(
+        45deg,
+        transparent 0 14px,
+        rgba(201,49,26,.045) 14px 15px
+      );
+    display:grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 24px;
+    align-items:center;
+  }
+  .praise .qmark{
+    font-family:"Fraunces", serif;
+    font-style:italic;
+    font-weight:300;
+    font-size:96px;
+    line-height:.6;
+    color:var(--accent);
+  }
+  .praise blockquote{
+    margin:0;
+    font-family:"Fraunces", serif;
+    font-style:italic;
+    font-weight:340;
+    font-size: clamp(20px, 2.4vw, 28px);
+    line-height:1.3;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+  }
+  .praise cite{
+    font-style:normal;
+    font-family:"JetBrains Mono", monospace;
+    font-size:10.5px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    color:var(--ink-2);
+    text-align:right;
+    line-height:1.6;
+    white-space:nowrap;
+  }
+  .praise cite b{display:block; color:var(--accent); font-weight:500;}
+  @media (max-width:900px){
+    .praise{grid-template-columns:1fr; gap:12px}
+    .praise .qmark{font-size:60px}
+    .praise cite{text-align:left; white-space:normal}
+  }
+
   /* divider ornament */
   .ornament{
     text-align:center;
@@ -412,6 +465,13 @@
     </aside>
   </header>
 
+  <!-- praise -->
+  <aside class="praise reveal d4" aria-label="Testimonial">
+    <div class="qmark" aria-hidden="true">“</div>
+    <blockquote>Samar is hard-working, proactive, and writes genuinely clean code — the kind of engineer you trust to ship.</blockquote>
+    <cite><b>Jack Dorsey</b>Co-founder, Twitter &amp; Block</cite>
+  </aside>
+
   <!-- body -->
   <div class="grid">
 
@@ -510,13 +570,13 @@
             <div class="when"><b>Earlier</b>Engineer<br/>Remote</div>
             <div>
               <h3>Engineer, <em>Invy</em></h3>
-              <div class="where">invy.com · Product &amp; platform · mentored by <b>Jack Dorsey</b> (co-founder, Twitter)</div>
+              <div class="where">invy.com · Product &amp; platform · worked under <b>Jack Dorsey</b> (co-founder, Twitter)</div>
               <p>Joined early and wore the hats that needed wearing. Built features, fixed the foundations, and learned what it actually takes to keep a product alive between release notes.</p>
-              <div class="pull">"Mentored directly by Jack Dorsey — a masterclass in product taste, restraint, and shipping with conviction."</div>
+              <div class="pull">"Samar is hard-working, proactive, and writes genuinely clean code." <span style="display:block; margin-top:8px; font-style:normal; font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-2);">— Jack Dorsey · co-founder, Twitter &amp; Block</span></div>
               <ul>
-                <li>Mentored under <b>Jack Dorsey</b> (ex-co-founder of Twitter): product judgement, distribution instincts, and a high bar for what's worth shipping.</li>
                 <li>Shipped product surfaces and the APIs behind them; refactored as the company found its shape.</li>
-                <li>Worked closely with founders and design — short cycles, sharp feedback, real users.</li>
+                <li>Worked closely with the founding team — short cycles, sharp feedback, real users.</li>
+                <li>Earned a written testimonial from Jack on work ethic, initiative, and code quality.</li>
               </ul>
               <div class="stack">
                 <span class="pill">TypeScript</span><span class="pill">React</span><span class="pill">Node</span><span class="pill">Postgres</span>
