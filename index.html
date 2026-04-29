@@ -1,123 +1,647 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="mystyle.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container mx-auto p-4">
-      <nav class="my-8 font-thin">Samar <span>Sheikh</span></nav>
-      <main class="bg-hray-500 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <!-- Intro -->
-        <div class="grid-item">
-          <h2 class="font-bold text-4xl">
-            I’m a full-stack Software Developer freelancer.
-          </h2>
-          <!-- growable  -->
-          <div x-data="{ open: true }" class="py-8 sec-font">
-            <div x-show="open" class="relative">
-              <p class="mt-4">
-                Approximately 7 years experienced 21 years old programmer with a
-                passion for being a minimalist. Minimalist is the way. Because I
-                believe that we can make more with less. Websites are supposed
-                to be faster and easier to edit and most importantly easier to
-                browse. I worked in ui/ux research, computer engineering, and my
-                hobby is to be updated with new tech stacks.
-              </p>
-              <p class="py-4">
-                <div class="bg-gray-200 text-center"
-                  >A jack of all trades master of none</div
-                >
-                I have worked with several tech stacks such as java, flutter,
-                vue, react, unity, blender. I am on my wway to become techlord jk. I
-                actually find myself comfortable with
-                flutter and
-                react/web..
-              </p>
-            </div>
-            <div class="cursor-pointer hover:text-blue-600 mt-3">
-              <span x-show="!open" @click="open = true" class="">
-                <span class="underline">More about me</span>
-                <span class="transform">↬</span>
-              </span>
-              <span
-                x-show="open"
-                @click="open = false"
-                class="growable-button-text-expanded"
-              >
-                <span class="underline">Less about me</span>
-                <span class="f4 dib rotate-90 v-mid o-90">↫</span>
-              </span>
-            </div>
-          </div>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Samar Sheikh — Curriculum Vitae</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,200..900,30..100,0..1;1,9..144,200..900,30..100,0..1&family=JetBrains+Mono:wght@300;400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --paper:#f1ead8;
+    --paper-2:#ebe2cc;
+    --ink:#15110d;
+    --ink-2:#3b2f23;
+    --rule:#1a140f;
+    --accent:#c9311a;
+    --accent-2:#e7a23a;
+    --hair:rgba(21,17,13,.18);
+    --grain-op:.06;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--paper);color:var(--ink);}
+  body{
+    font-family:"Newsreader", Georgia, serif;
+    font-weight:380;
+    font-size:17px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    background:
+      radial-gradient(1200px 600px at 85% -10%, rgba(231,162,58,.18), transparent 60%),
+      radial-gradient(900px 500px at -10% 110%, rgba(201,49,26,.12), transparent 55%),
+      var(--paper);
+    min-height:100vh;
+    overflow-x:hidden;
+  }
+  /* film-grain overlay */
+  body::before{
+    content:"";
+    pointer-events:none;
+    position:fixed; inset:0;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    opacity:var(--grain-op);
+    mix-blend-mode:multiply;
+    z-index:9;
+  }
+  ::selection{background:var(--accent);color:var(--paper)}
+
+  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;letter-spacing:.02em}
+  .display{font-family:"Fraunces", "Newsreader", Georgia, serif;}
+
+  /* ——— Page frame ——— */
+  .sheet{
+    max-width:1180px;
+    margin:0 auto;
+    padding:56px 72px 96px;
+    position:relative;
+  }
+  .corner{
+    position:absolute;
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--ink-2);
+  }
+  .corner.tl{top:24px;left:72px}
+  .corner.tr{top:24px;right:72px;text-align:right}
+  .corner.bl{bottom:28px;left:72px}
+  .corner.br{bottom:28px;right:72px;text-align:right}
+
+  /* ——— Masthead ——— */
+  .mast{
+    border-top:2px solid var(--rule);
+    border-bottom:1px solid var(--rule);
+    padding:14px 0 10px;
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+  }
+  .mast .vol{display:flex;gap:18px;color:var(--ink-2)}
+  .mast .vol em{font-style:normal;color:var(--accent);font-weight:500}
+
+  /* ——— Hero / Name ——— */
+  .hero{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    align-items:end;
+    gap:24px;
+    padding:54px 0 24px;
+    position:relative;
+  }
+  .hero h1{
+    grid-column: 1 / -1;
+    font-family:"Fraunces", serif;
+    font-variation-settings:"opsz" 144, "SOFT" 50, "WONK" 1;
+    font-weight:340;
+    font-style:italic;
+    font-size: clamp(72px, 14vw, 220px);
+    line-height:.86;
+    letter-spacing:-0.045em;
+    margin:0;
+    color:var(--ink);
+    position:relative;
+  }
+  .hero h1 .amp{
+    color:var(--accent);
+    font-style:italic;
+    font-weight:300;
+  }
+  .hero h1 .ndash{
+    display:inline-block;
+    width:.7em;
+    height:.06em;
+    background:var(--accent);
+    vertical-align:.28em;
+    margin:0 .12em;
+  }
+  .hero .lede{
+    font-family:"Newsreader", serif;
+    font-style:italic;
+    font-weight:380;
+    font-size:22px;
+    line-height:1.35;
+    max-width:38ch;
+    color:var(--ink);
+  }
+  .hero .lede::first-letter{
+    font-family:"Fraunces", serif;
+    font-weight:400;
+    font-style:normal;
+    font-size:78px;
+    float:left;
+    line-height:.85;
+    padding:6px 10px 0 0;
+    color:var(--accent);
+  }
+  .hero .meta{
+    text-align:right;
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--ink-2);
+    line-height:1.9;
+  }
+  .hero .meta a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--hair);padding-bottom:1px}
+  .hero .meta a:hover{color:var(--accent);border-color:var(--accent)}
+  .hero .meta .label{color:var(--accent);margin-right:8px}
+
+  .stamp{
+    position:absolute;
+    right:-8px;
+    top:-22px;
+    width:128px;height:128px;
+    border:1.5px solid var(--accent);
+    border-radius:50%;
+    color:var(--accent);
+    display:grid;place-items:center;
+    transform:rotate(-9deg);
+    font-family:"JetBrains Mono",monospace;
+    font-size:10px;
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    text-align:center;
+    line-height:1.4;
+    background:radial-gradient(circle at 50% 50%, rgba(201,49,26,.06), transparent 70%);
+  }
+  .stamp::before, .stamp::after{
+    content:"";position:absolute;inset:6px;border-radius:50%;
+    border:1px dashed rgba(201,49,26,.45);
+  }
+  .stamp::after{inset:14px;border-style:dotted;opacity:.6}
+
+  /* ——— Body grid ——— */
+  .grid{
+    display:grid;
+    grid-template-columns: 1fr 2.3fr;
+    gap:64px;
+    padding-top:36px;
+    border-top:1px solid var(--rule);
+  }
+
+  section{padding-bottom:42px}
+  .label-row{
+    display:flex;align-items:baseline;gap:14px;
+    font-family:"JetBrains Mono",monospace;
+    font-size:10.5px;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:var(--ink-2);
+    padding-bottom:14px;
+    border-bottom:1px solid var(--hair);
+    margin-bottom:18px;
+  }
+  .label-row .num{color:var(--accent)}
+  .label-row::after{
+    content:"";flex:1;height:1px;background:transparent;
+  }
+
+  h2.kicker{
+    font-family:"Fraunces", serif;
+    font-variation-settings:"opsz" 80, "WONK" 0;
+    font-weight:330;
+    font-style:italic;
+    font-size:38px;
+    line-height:1;
+    letter-spacing:-0.025em;
+    margin:0 0 22px;
+  }
+
+  /* — Aside (left col) — */
+  .aside .block{margin-bottom:34px}
+  .aside p{margin:0 0 10px}
+  .aside ul{list-style:none;padding:0;margin:0}
+  .aside li{
+    display:flex;justify-content:space-between;gap:14px;
+    padding:7px 0;border-bottom:1px dotted var(--hair);
+    font-size:15px;
+  }
+  .aside li:last-child{border-bottom:0}
+  .aside li b{font-weight:500;font-family:"Newsreader",serif}
+  .aside li span{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    color:var(--ink-2);
+    letter-spacing:.04em;
+    white-space:nowrap;
+  }
+  .pill-cloud{display:flex;flex-wrap:wrap;gap:6px}
+  .pill{
+    font-family:"JetBrains Mono",monospace;
+    font-size:10.5px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    padding:5px 10px 4px;
+    border:1px solid var(--rule);
+    border-radius:999px;
+    background:transparent;
+    transition:all .25s ease;
+  }
+  .pill.solid{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+  .pill.accent{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+  .pill:hover{transform:translateY(-1px);background:var(--accent);color:var(--paper);border-color:var(--accent)}
+
+  /* — Experience (right col) — */
+  .roles{display:flex;flex-direction:column;gap:34px}
+  .role{
+    display:grid;
+    grid-template-columns: 96px 1fr;
+    gap:28px;
+    position:relative;
+  }
+  .role .when{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    letter-spacing:.12em;
+    color:var(--ink-2);
+    line-height:1.55;
+    padding-top:8px;
+    text-transform:uppercase;
+  }
+  .role .when b{display:block;color:var(--ink);font-weight:500;margin-bottom:2px}
+  .role h3{
+    font-family:"Fraunces", serif;
+    font-variation-settings:"opsz" 96;
+    font-weight:380;
+    font-size:30px;
+    line-height:1.05;
+    letter-spacing:-0.018em;
+    margin:0 0 4px;
+  }
+  .role h3 em{
+    color:var(--accent);
+    font-style:italic;
+    font-variation-settings:"opsz" 96, "WONK" 1;
+  }
+  .role .where{
+    font-family:"JetBrains Mono",monospace;
+    font-size:11px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--ink-2);
+    margin-bottom:14px;
+  }
+  .role p{margin:0 0 10px;max-width:62ch}
+  .role .pull{
+    border-left:2px solid var(--accent);
+    padding:2px 0 2px 16px;
+    margin:14px 0 12px;
+    font-style:italic;
+    font-size:18px;
+    color:var(--ink);
+    max-width:54ch;
+  }
+  .role ul{margin:8px 0 0;padding:0;list-style:none}
+  .role ul li{
+    padding-left:20px;position:relative;margin-bottom:6px;
+    max-width:62ch;
+  }
+  .role ul li::before{
+    content:"§"; position:absolute;left:0;top:1px;
+    color:var(--accent);
+    font-family:"Fraunces",serif;
+    font-style:italic;
+  }
+  .role .stack{
+    margin-top:14px;display:flex;flex-wrap:wrap;gap:6px;
+  }
+
+  /* divider ornament */
+  .ornament{
+    text-align:center;
+    color:var(--accent);
+    font-family:"Fraunces", serif;
+    font-style:italic;
+    letter-spacing:.6em;
+    margin:30px 0 30px;
+    user-select:none;
+  }
+
+  /* ——— Footer colophon ——— */
+  .colophon{
+    margin-top:48px;
+    border-top:2px solid var(--rule);
+    padding-top:18px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    font-family:"JetBrains Mono",monospace;
+    font-size:10.5px;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--ink-2);
+  }
+  .colophon .center{text-align:center}
+  .colophon .right{text-align:right}
+  .colophon a{color:var(--ink);text-decoration:none}
+
+  /* — entry animation — */
+  @keyframes rise{
+    from{opacity:0; transform:translateY(14px)}
+    to{opacity:1; transform:none}
+  }
+  .reveal{animation: rise .9s cubic-bezier(.2,.7,.2,1) both}
+  .d1{animation-delay:.05s}.d2{animation-delay:.18s}.d3{animation-delay:.32s}
+  .d4{animation-delay:.45s}.d5{animation-delay:.6s}.d6{animation-delay:.75s}
+
+  /* — responsive — */
+  @media (max-width: 900px){
+    .sheet{padding:40px 28px 64px}
+    .corner{display:none}
+    .hero{grid-template-columns:1fr}
+    .hero .meta{text-align:left}
+    .hero h1{font-size:18vw}
+    .stamp{display:none}
+    .grid{grid-template-columns:1fr;gap:24px}
+    .role{grid-template-columns:1fr}
+    .role .when{padding-top:0}
+    .colophon{grid-template-columns:1fr;text-align:left}
+    .colophon .center, .colophon .right{text-align:left}
+  }
+
+  /* — print — */
+  @media print{
+    body{background:var(--paper)}
+    body::before{display:none}
+    .sheet{padding:24px 28px;max-width:none}
+    .corner{display:none}
+    .stamp{transform:rotate(-9deg) scale(.85)}
+    .reveal{animation:none}
+    a{color:var(--ink) !important}
+    .role{break-inside:avoid}
+    section{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+
+<main class="sheet">
+
+  <span class="corner tl">№ 001 · The Sheikh Quarterly</span>
+  <span class="corner tr">Filed · MMXXVI · Apr. 29</span>
+  <span class="corner bl">Set in Fraunces &amp; Newsreader</span>
+  <span class="corner br">One Page · One Career</span>
+
+  <!-- masthead -->
+  <div class="mast reveal d1">
+    <div class="vol"><span>Vol. XII</span><span>Issue 04</span><em>— Curriculum Vitæ</em></div>
+    <div>Hand-set in the City · No. 0001/0001</div>
+  </div>
+
+  <!-- hero -->
+  <header class="hero">
+    <h1 class="reveal d2">Samar<span class="amp"> &amp; </span>Co.<br/><em style="font-size:.45em; font-style:italic; font-weight:300; letter-spacing:0; color:var(--ink-2); display:block; margin-top:14px;">— builder, shipper, occasional founder.</em></h1>
+
+    <p class="lede reveal d3">Engineer &amp; performance-marketer. I build the tools that make ad spend legible — and run the campaigns that put the dollars to work. Equally at home inside a Meta Ads Manager and inside the codebase that wraps it.</p>
+
+    <aside class="meta reveal d4">
+      <div><span class="label">▸ Wire</span><a href="mailto:hello@samar.computer">hello@samar.computer</a></div>
+      <div><span class="label">▸ City</span>San Francisco, CA</div>
+      <div><span class="label">▸ Web</span><a href="#">samar.computer</a></div>
+      <div><span class="label">▸ Lab</span><a href="#">github.com/samar</a></div>
+      <div><span class="label">▸ Wire</span><a href="#">@samar</a></div>
+
+      <div class="stamp">Open<br/>to<br/>Conversation<br/>· 2026 ·</div>
+    </aside>
+  </header>
+
+  <!-- body -->
+  <div class="grid">
+
+    <!-- ASIDE -->
+    <aside class="aside">
+      <section class="block reveal d3">
+        <div class="label-row"><span class="num">i.</span><span>Manifesto</span></div>
+        <p>Most ad spend dies in the gap between Ads Manager and the funnel underneath it. I close that gap — with code when it pays, with a creative test when it doesn't.</p>
+      </section>
+
+      <section class="block reveal d4">
+        <div class="label-row"><span class="num">ii.</span><span>The Toolbox</span></div>
+        <div class="pill-cloud">
+          <span class="pill solid">Meta&nbsp;Ads</span>
+          <span class="pill solid">Marketing&nbsp;API</span>
+          <span class="pill accent">Funnel&nbsp;Analytics</span>
+          <span class="pill">Pixel / CAPI</span>
+          <span class="pill">UTM Hygiene</span>
+          <span class="pill">Creative Testing</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Next.js</span>
+          <span class="pill">Node</span>
+          <span class="pill">Python</span>
+          <span class="pill">Postgres</span>
+          <span class="pill">SQL</span>
+          <span class="pill">PostHog</span>
+          <span class="pill">GA4</span>
         </div>
-        <div class="grid-item">
-          <div class="p-2 text-gray-600 font-bold">My Work</div>
-          <ol>
-            <!-- <li class="py-2">
-              <a href="https://dogeparty.in">
-                <div class="border py-6 px-4 rounded-3xl relative">
-                  <div class="flex flex-col justify-center">
-                    <div class="text-gray-500 py-1">Dogeparty.in</div>
-                    <div class="text-sm py-1">Watch together</div>
-                    <img
-                      class="
-                        rounded-2xl
-                        w-32
-                        h-20
-                        absolute
-                        right-5
-                        hover:rotate-6
-                        transform
-                        transition-all
-                        hover:scale-125
-                      "
-                      src="https://dl.dropboxusercontent.com/s/neqpyzjk06wmja1/1.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </a>
-            </li> -->
-            <li class="py-2">
-              <a href="https://copykitties.com/">
-                <div class="border py-6 px-4 rounded-3xl relative">
-                  <div class="flex flex-col justify-center">
-                    <div class="text-gray-500 py-1">Copykitties</div>
-                    <div class="text-sm py-1">AI Writer</div>
-                    <img
-                      class="
-                        rounded-2xl
-                        w-32
-                        h-20
-                        absolute
-                        right-5
-                        hover:rotate-6
-                        transform
-                        transition-all
-                        hover:scale-125
-                      "
-                      src="https://dl.dropboxusercontent.com/s/wvwvgbn3bb1gc6p/2.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </a>
-            </li>
-          </ol>
+      </section>
+
+      <section class="block reveal d4">
+        <div class="label-row"><span class="num">ii·b</span><span>What I Actually Know</span></div>
+        <p>Meta Ads at scale: campaign structure, creative iteration, audience strategy, attribution. Plus the unwritten rules — what gets accounts shadow-banned, why your "active" campaigns sometimes aren't, and how to keep ad accounts healthy when you're moving fast.</p>
+      </section>
+
+      <section class="block reveal d5">
+        <div class="label-row"><span class="num">iii.</span><span>Schooling</span></div>
+        <ul>
+          <li><b>B.S. Computer Science</b><span>India</span></li>
+          <li><b>Completed</b><span>—</span></li>
+        </ul>
+      </section>
+
+      <section class="block reveal d5">
+        <div class="label-row"><span class="num">iv.</span><span>Tongues</span></div>
+        <ul>
+          <li><b>English</b><span>native</span></li>
+        </ul>
+      </section>
+
+      <section class="block reveal d6">
+        <div class="label-row"><span class="num">v.</span><span>Around the Web</span></div>
+        <ul>
+          <li><b>jun.so</b><span>project</span></li>
+          <li><b>madedaily.in</b><span>project</span></li>
+          <li><b>serp.so</b><span>project</span></li>
+          <li><b>outsearch.io</b><span>project</span></li>
+        </ul>
+      </section>
+
+      <section class="block reveal d6">
+        <div class="label-row"><span class="num">vi.</span><span>Off-Hours</span></div>
+        <p>Farming and fermenting things. There's something honest about food that takes a season to grow and a month to turn — a useful counterweight to software, where everything ships in an afternoon.</p>
+      </section>
+    </aside>
+
+    <!-- MAIN -->
+    <div class="main">
+      <section class="reveal d3">
+        <div class="label-row"><span class="num">§ 01</span><span>Selected Works · Ads, Engineering &amp; Operating</span></div>
+        <h2 class="kicker">Where the <em style="color:var(--accent)">spend</em> meets the code.</h2>
+
+        <div class="roles">
+
+          <article class="role">
+            <div class="when"><b>Recent</b>Engineer &amp;<br/>Ads&nbsp;Strategist<br/>Remote</div>
+            <div>
+              <h3>Engineer &amp; Ads Strategist, <em>Loops GTM</em></h3>
+              <div class="where">loopsgtm.com · Performance marketing for high-spend clients</div>
+              <p>Worked directly with clients spending <b>thousands of USD per day</b> on Meta Ads. Built the tooling that gave them a real picture of their spend — and then used that picture to fix what was actually broken.</p>
+              <div class="pull">"The campaigns weren't the problem. The funnel was. We just couldn't see it until we built the lens."</div>
+              <ul>
+                <li>Built an <b>ad-insights tool</b> that surfaced wasted spend, creative fatigue, and audience overlap across active Meta campaigns.</li>
+                <li>Used the tool to find and patch <b>funnel leaks</b> — checkout drop-offs, broken Pixel events, mis-attributed conversions — that ad ops alone couldn't see.</li>
+                <li>Advised clients on Meta strategy directly: campaign structure, creative testing cadence, and account-health practices that keep spend flowing.</li>
+              </ul>
+              <div class="stack">
+                <span class="pill">Meta&nbsp;Marketing&nbsp;API</span><span class="pill">TypeScript</span><span class="pill">Next.js</span><span class="pill">Postgres</span><span class="pill">Pixel / CAPI</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="ornament">· ·  ✦  · ·</div>
+
+          <article class="role">
+            <div class="when"><b>Earlier</b>Engineer<br/>Remote</div>
+            <div>
+              <h3>Engineer, <em>Invy</em></h3>
+              <div class="where">invy.com · Product &amp; platform</div>
+              <p>Joined early and wore the hats that needed wearing. Built features, fixed the foundations, and learned what it actually takes to keep a product alive between release notes.</p>
+              <ul>
+                <li>Shipped product surfaces and the APIs behind them; refactored as the company found its shape.</li>
+                <li>Worked closely with founders and design — short cycles, sharp feedback, real users.</li>
+              </ul>
+              <div class="stack">
+                <span class="pill">TypeScript</span><span class="pill">React</span><span class="pill">Node</span><span class="pill">Postgres</span>
+              </div>
+            </div>
+          </article>
+
+          <div class="ornament">· ·  ✦  · ·</div>
+
+          <article class="role">
+            <div class="when"><b>Ongoing</b>Operator<br/>Self-funded</div>
+            <div>
+              <h3>Performance Marketing, <em>Own Startups &amp; Side Projects</em></h3>
+              <div class="where">Meta Ads · Lead Gen · Hard-won lessons</div>
+              <p>Run my own campaigns end-to-end across personal startups and projects. The kind of operator experience you only get by spending real money, watching it work, and occasionally watching it not.</p>
+              <ul>
+                <li><b>madedaily.in</b> — drove <b>~100 qualified leads on ₹7,000 ad spend</b> for a meal-subscription business; tight creative, tighter targeting.</li>
+                <li>Ran multiple successful Meta campaigns for own products; learned what "scale" actually costs in creative volume.</li>
+                <li><b>Got several FB ad accounts banned</b> along the way — and now know exactly why. Including the unwritten one: <em>never run Meta Ads from your own developer / personal Facebook account, even though Meta allows it.</em> Their algorithm shadow-bans you, your campaigns show "active" but stop delivering, and you'll burn budget into a void. Manual operation or a clean dedicated account is the only safe path.</li>
+              </ul>
+              <div class="stack">
+                <span class="pill">Meta&nbsp;Ads</span><span class="pill">Creative&nbsp;Testing</span><span class="pill">Lead&nbsp;Gen</span><span class="pill">Account&nbsp;Health</span>
+              </div>
+            </div>
+          </article>
+
         </div>
-      </main>
-      <footer class="sec-font">
-        I do Web Development and App development, to work me please email me at samarsheikh001@gmail.com.
-      </footer>
+      </section>
+
+      <section class="reveal d6" style="margin-top:8px;">
+        <div class="label-row"><span class="num">§ 02</span><span>Personal Projects</span></div>
+        <h2 class="kicker">Things made for the <em style="color:var(--accent)">love</em> of it.</h2>
+        <div class="roles">
+
+          <article class="role">
+            <div class="when"><b>Live</b>Founder<br/>Solo build</div>
+            <div>
+              <h3><em>jun.so</em> — workflows in plain English</h3>
+              <div class="where"><a style="color:inherit" href="https://jun.so">jun.so</a> · AI workflow automation</div>
+              <p>An AI-powered automation platform: describe a workflow in plain English, Jun connects the apps and runs it 24/7. Built for operators and small teams who need automation without engineers — social posting, inbox triage, scheduling, lead outreach.</p>
+              <ul>
+                <li>Plain-English to deployed workflow — Claude-routed task planning, no node-graph required.</li>
+                <li>500+ app integrations; self-healing runs that recover from upstream API drift.</li>
+                <li>Designed, built, and shipped end-to-end as a solo project.</li>
+              </ul>
+              <div class="stack">
+                <span class="pill">Claude</span><span class="pill">Next.js</span><span class="pill">TypeScript</span><span class="pill">Postgres</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="role">
+            <div class="when"><b>Live</b>Marketer<br/>Family biz</div>
+            <div>
+              <h3><em>madedaily.in</em> — clean food, made fresh</h3>
+              <div class="where"><a style="color:inherit" href="https://madedaily.in">madedaily.in</a> · high-protein meal subscription · Indian, fresh-cooked daily</div>
+              <p>A meal-subscription service: protein-rich Indian food, whole ingredients, no packet masalas or refined oils, delivered by noon. Helped my cousin take it from launch to its first real cohort of customers.</p>
+              <ul>
+                <li>Ran Meta Ads end-to-end: creative, targeting, copy, account hygiene.</li>
+                <li><b>~100 qualified leads on just ₹7,000 in spend</b> — about ₹70 per lead.</li>
+                <li>Proof that one well-cut creative and tight targeting beats raw budget every time.</li>
+              </ul>
+              <div class="stack">
+                <span class="pill">Meta&nbsp;Ads</span><span class="pill">Lead&nbsp;Gen</span><span class="pill">Creative&nbsp;Strategy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="role">
+            <div class="when"><b>Live</b>Founder<br/>Solo build</div>
+            <div>
+              <h3><em>serp.so</em> — own the SERP</h3>
+              <div class="where"><a style="color:inherit" href="https://serp.so">serp.so</a> · AI-powered SEO &amp; competitive intelligence</div>
+              <p>A search-results analysis platform. Tracks ranking movement across hundreds of keywords, scores content against competitors, surfaces keyword gaps, and turns raw SERP data into the next thing to write.</p>
+              <ul>
+                <li>Real-time tracking across 800+ keywords with position-change alerts.</li>
+                <li>Content scoring, competitor breakdowns, and trending-cluster discovery.</li>
+                <li>Tagline: <em>"Own the SERP."</em></li>
+              </ul>
+              <div class="stack">
+                <span class="pill">Next.js</span><span class="pill">SERP&nbsp;APIs</span><span class="pill">Postgres</span><span class="pill">LLM&nbsp;scoring</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="role">
+            <div class="when"><b>Live</b>Founder<br/>Solo build</div>
+            <div>
+              <h3><em>outsearch.io</em> — SEO on autopilot</h3>
+              <div class="where"><a style="color:inherit" href="https://outsearch.io">outsearch.io</a> · automated content &amp; publishing</div>
+              <p>An SEO automation platform for small businesses that don't have time to write. Picks keywords, drafts the article, generates images, and auto-publishes to WordPress or Webflow — daily, in 150+ languages.</p>
+              <ul>
+                <li>End-to-end pipeline: keyword research → SEO-optimised draft → imagery → publish.</li>
+                <li>WordPress &amp; Webflow integrations; built-in backlink-exchange to lift domain authority.</li>
+                <li>Built for operators who'd rather grow traffic than babysit a CMS.</li>
+              </ul>
+              <div class="stack">
+                <span class="pill">Next.js</span><span class="pill">LLMs</span><span class="pill">CMS&nbsp;APIs</span><span class="pill">Image&nbsp;Gen</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
     </div>
-  </body>
+
+  </div>
+
+  <!-- colophon -->
+  <footer class="colophon reveal d6">
+    <div>© MMXXVI · Samar Sheikh · All rites reserved</div>
+    <div class="center">Set in Fraunces, Newsreader &amp; JetBrains Mono</div>
+    <div class="right"><a href="mailto:hello@samar.computer">hello@samar.computer</a> · letters welcome</div>
+  </footer>
+
+</main>
+
+<script>
+  // gentle parallax on the wax stamp
+  const stamp = document.querySelector('.stamp');
+  if (stamp && matchMedia('(hover:hover)').matches){
+    document.addEventListener('mousemove', (e)=>{
+      const x = (e.clientX / window.innerWidth - .5) * 6;
+      const y = (e.clientY / window.innerHeight - .5) * 6;
+      stamp.style.transform = `rotate(${-9 + x*0.4}deg) translate(${x}px, ${y}px)`;
+    }, {passive:true});
+  }
+</script>
+</body>
 </html>
