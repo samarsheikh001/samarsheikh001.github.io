@@ -221,6 +221,37 @@
     color:var(--ink-2);
   }
   .quote cite b{color:var(--ink); font-weight:500}
+  .voicenote{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    margin-top:12px;
+    padding:6px 13px 6px 11px;
+    font-family:"JetBrains Mono",monospace;
+    font-size:10.5px;
+    letter-spacing:.04em;
+    color:var(--ink);
+    background:transparent;
+    border:1px solid var(--accent);
+    border-radius:3px;
+    cursor:pointer;
+    transition:background .15s ease, color .15s ease;
+  }
+  .voicenote:hover{ background:var(--accent); color:#fff }
+  .voicenote .ic{
+    display:block;
+    width:0; height:0;
+    border-style:solid;
+    border-width:5px 0 5px 8px;
+    border-color:transparent transparent transparent currentColor;
+  }
+  .voicenote.playing .ic{
+    width:8px; height:10px;
+    border:0;
+    border-left:3px solid currentColor;
+    border-right:3px solid currentColor;
+  }
+  @media print{ .voicenote, #vn{ display:none } }
 
   /* ——— project ——— */
   .proj{margin-bottom:14px}
@@ -319,10 +350,10 @@
   <header class="head">
     <div>
       <h1>Samar Sheikh</h1>
-      <div class="role">Engineer · Performance Marketer · <b>Meta Ads</b> Specialist</div>
+      <div class="role">Software Engineer · Full-Stack · <b>Meta Ads</b> tooling &amp; ad-tech</div>
     </div>
     <div class="contact">
-      <div><span class="l">email</span><a href="mailto:hello@samar.computer">hello@samar.computer</a></div>
+      <div><span class="l">email</span><a href="mailto:samarsheikh001@gmail.com">samarsheikh001@gmail.com</a></div>
       <div><span class="l">site</span><a href="https://samarsheikh001.github.io">samarsheikh001.github.io</a></div>
       <div><span class="l">git</span><a href="https://github.com/samarsheikh001">github.com/samarsheikh001</a></div>
       <div><span class="l">city</span>Mumbai, India</div>
@@ -330,7 +361,7 @@
   </header>
 
   <p class="summary">
-    Engineer who runs the campaigns and writes the code that wraps them. Built ad-insights tooling for clients spending <b>thousands of USD per day</b> on Meta. Equally comfortable inside Ads Manager and inside the funnel underneath it. Operator-grade understanding of Meta's policies, account-health rules, and what actually moves a campaign at scale.
+    Full-stack software engineer who builds ad-tech. I ship the TypeScript / Next.js tooling that sits on top of the <b>Meta Marketing API</b> — ad-insights dashboards, funnel instrumentation, conversion pipelines — for clients spending <b>thousands of USD per day</b>. Deep enough in the domain to know what the code has to surface, not just which endpoint returns it.
   </p>
 
   <div class="body">
@@ -342,15 +373,15 @@
 
         <article class="role">
           <div class="top">
-            <h3>Engineer &amp; Ads Strategist <span class="at">— Loops GTM</span></h3>
+            <h3>Full-Stack Engineer <span class="at">— Loops GTM</span></h3>
             <span class="when">RECENT</span>
           </div>
-          <div class="where"><b>loopsgtm.com</b> · Performance marketing for high-spend clients</div>
-          <p>Worked directly with clients spending thousands of USD per day on Meta Ads. Built the tooling that gave them a real picture of their spend, then used it to fix what was actually broken.</p>
+          <div class="where"><b>loopsgtm.com</b> · Ad-tech for high-spend Meta clients</div>
+          <p>Built and shipped the data tooling for clients spending thousands of USD per day on Meta. Owned it end-to-end — Marketing API integration, data pipeline, dashboard, and the conversion plumbing underneath.</p>
           <ul>
-            <li>Built an <b>ad-insights tool</b> surfacing wasted spend, creative fatigue, and audience overlap across active Meta campaigns.</li>
-            <li>Used it to identify and patch <b>funnel leaks</b> — checkout drop-offs, broken Pixel events, mis-attributed conversions — that ad ops alone couldn't see.</li>
-            <li>Advised clients on Meta strategy: campaign structure, creative testing cadence, account-health practices that keep spend flowing.</li>
+            <li>Designed and built an <b>ad-insights tool</b> (TypeScript · Next.js · Postgres) that pulls the Marketing API and surfaces wasted spend, creative fatigue, and audience overlap across active campaigns.</li>
+            <li>Instrumented the funnel in code — fixed broken <b>Pixel / CAPI</b> events, checkout drop-offs, and mis-attributed conversions that ad ops alone couldn't see.</li>
+            <li>Turned domain knowledge — campaign structure, account-health rules, attribution windows — into product logic the tooling enforces automatically.</li>
           </ul>
           <div class="stack">
             <span class="pill">Meta Marketing API</span>
@@ -375,6 +406,11 @@
           <div class="quote">
             <p>"Samar is hard-working, proactive, and writes genuinely clean code — the kind of engineer you trust to ship."</p>
             <cite>— <b>Jack Dorsey</b>, Co-founder, Twitter &amp; Block</cite>
+            <button type="button" class="voicenote" aria-label="Play voice note">
+              <span class="ic" aria-hidden="true"></span>
+              <span class="lbl">Play voice note</span>
+            </button>
+            <audio id="vn" src="Voice_002.m4a" preload="none"></audio>
           </div>
           <div class="stack">
             <span class="pill">TypeScript</span>
@@ -386,15 +422,15 @@
 
         <article class="role">
           <div class="top">
-            <h3>Performance Marketing <span class="at">— Own Startups &amp; Side Projects</span></h3>
+            <h3>Founder &amp; Engineer <span class="at">— Own Startups &amp; Side Projects</span></h3>
             <span class="when">ONGOING</span>
           </div>
-          <div class="where">Meta Ads · Lead Gen · Hard-won lessons</div>
-          <p>Run my own campaigns end-to-end across personal startups. The kind of operator experience you only get by spending real money and watching what works.</p>
+          <div class="where">Full-stack · Growth · Hard-won Meta Ads lessons</div>
+          <p>Build and ship my own products end-to-end, then run the Meta campaigns that grow them. The domain knowledge that makes the ad-tech credible comes from spending real money on real accounts.</p>
           <ul>
-            <li><b>madedaily.in</b> — drove ~100 qualified leads on ₹7,000 ad spend (≈ ₹70/lead) for a meal-subscription business.</li>
-            <li>Ran multiple successful Meta campaigns for own products; learned what scale costs in creative volume.</li>
-            <li><b>Banned-account expertise</b> — got several FB ad accounts banned and now know exactly why. Including the unwritten rule: never run Meta Ads from a personal/dev FB account, even though Meta allows it. The algorithm shadow-bans you, campaigns show "active" but stop delivering.</li>
+            <li><b>madedaily.in</b> — built the site and drove ~100 qualified leads on ₹7,000 ad spend (≈ ₹70/lead) for a meal-subscription business.</li>
+            <li>Shipped and grew multiple personal products with Meta campaigns; learned what scale costs in creative volume and infra.</li>
+            <li><b>Banned-account expertise</b> — got several FB ad accounts banned and now know exactly why. Including the unwritten rule: never run Meta Ads from a personal/dev FB account, even though Meta allows it. The algorithm shadow-bans you, campaigns show "active" but stop delivering — the kind of edge case you only design tooling around once you've hit it.</li>
           </ul>
         </article>
       </section>
@@ -441,21 +477,21 @@
       <section class="panel">
         <h2 class="sec">Skills</h2>
         <div class="pill-cloud">
-          <span class="pill solid">Meta Ads</span>
-          <span class="pill solid">Marketing API</span>
-          <span class="pill accent">Funnel Analytics</span>
-          <span class="pill">Pixel / CAPI</span>
-          <span class="pill">UTM Hygiene</span>
-          <span class="pill">Creative Testing</span>
-          <span class="pill">Account Health</span>
-          <span class="pill">TypeScript</span>
-          <span class="pill">Next.js</span>
+          <span class="pill solid">TypeScript</span>
+          <span class="pill solid">Next.js</span>
           <span class="pill">Node</span>
+          <span class="pill">React</span>
           <span class="pill">Python</span>
           <span class="pill">Postgres</span>
           <span class="pill">SQL</span>
+          <span class="pill accent">Meta Marketing API</span>
+          <span class="pill">Pixel / CAPI</span>
+          <span class="pill">Funnel Analytics</span>
           <span class="pill">PostHog</span>
           <span class="pill">GA4</span>
+          <span class="pill">Meta Ads</span>
+          <span class="pill">Account Health</span>
+          <span class="pill">Creative Testing</span>
         </div>
       </section>
 
@@ -469,10 +505,10 @@
       <section class="panel">
         <h2 class="sec">Highlights</h2>
         <ul class="kv">
+          <li><b>4 live products shipped</b><span>solo</span></li>
           <li><b>Testimonial · Jack Dorsey</b><span>Invy</span></li>
-          <li><b>Clients @ $1k+/day spend</b><span>Loops GTM</span></li>
+          <li><b>Ad-tech @ $1k+/day spend</b><span>Loops GTM</span></li>
           <li><b>~₹70 / lead</b><span>madedaily</span></li>
-          <li><b>4 live products</b><span>solo</span></li>
         </ul>
       </section>
 
