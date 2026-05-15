@@ -251,7 +251,15 @@
     border-left:3px solid currentColor;
     border-right:3px solid currentColor;
   }
-  @media print{ .voicenote, #vn{ display:none } }
+  .vn-by{
+    font-family:"JetBrains Mono",monospace;
+    font-size:10px;
+    color:var(--ink-3);
+    margin-left:10px;
+    letter-spacing:.03em;
+  }
+  .vn-by b{ color:var(--ink-2); font-weight:500 }
+  @media print{ .voicenote, #vn, .vn-by{ display:none } }
 
   /* ——— project ——— */
   .proj{margin-bottom:14px}
@@ -404,12 +412,13 @@
             <li>Earned a written testimonial from Jack on work ethic, initiative, and code quality.</li>
           </ul>
           <div class="quote">
-            <p>"Samar is hard-working, proactive, and writes genuinely clean code — the kind of engineer you trust to ship."</p>
+            <p>"Samar is hard-working, proactive, and writes genuinely clean code. The kind of engineer you trust to ship."</p>
             <cite>— <b>Jack Dorsey</b>, Co-founder, Twitter &amp; Block</cite>
             <button type="button" class="voicenote" aria-label="Play voice note">
               <span class="ic" aria-hidden="true"></span>
               <span class="lbl">Play voice note</span>
             </button>
+            <span class="vn-by">by <b>Invy CEO</b> · invy.com</span>
             <audio id="vn" src="Voice_002.m4a" preload="none"></audio>
           </div>
           <div class="stack">
@@ -533,6 +542,21 @@
   </div>
 
 </main>
+
+<script>
+(function(){
+  var b = document.querySelector('.voicenote');
+  if(!b) return;
+  var a = document.getElementById('vn');
+  var lbl = b.querySelector('.lbl');
+  b.addEventListener('click', function(){
+    if(a.paused){ a.play(); } else { a.pause(); }
+  });
+  a.addEventListener('play',  function(){ b.classList.add('playing');    lbl.textContent = 'Pause'; });
+  a.addEventListener('pause', function(){ b.classList.remove('playing'); lbl.textContent = 'Play voice note'; });
+  a.addEventListener('ended', function(){ b.classList.remove('playing'); lbl.textContent = 'Play voice note'; a.currentTime = 0; });
+})();
+</script>
 
 </body>
 </html>
