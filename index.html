@@ -3,390 +3,110 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Samar Sheikh — Backend / Full-Stack Engineer</title>
+<title>Samar Sheikh — Software Engineer</title>
 <link rel="icon" href="favicon.svg" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css" />
 <style>
   :root{
-    --paper:#fbfaf6;
-    --bg:#eeece4;
-    --ink:#111110;
-    --ink-2:#5a5852;
-    --ink-3:#8a877f;
-    --rule:#1a1a18;
-    --hair:#d8d5cb;
-    --accent:#c43a17;
+    --ink:#111;
+    --ink-2:#333;
+    --rule:#111;
+    --bg:#e9e9e6;
+    --paper:#fff;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{background:var(--bg);color:var(--ink);}
+  html,body{background:var(--bg);color:var(--ink)}
   body{
-    font-family:"Bricolage Grotesque", system-ui, sans-serif;
-    font-weight:400;
-    font-size:14px;
-    line-height:1.5;
-    -webkit-font-smoothing:antialiased;
-    text-rendering:optimizeLegibility;
+    font-family:"Computer Modern Serif","Latin Modern Roman","CMU Serif",Georgia,serif;
+    font-size:15px;
+    line-height:1.32;
     padding:32px 16px 48px;
+    -webkit-font-smoothing:antialiased;
   }
-  ::selection{background:var(--accent);color:white}
-  a{color:var(--ink); text-decoration:none; border-bottom:1px solid var(--hair)}
-  a:hover{color:var(--accent); border-color:var(--accent)}
+  a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
 
-  .mono{font-family:"JetBrains Mono",ui-monospace,monospace;}
-
-  /* ——— sheet ——— */
   .sheet{
-    max-width:880px;
+    max-width:850px;
     margin:0 auto;
     background:var(--paper);
-    padding:56px 64px;
-    border:1px solid var(--hair);
-    box-shadow:0 1px 0 rgba(0,0,0,.02), 0 30px 60px -30px rgba(0,0,0,.12);
+    padding:48px 56px 52px;
+    box-shadow:0 20px 50px -25px rgba(0,0,0,.25);
   }
 
-  /* ——— header ——— */
-  header.head{
-    display:grid;
-    grid-template-columns: 1fr auto;
-    gap:24px;
-    align-items:end;
-    padding-bottom:18px;
-    border-bottom:2px solid var(--rule);
-    margin-bottom:24px;
-  }
-  header.head h1{
-    font-family:"Bricolage Grotesque", sans-serif;
-    font-variation-settings:"opsz" 96;
-    font-weight:600;
-    font-size:54px;
-    line-height:1;
-    letter-spacing:-0.04em;
-  }
-  header.head .role{
-    font-family:"JetBrains Mono",monospace;
-    font-size:12px;
-    color:var(--ink-2);
-    margin-top:8px;
-    letter-spacing:.02em;
-  }
-  header.head .role b{color:var(--accent); font-weight:500}
-  header.head .contact{
-    font-family:"JetBrains Mono",monospace;
-    font-size:11.5px;
-    line-height:1.85;
-    color:var(--ink-2);
-    text-align:right;
-  }
-  header.head .contact a{
-    color:var(--ink); border-bottom:0;
-  }
-  header.head .contact a:hover{color:var(--accent)}
-  header.head .contact .l{color:var(--ink-3); display:inline-block; min-width:38px;}
-
-  /* ——— summary ——— */
-  .summary{
-    font-size:15px;
-    line-height:1.55;
-    color:var(--ink);
-    padding:0 0 22px;
-    margin-bottom:28px;
-    border-bottom:1px solid var(--hair);
-    max-width:68ch;
-  }
-  .summary b{font-weight:600}
-
-  /* ——— two col body ——— */
-  .body{
-    display:grid;
-    grid-template-columns: 2.1fr 1fr;
-    gap:48px;
-  }
-
-  /* ——— section ——— */
-  section{margin-bottom:30px}
-  section:last-child{margin-bottom:0}
-  h2.sec{
-    font-family:"JetBrains Mono",monospace;
-    font-size:11px;
-    text-transform:uppercase;
-    letter-spacing:.18em;
-    color:var(--ink-2);
-    padding-bottom:8px;
-    border-bottom:1px solid var(--rule);
-    margin-bottom:14px;
-    display:flex;
-    align-items:baseline;
-    justify-content:space-between;
-  }
-  h2.sec span{color:var(--accent); font-weight:500}
-
-  /* ——— role ——— */
-  .role{
-    margin-bottom:22px;
-    padding-bottom:22px;
-    border-bottom:1px dotted var(--hair);
-  }
-  .role:last-child{border-bottom:0; padding-bottom:0; margin-bottom:0}
-
-  .role .top{
-    display:flex;
-    justify-content:space-between;
-    align-items:baseline;
-    gap:16px;
-    margin-bottom:2px;
-    flex-wrap:wrap;
-  }
-  .role h3{
-    font-family:"Bricolage Grotesque", sans-serif;
-    font-variation-settings:"opsz" 24;
-    font-weight:600;
-    font-size:17px;
-    letter-spacing:-0.012em;
-    line-height:1.25;
-  }
-  .role h3 .at{color:var(--accent); font-weight:500}
-  .role .when{
-    font-family:"JetBrains Mono",monospace;
-    font-size:11px;
-    color:var(--ink-2);
-    white-space:nowrap;
-  }
-  .role .where{
-    font-family:"JetBrains Mono",monospace;
-    font-size:11px;
-    color:var(--ink-2);
-    margin-bottom:8px;
-  }
-  .role .where b{color:var(--ink); font-weight:500}
-  .role p{
-    font-size:14px;
-    line-height:1.55;
-    margin-bottom:8px;
-    color:var(--ink);
-  }
-  .role ul{
-    list-style:none;
-    margin:6px 0 0;
-  }
-  .role li{
-    position:relative;
-    padding-left:14px;
-    margin-bottom:5px;
-    font-size:13.5px;
-    line-height:1.5;
-  }
-  .role li::before{
-    content:"·";
-    position:absolute; left:0; top:0;
-    color:var(--accent);
+  /* header */
+  header{text-align:center;margin-bottom:10px}
+  header h1{
+    font-size:36px;
     font-weight:700;
-    font-size:18px;
-    line-height:1;
+    letter-spacing:.01em;
+    line-height:1.1;
   }
-  .role li b{font-weight:600}
-  .role .stack{
-    display:flex; flex-wrap:wrap; gap:5px;
-    margin-top:10px;
-  }
-  .pill{
-    font-family:"JetBrains Mono",monospace;
-    font-size:10.5px;
-    padding:2px 8px;
-    border:1px solid var(--hair);
-    color:var(--ink-2);
-    border-radius:3px;
-  }
+  header .title{font-size:15px;margin-top:3px}
+  header .contact{font-size:14px;margin-top:4px}
+  header .contact .sep{margin:0 6px}
 
-  /* — testimonial — */
-  .quote{
-    border-left:3px solid var(--accent);
-    padding:10px 0 10px 16px;
-    margin:14px 0 4px;
-    background:transparent;
+  /* sections */
+  h2{
+    font-variant:small-caps;
+    font-weight:400;
+    font-size:19px;
+    letter-spacing:.02em;
+    border-bottom:1px solid var(--rule);
+    padding-bottom:1px;
+    margin:14px 0 6px;
   }
-  .quote p{
-    font-size:14px;
-    font-style:italic;
-    line-height:1.5;
-    color:var(--ink);
-    margin-bottom:6px;
-  }
-  .quote cite{
-    display:block;
-    font-family:"JetBrains Mono",monospace;
-    font-size:10.5px;
-    font-style:normal;
-    color:var(--ink-2);
-  }
-  .quote cite b{color:var(--ink); font-weight:500}
+  .summary{font-size:14.5px;margin:0 6px}
+
+  /* entries */
+  .entry{margin:0 6px 8px}
+  .row{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+  .row .l{font-weight:700;font-size:15.5px}
+  .row .r{white-space:nowrap;font-size:14.5px}
+  .row.sub{font-style:italic;font-size:14px}
+  .row .tech{font-weight:400;font-style:italic;font-size:14px}
+  ul{margin:3px 0 0 26px}
+  li{font-size:14px;margin-bottom:1px}
+  li::marker{font-size:11px}
+
   .voicenote{
-    display:inline-flex;
-    align-items:center;
-    gap:9px;
-    margin-top:12px;
-    padding:6px 13px 6px 11px;
-    font-family:"JetBrains Mono",monospace;
-    font-size:10.5px;
-    letter-spacing:.04em;
-    color:var(--ink);
-    background:transparent;
-    border:1px solid var(--accent);
-    border-radius:3px;
-    cursor:pointer;
-    transition:background .15s ease, color .15s ease;
+    font:inherit;font-size:12px;font-style:normal;
+    margin-left:8px;padding:0 6px;
+    background:none;border:1px solid var(--ink-2);border-radius:2px;
+    cursor:pointer;color:var(--ink);
   }
-  .voicenote:hover{ background:var(--accent); color:#fff }
-  .voicenote .ic{
-    display:block;
-    width:0; height:0;
-    border-style:solid;
-    border-width:5px 0 5px 8px;
-    border-color:transparent transparent transparent currentColor;
-  }
-  .voicenote.playing .ic{
-    width:8px; height:10px;
-    border:0;
-    border-left:3px solid currentColor;
-    border-right:3px solid currentColor;
-  }
-  .vn-by{
-    font-family:"JetBrains Mono",monospace;
-    font-size:10px;
-    color:var(--ink-3);
-    margin-left:10px;
-    letter-spacing:.03em;
-  }
-  .vn-by b{ color:var(--ink-2); font-weight:500 }
-  @media print{ .voicenote, #vn, .vn-by{ display:none } }
+  .voicenote:hover{background:var(--ink);color:var(--paper)}
 
-  /* ——— project ——— */
-  .proj{margin-bottom:14px}
-  .proj:last-child{margin-bottom:0}
-  .proj .top{
-    display:flex; justify-content:space-between; align-items:baseline; gap:12px;
-    margin-bottom:2px;
-  }
-  .proj h4{
-    font-family:"Bricolage Grotesque", sans-serif;
-    font-weight:600;
-    font-size:14.5px;
-    letter-spacing:-0.005em;
-  }
-  .proj h4 .accent{color:var(--accent)}
-  .proj .url{
-    font-family:"JetBrains Mono",monospace;
-    font-size:10.5px;
-    color:var(--ink-2);
-    border-bottom:0;
-  }
-  .proj .url:hover{color:var(--accent)}
-  .proj p{
-    font-size:13px;
-    line-height:1.5;
-    color:var(--ink);
-  }
-  .proj p b{font-weight:600}
+  /* skills */
+  .skills{margin:0 6px;font-size:14px}
+  .skills div{margin-bottom:1px}
+  .skills b{font-weight:700}
 
-  /* ——— sidebar ——— */
-  aside .panel{margin-bottom:26px}
-  aside h2.sec{margin-bottom:10px}
-  aside p{font-size:13px; line-height:1.55; color:var(--ink);}
-  aside ul{list-style:none;}
-  aside .kv li{
-    display:flex;
-    justify-content:space-between;
-    align-items:baseline;
-    padding:5px 0;
-    border-bottom:1px dotted var(--hair);
-    font-size:13px;
-    gap:10px;
-  }
-  aside .kv li:last-child{border-bottom:0}
-  aside .kv li b{font-weight:500}
-  aside .kv li span{
-    font-family:"JetBrains Mono",monospace;
-    font-size:10.5px;
-    color:var(--ink-2);
-    white-space:nowrap;
-  }
-  aside .pill-cloud{display:flex; flex-wrap:wrap; gap:4px}
-  aside .pill-cloud .pill{font-size:10.5px}
-  aside .pill.solid{background:var(--ink); color:var(--paper); border-color:var(--ink)}
-  aside .pill.accent{background:var(--accent); color:white; border-color:var(--accent)}
-
-  /* ——— footer ——— */
-  .foot{
-    margin-top:36px;
-    padding-top:14px;
-    border-top:1px solid var(--hair);
-    display:flex; justify-content:space-between;
-    font-family:"JetBrains Mono",monospace;
-    font-size:10.5px;
-    color:var(--ink-3);
+  @media (max-width:720px){
+    body{padding:12px 0 24px}
+    .sheet{padding:28px 16px}
+    header h1{font-size:30px}
+    .row{flex-direction:column;gap:0}
+    .row .r{white-space:normal}
+    header .contact .sep{display:none}
+    header .contact a, header .contact span.item{display:block}
   }
 
-  /* ——— responsive ——— */
-  @media (max-width:780px){
-    body{padding:16px 8px 24px}
-    .sheet{padding:32px 24px}
-    header.head{grid-template-columns:1fr; align-items:start}
-    header.head .contact{text-align:left}
-    header.head h1{font-size:42px}
-    .body{grid-template-columns:1fr; gap:28px}
-    .role .top, .proj .top{flex-direction:column; gap:2px}
-  }
-
-  /* ——— print ——— */
   @media print{
-    @page{ size:A4 portrait; margin:8mm }
-    html,body{background:white}
-    body{padding:0; font-size:9pt; line-height:1.35}
-    .sheet{
-      border:0; box-shadow:none; padding:0; max-width:none; background:white;
-    }
-    header.head{
-      gap:16px; padding-bottom:10px; margin-bottom:10px;
-    }
-    header.head h1{font-size:36px}
-    header.head .role{font-size:9px; margin-top:5px}
-    header.head .contact{font-size:8px; line-height:1.5}
-    .summary{
-      max-width:none; font-size:9.5pt; line-height:1.35;
-      padding-bottom:9px; margin-bottom:12px;
-    }
-    .body{grid-template-columns:2.2fr 1fr; gap:24px}
-    section{margin-bottom:14px}
-    h2.sec{font-size:8px; padding-bottom:5px; margin-bottom:8px}
-    .role{margin-bottom:10px; padding-bottom:10px}
-    .role .top{gap:8px; margin-bottom:1px}
-    .role h3{font-size:12.5px}
-    .role .when, .role .where{font-size:7.5px}
-    .role .where{margin-bottom:4px}
-    .role p{font-size:8.7pt; line-height:1.35; margin-bottom:4px}
-    .role ul{margin-top:3px}
-    .role li{font-size:8.2pt; line-height:1.3; margin-bottom:2px}
-    .role .stack{gap:3px; margin-top:5px}
-    .pill{font-size:7px; padding:1px 5px}
-    .quote{padding:5px 0 5px 10px; margin:6px 0 2px}
-    .quote p{font-size:8.2pt; line-height:1.3; margin-bottom:3px}
-    .quote cite{font-size:7px}
-    .proj{margin-bottom:7px}
-    .proj h4{font-size:10px}
-    .proj .url{font-size:7.5px}
-    .proj p{font-size:8.1pt; line-height:1.3}
-    aside .panel{margin-bottom:12px}
-    aside h2.sec{margin-bottom:6px}
-    aside p{font-size:8.2pt; line-height:1.35}
-    aside .kv{font-size:8pt}
-    aside .kv li{padding:3px 0; font-size:8.2pt}
-    aside .kv li span{font-size:7px}
-    aside .pill-cloud{gap:3px}
-    aside .pill-cloud .pill{font-size:7px}
-    .foot{margin-top:12px; padding-top:7px; font-size:7px}
-    a{color:var(--ink) !important}
-    .role, .proj, aside .panel{break-inside:avoid}
+    @page{size:A4 portrait;margin:10mm 12mm}
+    html,body{background:#fff}
+    body{padding:0;font-size:10pt}
+    .sheet{box-shadow:none;padding:0;max-width:none}
+    header h1{font-size:24pt}
+    header .title, header .contact{font-size:9.5pt}
+    h2{font-size:12.5pt;margin:8px 0 4px}
+    .summary{font-size:9.5pt}
+    .entry{margin-bottom:5px}
+    .row .l{font-size:10.3pt}
+    .row .r, .row.sub, .row .tech{font-size:9.5pt}
+    li{font-size:9.3pt}
+    .skills{font-size:9.3pt}
+    .voicenote, #vn{display:none}
+    .entry{break-inside:avoid}
   }
 </style>
 </head>
@@ -394,181 +114,109 @@
 
 <main class="sheet">
 
-  <header class="head">
-    <div>
-      <h1>Samar Sheikh</h1>
-      <div class="role">Backend / Full-Stack Engineer · <b>TypeScript &amp; Node.js</b></div>
-    </div>
+  <header>
+    <h1>Samar Sheikh</h1>
+    <div class="title">Software Engineer · Backend, Cloud &amp; AI Systems</div>
     <div class="contact">
-      <div><span class="l">email</span><a href="mailto:samarsheikh001@gmail.com">samarsheikh001@gmail.com</a></div>
-      <div><span class="l">site</span><a href="https://samarsheikh001.github.io">samarsheikh001.github.io</a></div>
-      <div><span class="l">git</span><a href="https://github.com/samarsheikh001">github.com/samarsheikh001</a></div>
-      <div><span class="l">city</span>Mumbai, India</div>
+      <span class="item">Mumbai, India</span><span class="sep">|</span>
+      <a href="mailto:samarsheikh001@gmail.com">samarsheikh001@gmail.com</a><span class="sep">|</span>
+      <a href="https://samarsheikh001.github.io">samarsheikh001.github.io</a><span class="sep">|</span>
+      <a href="https://github.com/samarsheikh001">github.com/samarsheikh001</a>
     </div>
   </header>
 
+  <h2>Summary</h2>
   <p class="summary">
-    Software engineer focused on backend and application development. I build <b>APIs, data pipelines, and web apps</b> with TypeScript, Node.js, Next.js, and PostgreSQL. Most of my work has been on small teams where I take a feature from database changes to the UI and deployment.
+    Software engineer building backend services, web and mobile applications, ML/LLM pipelines, and AI automation.
+    Built Charley.ai alone and grew it to 2M+ users.
+    Works across TypeScript, Python, Go, and Rust, and deploys to AWS and Azure. Comfortable owning a system end to end:
+    schema design, APIs, data ingestion, frontend, CI/CD, and production operations.
   </p>
 
-  <div class="body">
-
-    <main>
-
-      <section>
-        <h2 class="sec">Experience <span>01</span></h2>
-
-        <article class="role">
-          <div class="top">
-            <h3>Software Engineer <span class="at">— Loops GTM</span></h3>
-            <span class="when">CURRENT</span>
-          </div>
-          <div class="where"><b>loopsgtm.com</b> · Internal tools for Meta ad accounts</div>
-          <p>Built the ad-insights app used to monitor client accounts spending thousands of dollars per day. It pulls campaign data through the Meta Marketing API, stores it in Postgres, and presents it in a Next.js dashboard.</p>
-          <ul>
-            <li>Implemented campaign-data ingestion and reporting in <b>TypeScript and Next.js</b>.</li>
-            <li>Debugged broken <b>Pixel and CAPI events</b>, checkout drop-offs, and conversion attribution.</li>
-            <li>Added checks for campaign structure, account health, and attribution windows.</li>
-          </ul>
-          <div class="stack">
-            <span class="pill">Meta Marketing API</span>
-            <span class="pill">TypeScript</span>
-            <span class="pill">Next.js</span>
-            <span class="pill">Postgres</span>
-            <span class="pill">Pixel · CAPI</span>
-          </div>
-        </article>
-
-        <article class="role">
-          <div class="top">
-            <h3>Engineer <span class="at">— Invy</span></h3>
-            <span class="when">PREVIOUS</span>
-          </div>
-          <div class="where"><a href="https://www.invy.com"><b>invy.com</b></a> · Portfolio intelligence app</div>
-          <p>Joined while the product was early and worked directly with the founding team. Built features across the React app and Node APIs, cleaned up existing code, and adapted the system as the product changed.</p>
-          <ul>
-            <li>Shipped app screens and their supporting <b>API endpoints</b>.</li>
-            <li>Worked on data integrations and Postgres-backed features.</li>
-            <li>Received a written testimonial from Jack Dorsey about my initiative and code quality.</li>
-          </ul>
-          <div class="quote">
-            <p>"Samar is hard-working, proactive, and writes genuinely clean code. The kind of engineer you trust to ship."</p>
-            <cite>— <b>Jack Dorsey</b>, Co-founder, Twitter &amp; Block</cite>
-            <button type="button" class="voicenote" aria-label="Play voice note">
-              <span class="ic" aria-hidden="true"></span>
-              <span class="lbl">Play voice note</span>
-            </button>
-            <span class="vn-by">by <b>Invy CEO</b> · invy.com</span>
-            <audio id="vn" src="Voice_002.m4a" preload="none"></audio>
-          </div>
-          <div class="stack">
-            <span class="pill">TypeScript</span>
-            <span class="pill">React</span>
-            <span class="pill">Node</span>
-            <span class="pill">Postgres</span>
-          </div>
-        </article>
-
-        <article class="role">
-          <div class="top">
-            <h3>Independent Developer <span class="at">— Products &amp; Client Work</span></h3>
-            <span class="when">ONGOING</span>
-          </div>
-          <div class="where">Web apps · APIs · Third-party integrations</div>
-          <p>Build web products for myself and clients. I usually handle the database, backend, frontend, integrations, and deployment.</p>
-        </article>
-      </section>
-
-      <section>
-        <h2 class="sec">Projects <span>02</span></h2>
-
-        <article class="proj">
-          <div class="top">
-            <h4><span class="accent">ninja</span>chat.ai — AI app and API</h4>
-            <a class="url" href="https://ninjachat.ai">ninjachat.ai ↗</a>
-          </div>
-          <p>One app for using GPT, Claude, Gemini, and other models. Includes chat, web search, image and video generation, and a developer API.</p>
-        </article>
-
-        <article class="proj">
-          <div class="top">
-            <h4><span class="accent">limoni</span>.vip — web application</h4>
-            <span class="url">limoni.vip</span>
-          </div>
-          <p>Independent product build. Worked across the backend, application logic, frontend, and deployment.</p>
-        </article>
-
-        <article class="proj">
-          <div class="top">
-            <h4><span class="accent">hyathi</span> — software agency</h4>
-            <a class="url" href="https://www.hyathi.com">hyathi.com ↗</a>
-          </div>
-          <p>Development work for client web, mobile, and AI products.</p>
-        </article>
-
-        <article class="proj">
-          <div class="top">
-            <h4><span class="accent">jun</span>.so — AI workflow automation</h4>
-            <a class="url" href="https://jun.so">jun.so ↗</a>
-          </div>
-          <p>Describe a workflow in plain English and Jun connects the apps and runs it. Built the task planner and integrations as a solo project.</p>
-        </article>
-      </section>
-
-    </main>
-
-    <aside>
-      <section class="panel">
-        <h2 class="sec">Skills</h2>
-        <div class="pill-cloud">
-          <span class="pill solid">TypeScript</span>
-          <span class="pill solid">Node.js</span>
-          <span class="pill solid">Next.js</span>
-          <span class="pill">React</span>
-          <span class="pill">Python</span>
-          <span class="pill">PostgreSQL</span>
-          <span class="pill">SQL</span>
-          <span class="pill">REST APIs</span>
-          <span class="pill">Meta Marketing API</span>
-          <span class="pill">Pixel / CAPI</span>
-        </div>
-      </section>
-
-      <section class="panel">
-        <h2 class="sec">Education</h2>
-        <ul class="kv">
-          <li><b>B.S. Computer Science</b><span>India · Completed</span></li>
-        </ul>
-      </section>
-
-      <section class="panel">
-        <h2 class="sec">Highlights</h2>
-        <ul class="kv">
-          <li><b>Early engineer</b><span>Invy</span></li>
-          <li><b>Jack Dorsey testimonial</b><span>Invy</span></li>
-          <li><b>High-spend ad tooling</b><span>Loops GTM</span></li>
-          <li><b>Independent products</b><span>ongoing</span></li>
-        </ul>
-      </section>
-
-      <section class="panel">
-        <h2 class="sec">What I Work On</h2>
-        <p>APIs, data-heavy web apps, AI integrations, and the backend work that keeps them running.</p>
-      </section>
-
-      <section class="panel">
-        <h2 class="sec">Languages</h2>
-        <ul class="kv">
-          <li><b>English</b><span>native</span></li>
-        </ul>
-      </section>
-    </aside>
-
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div><b>Languages:</b> TypeScript, JavaScript, Python, Go, Rust, SQL, Bash</div>
+    <div><b>Backend &amp; Web:</b> Node.js, Next.js, React, React Native, Express, FastAPI, REST, GraphQL, WebSockets</div>
+    <div><b>Cloud &amp; DevOps:</b> AWS (Lambda, ECS, S3, RDS, SQS, CloudWatch), Azure (App Service, Functions, Blob Storage, Azure OpenAI), Docker, GitHub Actions, Vercel</div>
+    <div><b>Data &amp; ML:</b> PostgreSQL, Redis, vector search, ETL/data pipelines, LLM APIs (OpenAI, Anthropic, Gemini), RAG, embeddings, pandas</div>
+    <div><b>AI Automation:</b> agent/tool-calling workflows, task planning, third-party API integrations, background job queues</div>
   </div>
 
-  <div class="foot">
-    <span>Samar Sheikh · Resume · 2026</span>
-    <span>samarsheikh001.github.io</span>
+  <h2>Experience</h2>
+
+  <div class="entry">
+    <div class="row"><span class="l">Software Engineer</span><span class="r">Current</span></div>
+    <div class="row sub"><span>Loops GTM — ad-performance tooling for Meta ad accounts</span><span class="r">Remote</span></div>
+    <ul>
+      <li>Built the internal ad-insights platform used to monitor client accounts spending thousands of dollars per day.</li>
+      <li>Designed the ingestion pipeline that pulls campaign and conversion data from the Meta Marketing API into PostgreSQL on scheduled jobs.</li>
+      <li>Developed the Next.js/TypeScript reporting dashboard and API layer on top of the ingested data.</li>
+      <li>Diagnosed broken Pixel and Conversions API (CAPI) events, checkout drop-offs, and attribution mismatches.</li>
+      <li>Wrote automated checks for campaign structure, account health, and attribution-window configuration.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><span class="l">Software Engineer (Early Team)</span><span class="r">Previous</span></div>
+    <div class="row sub"><span><a href="https://www.invy.com">Invy</a> — portfolio intelligence platform</span><span class="r">Remote</span></div>
+    <ul>
+      <li>Joined at an early stage and worked directly with the founding team on product and architecture.</li>
+      <li>Shipped React application screens together with the Node.js API endpoints and PostgreSQL models behind them.</li>
+      <li>Integrated third-party data APIs and rewrote older modules that no longer fit the product.</li>
+      <li>Received a written reference from Jack Dorsey (Co-founder, Twitter and Block) for my work at Invy.
+        <button type="button" class="voicenote" aria-label="Play voice reference from Invy CEO">▶ voice note</button>
+        <audio id="vn" src="Voice_002.m4a" preload="none"></audio>
+      </li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><span class="l">Independent Software Engineer</span><span class="r">Ongoing</span></div>
+    <div class="row sub"><span>Own products and client work, incl. <a href="https://www.hyathi.com">Hyathi</a> (software agency)</span><span class="r">Remote</span></div>
+    <ul>
+      <li>Deliver web, mobile, and AI products for clients from database design through deployment.</li>
+      <li>Deploy services on AWS and Azure with Docker and GitHub Actions CI/CD.</li>
+      <li>Write performance-sensitive services and workers in Go and Rust alongside TypeScript and Python codebases.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="entry">
+    <div class="row"><span class="l"><a href="https://charley.ai">Charley.ai</a> <span class="tech">| AI application</span></span><span class="r">2M+ users</span></div>
+    <ul>
+      <li>Built and ran the product as the sole developer, growing it to over 2 million users.</li>
+      <li>Owned the backend, frontend, AI integrations, infrastructure, and scaling.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><span class="l"><a href="https://ninjachat.ai">NinjaChat.ai</a> <span class="tech">| TypeScript, Next.js, Python, PostgreSQL, LLM APIs</span></span></div>
+    <ul>
+      <li>Multi-model AI application giving users one interface to GPT, Claude, Gemini, and other models.</li>
+      <li>Built chat, web search, and image/video generation pipelines, plus a developer API for programmatic access.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><span class="l"><a href="https://jun.so">Jun.so</a> <span class="tech">| TypeScript, LLM agents, OAuth integrations, job queues</span></span></div>
+    <ul>
+      <li>AI workflow automation: users describe a workflow in plain English and Jun connects the apps and runs it.</li>
+      <li>Built the LLM task planner, tool-calling execution engine, and app integrations as a solo project.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row"><span class="l">Limoni.vip <span class="tech">| Full-stack web application</span></span></div>
+    <ul>
+      <li>Independent product build covering backend services, application logic, frontend, and deployment.</li>
+    </ul>
+  </div>
+
+  <h2>Education</h2>
+  <div class="entry">
+    <div class="row"><span class="l">Bachelor of Science in Computer Science</span><span class="r">Completed</span></div>
+    <div class="row sub"><span>India</span></div>
   </div>
 
 </main>
@@ -576,15 +224,12 @@
 <script>
 (function(){
   var b = document.querySelector('.voicenote');
-  if(!b) return;
   var a = document.getElementById('vn');
-  var lbl = b.querySelector('.lbl');
-  b.addEventListener('click', function(){
-    if(a.paused){ a.play(); } else { a.pause(); }
-  });
-  a.addEventListener('play',  function(){ b.classList.add('playing');    lbl.textContent = 'Pause'; });
-  a.addEventListener('pause', function(){ b.classList.remove('playing'); lbl.textContent = 'Play voice note'; });
-  a.addEventListener('ended', function(){ b.classList.remove('playing'); lbl.textContent = 'Play voice note'; a.currentTime = 0; });
+  if(!b || !a) return;
+  b.addEventListener('click', function(){ a.paused ? a.play() : a.pause(); });
+  a.addEventListener('play',  function(){ b.textContent = '❚❚ pause'; });
+  a.addEventListener('pause', function(){ b.textContent = '▶ voice note'; });
+  a.addEventListener('ended', function(){ a.currentTime = 0; });
 })();
 </script>
 
