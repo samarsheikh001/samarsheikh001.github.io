@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Samar Sheikh — Resume</title>
+<title>Samar Sheikh — Backend / Full-Stack Engineer</title>
 <link rel="icon" href="favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -340,14 +340,53 @@
 
   /* ——— print ——— */
   @media print{
-    @page{ size:A4; margin:14mm }
+    @page{ size:A4 portrait; margin:8mm }
     html,body{background:white}
-    body{padding:0; font-size:11pt;}
+    body{padding:0; font-size:9pt; line-height:1.35}
     .sheet{
       border:0; box-shadow:none; padding:0; max-width:none; background:white;
     }
+    header.head{
+      gap:16px; padding-bottom:10px; margin-bottom:10px;
+    }
+    header.head h1{font-size:36px}
+    header.head .role{font-size:9px; margin-top:5px}
+    header.head .contact{font-size:8px; line-height:1.5}
+    .summary{
+      max-width:none; font-size:9.5pt; line-height:1.35;
+      padding-bottom:9px; margin-bottom:12px;
+    }
+    .body{grid-template-columns:2.2fr 1fr; gap:24px}
+    section{margin-bottom:14px}
+    h2.sec{font-size:8px; padding-bottom:5px; margin-bottom:8px}
+    .role{margin-bottom:10px; padding-bottom:10px}
+    .role .top{gap:8px; margin-bottom:1px}
+    .role h3{font-size:12.5px}
+    .role .when, .role .where{font-size:7.5px}
+    .role .where{margin-bottom:4px}
+    .role p{font-size:8.7pt; line-height:1.35; margin-bottom:4px}
+    .role ul{margin-top:3px}
+    .role li{font-size:8.2pt; line-height:1.3; margin-bottom:2px}
+    .role .stack{gap:3px; margin-top:5px}
+    .pill{font-size:7px; padding:1px 5px}
+    .quote{padding:5px 0 5px 10px; margin:6px 0 2px}
+    .quote p{font-size:8.2pt; line-height:1.3; margin-bottom:3px}
+    .quote cite{font-size:7px}
+    .proj{margin-bottom:7px}
+    .proj h4{font-size:10px}
+    .proj .url{font-size:7.5px}
+    .proj p{font-size:8.1pt; line-height:1.3}
+    aside .panel{margin-bottom:12px}
+    aside h2.sec{margin-bottom:6px}
+    aside p{font-size:8.2pt; line-height:1.35}
+    aside .kv{font-size:8pt}
+    aside .kv li{padding:3px 0; font-size:8.2pt}
+    aside .kv li span{font-size:7px}
+    aside .pill-cloud{gap:3px}
+    aside .pill-cloud .pill{font-size:7px}
+    .foot{margin-top:12px; padding-top:7px; font-size:7px}
     a{color:var(--ink) !important}
-    .role, .proj, section{break-inside:avoid}
+    .role, .proj, aside .panel{break-inside:avoid}
   }
 </style>
 </head>
@@ -358,7 +397,7 @@
   <header class="head">
     <div>
       <h1>Samar Sheikh</h1>
-      <div class="role">Software Engineer · Full-Stack · <b>Meta Ads</b> tooling &amp; ad-tech</div>
+      <div class="role">Backend / Full-Stack Engineer · <b>TypeScript &amp; Node.js</b></div>
     </div>
     <div class="contact">
       <div><span class="l">email</span><a href="mailto:samarsheikh001@gmail.com">samarsheikh001@gmail.com</a></div>
@@ -369,7 +408,7 @@
   </header>
 
   <p class="summary">
-    Full-stack software engineer who builds ad-tech. I ship the TypeScript / Next.js tooling that sits on top of the <b>Meta Marketing API</b> — ad-insights dashboards, funnel instrumentation, conversion pipelines — for clients spending <b>thousands of USD per day</b>. Deep enough in the domain to know what the code has to surface, not just which endpoint returns it.
+    Software engineer focused on backend and application development. I build <b>APIs, data pipelines, and web apps</b> with TypeScript, Node.js, Next.js, and PostgreSQL. Most of my work has been on small teams where I take a feature from database changes to the UI and deployment.
   </p>
 
   <div class="body">
@@ -381,15 +420,15 @@
 
         <article class="role">
           <div class="top">
-            <h3>Full-Stack Engineer <span class="at">— Loops GTM</span></h3>
-            <span class="when">RECENT</span>
+            <h3>Software Engineer <span class="at">— Loops GTM</span></h3>
+            <span class="when">CURRENT</span>
           </div>
-          <div class="where"><b>loopsgtm.com</b> · Ad-tech for high-spend Meta clients</div>
-          <p>Built and shipped the data tooling for clients spending thousands of USD per day on Meta. Owned it end-to-end — Marketing API integration, data pipeline, dashboard, and the conversion plumbing underneath.</p>
+          <div class="where"><b>loopsgtm.com</b> · Internal tools for Meta ad accounts</div>
+          <p>Built the ad-insights app used to monitor client accounts spending thousands of dollars per day. It pulls campaign data through the Meta Marketing API, stores it in Postgres, and presents it in a Next.js dashboard.</p>
           <ul>
-            <li>Designed and built an <b>ad-insights tool</b> (TypeScript · Next.js · Postgres) that pulls the Marketing API and surfaces wasted spend, creative fatigue, and audience overlap across active campaigns.</li>
-            <li>Instrumented the funnel in code — fixed broken <b>Pixel / CAPI</b> events, checkout drop-offs, and mis-attributed conversions that ad ops alone couldn't see.</li>
-            <li>Turned domain knowledge — campaign structure, account-health rules, attribution windows — into product logic the tooling enforces automatically.</li>
+            <li>Implemented campaign-data ingestion and reporting in <b>TypeScript and Next.js</b>.</li>
+            <li>Debugged broken <b>Pixel and CAPI events</b>, checkout drop-offs, and conversion attribution.</li>
+            <li>Added checks for campaign structure, account health, and attribution windows.</li>
           </ul>
           <div class="stack">
             <span class="pill">Meta Marketing API</span>
@@ -403,13 +442,14 @@
         <article class="role">
           <div class="top">
             <h3>Engineer <span class="at">— Invy</span></h3>
-            <span class="when">EARLIER</span>
+            <span class="when">PREVIOUS</span>
           </div>
-          <div class="where"><b>invy.com</b> · Worked under <b>Jack Dorsey</b> (co-founder, Twitter)</div>
-          <p>Joined early. Built features, fixed foundations, and shipped product surfaces alongside the founding team — short cycles, sharp feedback, real users.</p>
+          <div class="where"><a href="https://www.invy.com"><b>invy.com</b></a> · Portfolio intelligence app</div>
+          <p>Joined while the product was early and worked directly with the founding team. Built features across the React app and Node APIs, cleaned up existing code, and adapted the system as the product changed.</p>
           <ul>
-            <li>Shipped product surfaces and the APIs behind them; refactored as the company found its shape.</li>
-            <li>Earned a written testimonial from Jack on work ethic, initiative, and code quality.</li>
+            <li>Shipped app screens and their supporting <b>API endpoints</b>.</li>
+            <li>Worked on data integrations and Postgres-backed features.</li>
+            <li>Received a written testimonial from Jack Dorsey about my initiative and code quality.</li>
           </ul>
           <div class="quote">
             <p>"Samar is hard-working, proactive, and writes genuinely clean code. The kind of engineer you trust to ship."</p>
@@ -431,16 +471,11 @@
 
         <article class="role">
           <div class="top">
-            <h3>Founder &amp; Engineer <span class="at">— Own Startups &amp; Side Projects</span></h3>
+            <h3>Independent Developer <span class="at">— Products &amp; Client Work</span></h3>
             <span class="when">ONGOING</span>
           </div>
-          <div class="where">Full-stack · Growth · Hard-won Meta Ads lessons</div>
-          <p>Build and ship my own products end-to-end, then run the Meta campaigns that grow them. The domain knowledge that makes the ad-tech credible comes from spending real money on real accounts.</p>
-          <ul>
-            <li><b>madedaily.in</b> — built the site and drove ~100 qualified leads on ₹7,000 ad spend (≈ ₹70/lead) for a meal-subscription business.</li>
-            <li>Shipped and grew multiple personal products with Meta campaigns; learned what scale costs in creative volume and infra.</li>
-            <li><b>Banned-account expertise</b> — got several FB ad accounts banned and now know exactly why. Including the unwritten rule: never run Meta Ads from a personal/dev FB account, even though Meta allows it. The algorithm shadow-bans you, campaigns show "active" but stop delivering — the kind of edge case you only design tooling around once you've hit it.</li>
-          </ul>
+          <div class="where">Web apps · APIs · Third-party integrations</div>
+          <p>Build web products for myself and clients. I usually handle the database, backend, frontend, integrations, and deployment.</p>
         </article>
       </section>
 
@@ -449,34 +484,34 @@
 
         <article class="proj">
           <div class="top">
+            <h4><span class="accent">ninja</span>chat.ai — AI app and API</h4>
+            <a class="url" href="https://ninjachat.ai">ninjachat.ai ↗</a>
+          </div>
+          <p>One app for using GPT, Claude, Gemini, and other models. Includes chat, web search, image and video generation, and a developer API.</p>
+        </article>
+
+        <article class="proj">
+          <div class="top">
+            <h4><span class="accent">limoni</span>.vip — web application</h4>
+            <span class="url">limoni.vip</span>
+          </div>
+          <p>Independent product build. Worked across the backend, application logic, frontend, and deployment.</p>
+        </article>
+
+        <article class="proj">
+          <div class="top">
+            <h4><span class="accent">hyathi</span> — software agency</h4>
+            <a class="url" href="https://www.hyathi.com">hyathi.com ↗</a>
+          </div>
+          <p>Development work for client web, mobile, and AI products.</p>
+        </article>
+
+        <article class="proj">
+          <div class="top">
             <h4><span class="accent">jun</span>.so — AI workflow automation</h4>
             <a class="url" href="https://jun.so">jun.so ↗</a>
           </div>
-          <p>Describe a workflow in plain English, Jun connects the apps and runs it 24/7. Claude-routed task planning, 500+ integrations, self-healing runs. Designed and shipped end-to-end as a solo project.</p>
-        </article>
-
-        <article class="proj">
-          <div class="top">
-            <h4><span class="accent">made</span>daily.in — meal subscription</h4>
-            <a class="url" href="https://madedaily.in">madedaily.in ↗</a>
-          </div>
-          <p>High-protein Indian meals, fresh-cooked daily. Helped my cousin's family business find its first cohort of customers — <b>~100 leads on ₹7,000 in Meta ad spend</b>.</p>
-        </article>
-
-        <article class="proj">
-          <div class="top">
-            <h4><span class="accent">serp</span>.so — "Own the SERP"</h4>
-            <a class="url" href="https://serp.so">serp.so ↗</a>
-          </div>
-          <p>SEO &amp; competitive-intelligence platform. Real-time tracking across 800+ keywords, content scoring against competitors, keyword-gap analysis.</p>
-        </article>
-
-        <article class="proj">
-          <div class="top">
-            <h4><span class="accent">out</span>search.io — SEO on autopilot</h4>
-            <a class="url" href="https://outsearch.io">outsearch.io ↗</a>
-          </div>
-          <p>Picks keywords, drafts the article, generates images, auto-publishes to WordPress / Webflow — daily, 150+ languages. Built-in backlink-exchange to lift domain authority.</p>
+          <p>Describe a workflow in plain English and Jun connects the apps and runs it. Built the task planner and integrations as a solo project.</p>
         </article>
       </section>
 
@@ -487,20 +522,15 @@
         <h2 class="sec">Skills</h2>
         <div class="pill-cloud">
           <span class="pill solid">TypeScript</span>
+          <span class="pill solid">Node.js</span>
           <span class="pill solid">Next.js</span>
-          <span class="pill">Node</span>
           <span class="pill">React</span>
           <span class="pill">Python</span>
-          <span class="pill">Postgres</span>
+          <span class="pill">PostgreSQL</span>
           <span class="pill">SQL</span>
-          <span class="pill accent">Meta Marketing API</span>
+          <span class="pill">REST APIs</span>
+          <span class="pill">Meta Marketing API</span>
           <span class="pill">Pixel / CAPI</span>
-          <span class="pill">Funnel Analytics</span>
-          <span class="pill">PostHog</span>
-          <span class="pill">GA4</span>
-          <span class="pill">Meta Ads</span>
-          <span class="pill">Account Health</span>
-          <span class="pill">Creative Testing</span>
         </div>
       </section>
 
@@ -514,16 +544,16 @@
       <section class="panel">
         <h2 class="sec">Highlights</h2>
         <ul class="kv">
-          <li><b>4 live products shipped</b><span>solo</span></li>
-          <li><b>Testimonial · Jack Dorsey</b><span>Invy</span></li>
-          <li><b>Ad-tech @ $1k+/day spend</b><span>Loops GTM</span></li>
-          <li><b>~₹70 / lead</b><span>madedaily</span></li>
+          <li><b>Early engineer</b><span>Invy</span></li>
+          <li><b>Jack Dorsey testimonial</b><span>Invy</span></li>
+          <li><b>High-spend ad tooling</b><span>Loops GTM</span></li>
+          <li><b>Independent products</b><span>ongoing</span></li>
         </ul>
       </section>
 
       <section class="panel">
-        <h2 class="sec">Off-hours</h2>
-        <p>Farming and fermenting. A useful counterweight to software, where everything ships in an afternoon.</p>
+        <h2 class="sec">What I Work On</h2>
+        <p>APIs, data-heavy web apps, AI integrations, and the backend work that keeps them running.</p>
       </section>
 
       <section class="panel">
